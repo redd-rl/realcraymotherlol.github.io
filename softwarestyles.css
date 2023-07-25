@@ -1,0 +1,73 @@
+
+a {
+    font-family:'Courier New', Courier, monospace;
+}
+#softbutton:link {
+    text-decoration: none;
+}
+
+#bannerflex {
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 270;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#banner {
+    content:url('banner.jpg');
+    width: 929px;
+    height: 165px;
+}
+
+#softbutton {
+    border-radius:5px;
+    border: 2px solid #155e27;
+    background-color: #2d831c;
+    padding: 20px;
+    color:white;
+    font-weight:bold;
+    font-family:'ProtoPixel';
+    font-size: 30px;
+    width: 150px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+#softbutton:hover {padding: 20px; background-color:#35c241; font-size: 32px;}
+
+
+@keyframes hover {
+    0% {padding: 16px;}
+    100% {padding: 20px;}
+}
+
+body {
+    background-color:black;
+    
+}
+
+.flex {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+    align-items:center
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik.ttf');
+}
+
+@font-face {
+    font-family: 'ProtoPixel';
+    src: url('ProtoPixel1.ttf');
+}
