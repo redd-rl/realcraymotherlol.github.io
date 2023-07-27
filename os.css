@@ -19,6 +19,8 @@ a {
     width: 150px;
     box-sizing: border-box;
     transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition-property: all;
 }
 
 .softbutton_ex{
@@ -27,6 +29,7 @@ a {
     padding-right: 200px;
     color:white;
     transition: 0.5s;
+    -moz-transition: 0.5s;
     background-size:200px;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,16 +66,15 @@ a {
     display: block;
     padding: 31px;
     padding-right:200px;
-    backdrop-filter: blur(5px);
     filter: none;
+    backdrop-filter: blur(5px);
 }
 
 #me{
     background-image: url(https://www.betaarchive.com/wiki/images/7/73/Windows_ME_Logo.png);
     display: block;
     padding: 31px;
-    padding-right:200px;
-    backdrop-filter: blur(5px);  
+    padding-right:200px; 
 }
 
 #mediv{
@@ -86,7 +88,6 @@ a {
     display: block;
     padding: 31px;
     padding-right:200px;
-    backdrop-filter: blur(5px);  
 }
 
 #win2000div{
@@ -100,7 +101,7 @@ a {
     display: block;
     padding: 31px;
     padding-right:200px;
-    backdrop-filter: blur(5px);  
+    backdrop-filter: blur(5px);
 }
 
 #xpdiv{
@@ -127,12 +128,80 @@ a {
     background-repeat: no-repeat;
 }
 
+#win98div{
+    border: 2px solid #174930;
+    transition: 0.5s;
+    background: url(https://qph.cf2.quoracdn.net/main-qimg-1d52bb961c819d4589245f44e3320b8c.webp);
+}
+
+#win98{
+    background-image: url(windows98.png);
+    display: block;
+    padding: 31px;
+    padding-right:200px;
+}
+
+#nt4div{
+    border: 2px solid #174930;
+    transition: 0.5s;
+    background: url(https://cdn.wallpapersafari.com/61/31/0MXQKU.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#nt4{
+    background-image: url(nt4.png);
+    display: block;
+    padding: 31px;
+    padding-right:200px;
+    filter: drop-shadow(0 0 0px rgb(134, 207, 255))
+}
+
+#win95{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Windows_95_logo_with_wordmark.svg/5782px-Microsoft_Windows_95_logo_with_wordmark.svg.png);
+    display: block;
+    padding: 31px;
+    padding-right:200px;
+    filter: none;   
+}
+
+#win95div{
+    border: 2px solid #174930;
+    transition: 0.5s;
+    background: url(https://qph.cf2.quoracdn.net/main-qimg-1d52bb961c819d4589245f44e3320b8c.webp);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#win31{
+    background-image: url(win31.png);
+    display: block;
+    padding: 31px;
+    padding-right:200px;
+    filter: none;   
+}
+
+#win31div{
+    border: 2px solid #174930;
+    transition: 0.5s;
+    background: url(https://qph.cf2.quoracdn.net/main-qimg-1d52bb961c819d4589245f44e3320b8c.webp);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
 
 .softbutton_ex:hover {padding: 22px; padding-right: 220px; background-size: 220px; font-size: 32px;}
-#me:hover{filter: drop-shadow(0 0 5px rgb(94, 141, 92)); padding:34px; padding-right:220px; backdrop-filter: blur(0px);}
-#win2000:hover{filter: drop-shadow(0 0 5px rgb(0,0,0)); padding:34px; padding-right:220px; backdrop-filter: blur(0px);}
+#me:hover{filter: drop-shadow(0 0 5px rgb(94, 141, 92)); padding:34px; padding-right:220px;}
+#win95:hover{filter: drop-shadow(0 0 8px rgb(255, 255, 255)); padding:34px; padding-right:220px;}
+#win31:hover{filter: drop-shadow(0 0 8px rgb(134, 207, 255)); padding:34px; padding-right:220px;}
+#nt4:hover{filter: drop-shadow(0 0 8px rgb(134, 207, 255)); padding:34px; padding-right:220px;}
+#win98:hover{filter: drop-shadow(0 0 5px rgb(255, 255, 255)); padding:34px; padding-right:220px;}
+#win2000:hover{filter: drop-shadow(0 0 5px rgb(0,0,0)); padding:34px; padding-right:220px;}
 #xp:hover{filter: drop-shadow(0 0 3px rgb(0,0,0)); padding:34px; padding-right:220px; backdrop-filter: blur(0px);}
-#vista:hover{filter: drop-shadow(0 0 1px rgb(255,255,255)); padding:34px; padding-right:220px; backdrop-filter: blur(0px);}
+#vista:hover{padding:34px; padding-right:220px; filter: drop-shadow(0 0 2px #fff); backdrop-filter: blur(0px);}
 #win7:hover {filter: drop-shadow(0 0 2px rgb(255,255,255)); padding:34px; padding-right:220px;}
 #win8:hover {background-color: #8036a0;}
 #win10:hover {background-color: rgb(17, 0, 100);}
@@ -182,3 +251,14 @@ body {
     bottom: 25;
     right: 20;
 }
+
+/** Mozilla Firefox */
+@-moz-document url-prefix() {
+    #vista{
+        backdrop-filter: none;
+    }
+
+    #xp {
+        backdrop-filter: none;
+    }
+    }
