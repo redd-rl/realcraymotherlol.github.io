@@ -6,6 +6,18 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
 #bannerflex {
     display: inline-flex;
     position: absolute;
@@ -18,7 +30,7 @@ a {
 }
 
 #banner {
-    content:url('banner.jpg');
+    content:url('images/banner.jpg');
     width: 929px;
     height: 165px;
 }
@@ -92,7 +104,7 @@ body {
     height:100%;
     width:100%;
     background-repeat:repeat;
-    background-image: url(background.png);
+    background-image: url(images/background.png);
     filter: blur(10px);
     animation: bokeh 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
     animation-direction: alternate;

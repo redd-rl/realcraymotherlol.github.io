@@ -62,7 +62,7 @@ a {
 }
 
 #vista{
-    background-image: url(Windows_Vista_logo.svg.png);
+    background-image: url(images/Windows_Vista_logo.svg.png);
     display: block;
     padding: 31px;
     padding-right:200px;
@@ -84,7 +84,7 @@ a {
 }
 
 #win2000{
-    background-image: url(win2000logo.png);
+    background-image: url(images/win2000logo.png);
     display: block;
     padding: 31px;
     padding-right:200px;
@@ -97,7 +97,7 @@ a {
 }
 
 #xp{
-    background-image: url(Microsoft_Windows_XP_Logo.svg.png);
+    background-image: url(images/Microsoft_Windows_XP_Logo.svg.png);
     display: block;
     padding: 31px;
     padding-right:200px;
@@ -135,7 +135,7 @@ a {
 }
 
 #win98{
-    background-image: url(windows98.png);
+    background-image: url(images/windows98.png);
     display: block;
     padding: 31px;
     padding-right:200px;
@@ -151,7 +151,7 @@ a {
 }
 
 #nt4{
-    background-image: url(nt4.png);
+    background-image: url(images/nt4.png);
     display: block;
     padding: 31px;
     padding-right:200px;
@@ -176,17 +176,36 @@ a {
 }
 
 #win31{
-    background-image: url(win31.png);
+    background-image: url(images/win31.png);
     display: block;
     padding: 31px;
+    image-rendering: auto;
     padding-right:200px;
     filter: none;   
 }
 
 #win31div{
-    border: 2px solid #174930;
+    border: 2px solid #173949;
     transition: 0.5s;
-    background: url(https://qph.cf2.quoracdn.net/main-qimg-1d52bb961c819d4589245f44e3320b8c.webp);
+    background-color: #3da0c7;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#win123{
+    background-image:url(images/win123.png);
+    display: block;
+    padding: 31px;
+    image-rendering: auto;
+    padding-right:200px;
+    filter: none;   
+}
+
+#win123div{
+    border: 2px solid #1a1749;
+    transition: 0.5s;
+    background-color: #2000af;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -196,7 +215,8 @@ a {
 .softbutton_ex:hover {padding: 22px; padding-right: 220px; background-size: 220px; font-size: 32px;}
 #me:hover{filter: drop-shadow(0 0 5px rgb(94, 141, 92)); padding:34px; padding-right:220px;}
 #win95:hover{filter: drop-shadow(0 0 8px rgb(255, 255, 255)); padding:34px; padding-right:220px;}
-#win31:hover{filter: drop-shadow(0 0 8px rgb(134, 207, 255)); padding:34px; padding-right:220px;}
+#win123:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255)); padding:34px; padding-right:220px;}
+#win31:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255)); padding:34px; padding-right:220px;}
 #nt4:hover{filter: drop-shadow(0 0 8px rgb(134, 207, 255)); padding:34px; padding-right:220px;}
 #win98:hover{filter: drop-shadow(0 0 5px rgb(255, 255, 255)); padding:34px; padding-right:220px;}
 #win2000:hover{filter: drop-shadow(0 0 5px rgb(0,0,0)); padding:34px; padding-right:220px;}
@@ -241,6 +261,11 @@ body {
 @font-face {
     font-family: 'ProtoPixel';
     src: url('ProtoPixel1.ttf');
+}
+
+@font-face {
+    font-family: 'FixedSys';
+    src: url('FSEX300.ttf');
 }
 
 #credits {
