@@ -1,0 +1,108 @@
+.container {
+  display: grid;
+  grid-template-columns: 270px 270px 200px;
+  grid-template-rows: 170px 170px;
+  grid-gap: 1rem;
+}
+
+
+
+body {
+  background-color: #3b404e;
+}
+
+#title {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+}
+
+/* OTHER STYLES */
+
+.container_body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
+  border: 6px solid #171717;
+  transition: 0.5s;
+}
+
+.game.item1 {
+  background-image: url(https://m.gjcdn.net/game-thumbnail/500/764231-crop82_51_1271_720-zw3rcmxn-v4.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:flex;
+  align-items: center;
+}
+
+.game.item2 {  
+  background-size: contain;
+  background-repeat: no-repeat;
+  display:flex;
+  align-items: center;
+}
+
+.game.item3 {  
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+  display:flex;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../Rubik.ttf');
+}
+
+#OMALB {
+  font-family: 'Rubik';
+  color:white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:100%;
+  text-decoration: none;
+  backdrop-filter: blur(2px);
+}
+
+#JA3B {
+  background: url(https://m.gjcdn.net/game-header/1900/758078-4itnpmdv-v4.webp);
+  color:white;
+  display:flex;
+  background-position: 500px;
+  background-size:cover;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:100%;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+#JA3B:visited {
+  text-decoration: none;
+}
+
+#OMALTXT {
+  font-size: 17px;
+}
+
+#JA3 {
+  background-image: url(https://cdn.discordapp.com/attachments/834390968110415882/1018463610109960242/JA3_LOGO.png);
+  width:100%;
+  height:100%;
+  background-size:contain;
+  background-position: 0;
+  background-repeat: no-repeat; 
+}
+
+.game:hover {border: 3px solid white;}
