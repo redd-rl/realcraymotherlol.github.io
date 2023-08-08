@@ -30,9 +30,9 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
       
           // Create new div with styles.
           dese1.className = "fade-in";
-          dese1.style.position = "absolute";
+          dese1.style.position = "relative";
           downbtn1.className = "fade-in"; // Add the                           fade-in class to the new element
-          downbtn1.style.position = "absolute";
+          downbtn1.style.position = "relative";
           grid.classList.add("selected");
       
           dese1.style.textAlign = "center";
@@ -64,7 +64,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
       background.style.backgroundPosition = "1200px";
       // Create Elements
       const dese2 = document.createElement("div");
-      const downbtn2 = document.createElement("div");
+      const downbtn2 = document.createElement("button");
   
       // Create new div with styles.
       dese2.className = "fade-in";
@@ -79,7 +79,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
       downbtn2.setAttribute('id', 'downbtn' + contentId);
   
       const textcontent = document.createTextNode("Jonathan's Adventure 3 is a Five Night's at Freddy's fan-game developed on the Clickteam Fusion 2.5 Engine, I developed it at severecorp as a Lead Programmer, Designer and Sound Artist.");
-      const textcontentdown = document.createTextNode("DOWNLOAD NOT AVAILABLE (YET)");
+      const textcontentdown = document.createTextNode("DOWNLOAD N/A");
       dese2.appendChild(textcontent);
       background.appendChild(dese2);
       background.appendChild(downbtn2);
@@ -87,7 +87,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
   
     // Start the fading in animation
     setTimeout(function () {
-        logo.style.height = "200px";
+        logo.style.height = "170px";
         dese2.style.opacity = "1";
         downbtn2.style.opacity = "0.75";
         logo.style.width = "350px";
