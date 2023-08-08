@@ -56,7 +56,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
             dese1.style.opacity = "1";
             downbtn1.style.opacity = "1";
             logo.style.transform = "scale(1.7)";
-            logo.style.top = "60px";
+            logo.style.top = "10%";
         }, 10);
           break;
            
