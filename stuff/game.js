@@ -55,7 +55,8 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
         setTimeout(function () {
             dese1.style.opacity = "1";
             downbtn1.style.opacity = "1";
-            logo.style.transform = "scale(1.7) translateY(10%)";
+            logo.style.transform = "scale(175%)";
+            logo.style.top = "20%"
         }, 10);
           break;
            
@@ -132,7 +133,8 @@ function RevertZoom(contentId){
       description.style.opacity = "0";
       downbtn.style.opacity = "0"
       if (contentId === 1) {
-        logo.style.transform = "scale(1)";
+        logo.style.transform = "scale(100%)";
+        logo.style.top = "50%";
       }
   }, 10);
 

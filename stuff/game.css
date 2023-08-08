@@ -87,11 +87,12 @@ body {
 
 #LOGO-1 {
   position: absolute;
-  top: 40%;
-  transform: scale(1) translateY(0%);
   transition: all 0.5s ease;
   filter:drop-shadow(1px 1px 1px rgb(0, 0, 0));
+  transform:scale(100%);
+  top:50%;
 }
+
 
 #LOGO-2 {
   background-image: url(https://cdn.discordapp.com/attachments/834390968110415882/1018463610109960242/JA3_LOGO.png);
@@ -154,7 +155,7 @@ body {
 
 #dese1 {
   filter:drop-shadow(1px 1px 1px rgb(0, 0, 0));
-  top:80px;
+  top:20%;
 }
 
 #dese2 {
