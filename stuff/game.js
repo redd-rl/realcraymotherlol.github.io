@@ -91,7 +91,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
         dese2.style.opacity = "1";
         downbtn2.style.opacity = "0.75";
         logo.style.width = "350px";
-        logo.style.transform = "TranslateY(0%)";
+        logo.style.transform = "scale(100%)";
         logo.style.top = "0%";
     }, 10);
     break;
