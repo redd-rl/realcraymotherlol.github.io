@@ -7,6 +7,7 @@ function zoom(contentId){
   var grid = document.getElementById("GRID-" + contentId);
   var background = document.getElementById("GRIDB-" + contentId);
   var logo = document.getElementById("LOGO-" + contentId);
+  
 
 if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"))) {
     grid.style.width = "400px";
@@ -55,8 +56,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
         setTimeout(function () {
             dese1.style.opacity = "1";
             downbtn1.style.opacity = "1";
-            logo.style.transform = "scale(175%)";
-            logo.style.top = "20%"
+            logo.style.fontSize = "25px";
         }, 10);
           break;
            
@@ -133,8 +133,7 @@ function RevertZoom(contentId){
       description.style.opacity = "0";
       downbtn.style.opacity = "0"
       if (contentId === 1) {
-        logo.style.transform = "scale(100%)";
-        logo.style.top = "50%";
+        logo.style.fontSize = "17px";
       }
   }, 10);
 

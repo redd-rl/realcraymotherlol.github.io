@@ -86,11 +86,9 @@ body {
 }
 
 #LOGO-1 {
-  position: absolute;
   transition: all 0.5s ease;
   filter:drop-shadow(1px 1px 1px rgb(0, 0, 0));
-  transform:scale(100%);
-  top:50%;
+  font-size: 17px;
 }
 
 
@@ -155,10 +153,17 @@ body {
 
 #dese1 {
   filter:drop-shadow(1px 1px 1px rgb(0, 0, 0));
-  top:20%;
 }
 
 #dese2 {
   position: relative;
   bottom:20px;  
+}
+
+#RCONTAINER-1 {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  position:relative;
+  transition: all 0.5s ease;
 }
