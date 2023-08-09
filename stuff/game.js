@@ -134,6 +134,9 @@ function RevertZoom(contentId){
       description.style.opacity = "0";
       downbtn.style.opacity = "0"
       if (contentId === 1) {
+        logo.style.top = "30%";
+        logo.style.transform = "scale(1)";
+
       }
   }, 10);
 
