@@ -7,7 +7,9 @@
 
 
 html, body {
-  background-color: #3b404e;
+  background: url("../images/patterngame.png");
+  background-size: 512px;
+  margin: 0;
   overflow-y:hidden;
 }
 
@@ -23,7 +25,7 @@ html, body {
 .game {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-radius: 7px;
-  border: 4px solid #171717;
+  border: 4px solid #ffffff;
   transition: 0.5s;
 }
 
@@ -39,7 +41,7 @@ html, body {
   cursor:pointer;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-radius: 10px;
-  border: 6px solid #171717;
+  border: 3px solid #171717 ;
   transition: 0.5s;
 }
 
@@ -94,6 +96,7 @@ html, body {
   filter:drop-shadow(1px 1px 1px rgb(0, 0, 0));
   transform: scale(1);
   top: 30%;
+  cursor:default;
 }
 
 
@@ -121,7 +124,7 @@ html, body {
   align-items: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-radius: 10px;
-  border: 6px solid #171717;
+  border: 3px solid #171717;
   transition: 0.5s;
 }
 
