@@ -6,8 +6,9 @@
 
 
 
-body {
+html, body {
   background-color: #3b404e;
+  overflow-y:hidden;
 }
 
 /* OTHER STYLES */
