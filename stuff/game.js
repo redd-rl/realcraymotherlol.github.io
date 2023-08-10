@@ -11,8 +11,8 @@ function zoom(contentId){
   
 
 if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"))) {
-    if(!(mobile.matches)) {
-      grid.style.width = "100%";
+    if((mobile.matches)) {
+      grid.style.width = "100%";  
     }
     else {
       grid.style.width = "400px";
