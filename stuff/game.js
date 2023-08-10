@@ -7,10 +7,16 @@ function zoom(contentId){
   var grid = document.getElementById("GRID-" + contentId);
   var background = document.getElementById("GRIDB-" + contentId);
   var logo = document.getElementById("LOGO-" + contentId);
+  var mobile = window.matchMedia("(max-width: 600px)")
   
 
 if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"))) {
-    grid.style.width = "400px";
+    if(!(mobile)) {
+      grid.style.width = "100%";
+    }
+    else {
+      grid.style.width = "400px";
+    }
     grid.style.height = "400px";
     originalJA3gridWidth = grid.style.width;
     originalJA3gridHeight = grid.style.height;
