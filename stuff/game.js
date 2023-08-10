@@ -12,7 +12,7 @@ function zoom(contentId){
 
 if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"))) {
     if((mobile.matches)) {
-      grid.style.width = "85%";  
+      grid.style.width = "100%";  
     }
     else {
       grid.style.width = "400px";
@@ -97,7 +97,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
         logo.style.height = "170px";
         dese2.style.opacity = "1";
         downbtn2.style.opacity = "0.75";
-        logo.style.width = "350px";
+        logo.style.width = "90%";
         logo.style.transform = "scale(100%)";
         logo.style.top = "0%";
     }, 10);
