@@ -63,6 +63,10 @@ a {
         padding-left: 150px;
         padding-right: 150px;
     }
+    #banner {
+        width:619px;
+        height:110px;
+    }
   }
   
 
