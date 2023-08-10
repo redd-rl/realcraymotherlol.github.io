@@ -32,7 +32,6 @@ a {
 #banner {
     content:url('images/banner.png');
     width: 929px;
-    height: 165px;
 }
 
 .softbutton {
@@ -60,8 +59,8 @@ a {
         bottom: 530;
     }
     .softbutton {
-        padding-left: 100%;
-        padding-right: 100%;
+        padding-right:100px;
+        padding-left: 100px;
     }
     #banner {
         max-width:100%;
