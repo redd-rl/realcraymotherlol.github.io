@@ -2,7 +2,7 @@
 a {
     font-family:'Courier New', Courier, monospace;
 }
-#softbutton:link {
+.softbutton:link {
     text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ a {
     height: 165px;
 }
 
-#softbutton {
+.softbutton {
     border-radius:5px;
     border: 2px solid #15175e;
     background-color: #3137e0;
@@ -49,8 +49,22 @@ a {
     transition: 0.5s;
 }
 
-#softbutton:hover {padding: 20px; background-color:#474dfc; font-size: 32px;}
+.softbutton:hover {padding: 20px; background-color:#474dfc; font-size: 32px;}
 
+@media only screen and (max-width: 600px) {
+    #flex {
+      flex-direction: column;
+      gap: 40px;
+    }
+    #bannerflex {
+        bottom: 530;
+    }
+    .softbutton {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+  }
+  
 
 @keyframes hover {
     0% {padding: 16px;}
@@ -62,15 +76,15 @@ body {
     
 }
 
-.flex {
+#flex {
     position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    gap: 20px;
+    column-gap: 20px;
     align-items:center
 }
 
