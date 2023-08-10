@@ -60,12 +60,11 @@ a {
         bottom: 530;
     }
     .softbutton {
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 100%;
+        padding-right: 100%;
     }
     #banner {
-        width:619px;
-        height:110px;
+        max-width:100%;
     }
   }
   
