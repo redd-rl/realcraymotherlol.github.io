@@ -12,7 +12,7 @@ function zoom(contentId){
 
 if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"))) {
     if((mobile.matches)) {
-      grid.style.width = "100%";  
+      grid.style.width = "95%";  
     }
     else {
       grid.style.width = "400px";
@@ -62,7 +62,11 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
         setTimeout(function () {
             dese1.style.opacity = "1";
             downbtn1.style.opacity = "1";
-            logo.style.transform = "scale(1.75)";
+            if (mobile.matches) {
+              logo.style.transform = "scale(1.6)";
+            } else {
+              logo.style.transform = "scale(1.75)";
+            }
             logo.style.top = "17%";
         }, 10);
           break;
@@ -97,7 +101,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
         logo.style.height = "170px";
         dese2.style.opacity = "1";
         downbtn2.style.opacity = "0.75";
-        logo.style.width = "90%";
+        logo.style.width = "80%";
         logo.style.transform = "scale(100%)";
         logo.style.top = "0%";
     }, 10);
