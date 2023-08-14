@@ -69,7 +69,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
               logo.style.transform = "scale(1.75)";
             }
             logo.style.top = "17%";
-            year.style.top = "25%";
+            year.style.transform = "translateY(-80px)";
         }, 10);
           break;
            
@@ -106,7 +106,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
         logo.style.width = "80%";
         logo.style.transform = "scale(100%)";
         logo.style.top = "0%";
-        year.style.top = "30%";
+        year.style.transform = "translateY(120px)";
     }, 10);
     break;
 
@@ -138,20 +138,20 @@ function RevertZoom(contentId){
   setTimeout(function () {
       background.style.backgroundPosition = "500px";
       if (contentId === 2) {
-      logo.style.height = "100px";
-      logo.style.width = "200px";
-      logo.style.transform = "TranslateY(-50%)";
-      logo.style.top = "50%";
-      year.style.top = "53%";
+      year.style.transform = "translateY(100px)";
+      logo.style.height = null;
+      logo.style.width = null;
+      logo.style.transform = null;
+      logo.style.top = null;
       }
       grid.style.width = "250px";
       grid.style.height = "150px";
       description.style.opacity = "0";
       downbtn.style.opacity = "0"
       if (contentId === 1) {
-        year.style.top = "45%";
         logo.style.top = "30%";
         logo.style.transform = "scale(1)";
+        year.style.transform = "translateY(20px)";
       }
   }, 10);
 

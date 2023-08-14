@@ -5,29 +5,6 @@
   justify-content: center;
 }
 
-.container2023 {
-  display: inline-flex;
-  position:absolute;
-  align-items: center;
-  top:37%;
-  right:39%;
-}
-
-.container2021 {
-  display: inline-flex;
-  position:absolute;
-  align-items: center;
-  top:37%;
-  left:39%;
-}
-
-.yeartext {
-  color:white;
-  margin: 0;
-  font-family: 'Rubik';
-  font-size: 27px;
-}
-
 html, body {
   background: url(../images/patterngame.png);
   background-size:468px;
@@ -50,23 +27,6 @@ html, body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
-
-svg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .container {
@@ -161,18 +121,17 @@ svg {
   position:absolute;
   transition: all 0.5s ease;
   filter:drop-shadow(1px 1px 1px rgb(0, 0, 0));
-  transform: scale(1);
-  top: 45%;
+  transform: translateY(20px);
   font-size: 14px;
   cursor:default;
 }
 
 #YEAR-2 {
-  position:absolute;
+  position:absolute;  
   transition: all 0.5s ease;
   filter:drop-shadow(1px 1px 1px rgb(0, 0, 0));
-  transform: scale(1);
-  top: 55%;
+  transform: translateY(100px);
+  margin:0;
   font-size: 14px;
   font-family: 'Rubik';
   cursor:default;
@@ -207,7 +166,6 @@ svg {
   transition: 0.5s;
 }
 
-/* Used for Javascript (don't touch) */
 .fade-in {
  opacity: 0;
  transition: opacity 1s ease-in-out;
@@ -260,4 +218,18 @@ svg {
   align-items:center;
   position:relative;
   transition: all 0.5s ease;
+}
+.yeargap {
+  padding-top: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .yeargap {
+    padding-top: 0px;
+    padding-right: 120px;
+  }
 }
