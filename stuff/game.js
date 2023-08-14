@@ -8,6 +8,7 @@ function zoom(contentId){
   var background = document.getElementById("GRIDB-" + contentId);
   var logo = document.getElementById("LOGO-" + contentId);
   var mobile = window.matchMedia("(max-width: 600px)")
+  var year = document.getElementById("YEAR-" + contentId);
   
 
 if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"))) {
@@ -63,11 +64,12 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
             dese1.style.opacity = "1";
             downbtn1.style.opacity = "1";
             if (mobile.matches) {
-              logo.style.transform = "scale(1.6)";
+              logo.style.transform = "scale(1.5)";
             } else {
               logo.style.transform = "scale(1.75)";
             }
             logo.style.top = "17%";
+            year.style.top = "25%";
         }, 10);
           break;
            
@@ -104,6 +106,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
         logo.style.width = "80%";
         logo.style.transform = "scale(100%)";
         logo.style.top = "0%";
+        year.style.top = "30%";
     }, 10);
     break;
 
@@ -116,6 +119,7 @@ function RevertZoom(contentId){
   var grid = document.getElementById("GRID-" + contentId);
   var background = document.getElementById("GRIDB-" + contentId);
   var logo = document.getElementById("LOGO-" + contentId);
+  var year = document.getElementById("YEAR-" + contentId);
   
   if (document.getElementById("GRID-" + contentId).classList.contains("selected")) {
       // Remove the dynamically added elements
@@ -138,15 +142,16 @@ function RevertZoom(contentId){
       logo.style.width = "200px";
       logo.style.transform = "TranslateY(-50%)";
       logo.style.top = "50%";
+      year.style.top = "53%";
       }
       grid.style.width = "250px";
       grid.style.height = "150px";
       description.style.opacity = "0";
       downbtn.style.opacity = "0"
       if (contentId === 1) {
+        year.style.top = "45%";
         logo.style.top = "30%";
         logo.style.transform = "scale(1)";
-
       }
   }, 10);
 

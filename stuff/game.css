@@ -1,10 +1,32 @@
 .container {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   column-gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
+.container2023 {
+  display: inline-flex;
+  position:absolute;
+  align-items: center;
+  top:37%;
+  right:39%;
+}
 
+.container2021 {
+  display: inline-flex;
+  position:absolute;
+  align-items: center;
+  top:37%;
+  left:39%;
+}
+
+.yeartext {
+  color:white;
+  margin: 0;
+  font-family: 'Rubik';
+  font-size: 27px;
+}
 
 html, body {
   background: url(../images/patterngame.png);
@@ -17,10 +39,17 @@ html, body {
 
 .container_body {
   height: 100vh;
+  flex-flow:wrap;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+}
+
+#container_text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -43,6 +72,12 @@ svg {
 .container {
   align-items: center;
   position: relative;
+}
+
+.yeartext {
+  text-align:center;
+  color:white;
+  bottom:50px;
 }
 
 .game {
@@ -119,6 +154,27 @@ svg {
   filter:drop-shadow(1px 1px 1px rgb(0, 0, 0));
   transform: scale(1);
   top: 30%;
+  cursor:default;
+}
+
+#YEAR-1 {
+  position:absolute;
+  transition: all 0.5s ease;
+  filter:drop-shadow(1px 1px 1px rgb(0, 0, 0));
+  transform: scale(1);
+  top: 45%;
+  font-size: 14px;
+  cursor:default;
+}
+
+#YEAR-2 {
+  position:absolute;
+  transition: all 0.5s ease;
+  filter:drop-shadow(1px 1px 1px rgb(0, 0, 0));
+  transform: scale(1);
+  top: 55%;
+  font-size: 14px;
+  font-family: 'Rubik';
   cursor:default;
 }
 
