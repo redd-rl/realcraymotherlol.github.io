@@ -59,7 +59,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
             dese1.style.opacity = "1";
             downbtn1.style.opacity = "1";
             if (mobile.matches) {
-              logo.style.transform = "scale(1.5)";
+              logo.style.transform = "scale(1.3)";
             } else {
               logo.style.transform = "scale(1.75)";
             }

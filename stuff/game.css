@@ -9,6 +9,7 @@ html, body {
   background: url(../images/patterngame.png);
   background-size:468px;
   margin: 0;
+  background-color:#212121;
   overflow-y:hidden;
 }
 
