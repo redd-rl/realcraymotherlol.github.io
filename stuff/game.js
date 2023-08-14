@@ -12,12 +12,7 @@ function zoom(contentId){
   
 
 if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"))) {
-    if((mobile.matches)) {
-      grid.style.width = "95%";  
-    }
-    else {
-      grid.style.width = "400px";
-    }
+    grid.style.width = "41vh"
     grid.style.height = "400px";
     originalJA3gridWidth = grid.style.width;
     originalJA3gridHeight = grid.style.height;
@@ -114,6 +109,8 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
 }
 }
 
+ChangeWIDTH(mobile);
+grid.addEventListener(ChangeWIDTH);
 
 function RevertZoom(contentId){
   var grid = document.getElementById("GRID-" + contentId);

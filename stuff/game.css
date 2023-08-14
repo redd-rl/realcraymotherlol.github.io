@@ -223,6 +223,10 @@ html, body {
   padding-top: 120px;
 }
 
+.selected {
+  width:400px;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
@@ -231,5 +235,8 @@ html, body {
   .yeargap {
     padding-top: 0px;
     padding-right: 120px;
+  }
+  .selected {
+    width: 95%
   }
 }
