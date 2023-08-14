@@ -109,9 +109,6 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
 }
 }
 
-ChangeWIDTH(mobile);
-grid.addEventListener(ChangeWIDTH);
-
 function RevertZoom(contentId){
   var grid = document.getElementById("GRID-" + contentId);
   var background = document.getElementById("GRIDB-" + contentId);

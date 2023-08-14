@@ -24,21 +24,9 @@ html, body {
   align-items: center;
 }
 
-#container_text {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .container {
   align-items: center;
   position: relative;
-}
-
-.yeartext {
-  text-align:center;
-  color:white;
-  bottom:50px;
 }
 
 .game {
@@ -171,8 +159,6 @@ html, body {
  opacity: 0;
  transition: opacity 1s ease-in-out;
 }
-
-.game:hover {border: 3px solid white;}
 
 #downbtn2 {
   border: 2px solid white;
