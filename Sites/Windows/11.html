@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="../../CSS/operatingSystemPages/windows11.css">
   <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet">
-  <script>let globalOSInfo;async function fetchOSInfo(){try{var o=await fetch("https://realcraymotherlol.github.io/JSON/Windows11.json");if(o.ok)return o.json();throw new Error("Network response was not ok")}catch(o){return console.error("Error fetching OS information:",o),null}}document.addEventListener("DOMContentLoaded",async()=>{globalOSInfo=await fetchOSInfo(),console.log("OS Info:",globalOSInfo)});  </script>
+  <script>let OSInfo;async function fetchOSInfo(){try{var o=await fetch("https://realcraymotherlol.github.io/JSON/Windows11.json");if(o.ok)return o.json();throw new Error("Network response was not ok")}catch(o){return console.error("Error fetching OS information:",o),null}}document.addEventListener("DOMContentLoaded",async()=>{OSInfo=await fetchOSInfo()});  </script>
   <script src="../../Javascript/Windows11.js"></script>
 </head>
 <form onsubmit="validateForm(event)">
