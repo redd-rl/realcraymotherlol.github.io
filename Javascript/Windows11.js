@@ -75,8 +75,6 @@ fetchOSInfo().then(data => {
   fadeOut(versionContainer);
   versionDropdown.innerHTML = '<option value="" selected disabled>Select Version</option>';
   downloadButton.disabled = true;
-
-  downloadButton.style.transform = `translateY(${50 * 1}px)`; // Slide down by a multiple of 50px
   }
 
   function updateVersionDropdown() {
@@ -94,8 +92,6 @@ fetchOSInfo().then(data => {
   
     fadeIn(versionContainer);
     downloadButton.disabled = true;
-  
-    downloadButton.style.transform = `translateY(${50 * 2}px)`; // Slide down by a multiple of 50px
   }
   
   function enableDownloadButton() {
@@ -108,9 +104,11 @@ fetchOSInfo().then(data => {
   if (allOptionsSelected) {
     downloadButton.disabled = false;
     downloadButton.classList.add("blue"); // Add the "blue" class
+    fadeIn(downloadButton);
   } else {
     downloadButton.disabled = true;
     downloadButton.classList.remove("blue"); // Remove the "blue" class
+    fadeOut(downloadButton);
   }
 }
 
