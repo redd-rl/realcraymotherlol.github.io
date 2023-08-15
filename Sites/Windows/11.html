@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="../../CSS/servicepacklist.css">
+  <link rel="stylesheet" href="../../CSS/windows11.css">
   <script src="../../Javascript/windows.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet">
 </head>
-<body>
-  <form name="sex" onsubmit="return checkAndDownload()">
-    <select name="build" id="build">
-      <option value="22H2">22H2</option>
-    </select>
+<form onsubmit="validateForm(event)">
+  <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/2560px-Windows_11_logo.svg.png" alt="Windows 11 Logo">
+  <select name="build" id="build">
+    <option value="" selected disabled>Select Build</option>
+  </select>
+  <div id="architecture-container" class="fade-in" style="display: none;">
     <select name="architecture" id="architecture">
-      <option value="001">x86</option>
-      <option value="002">x64</option>
-      <option value="003">ARM64</option>
+      <option value="" selected disabled>Select Architecture</option>
     </select>
+  </div>
+  <div id="version-container" class="fade-in" style="display: none;">
     <select name="version" id="version">
-      <option value="22622">22622</option>
+      <option value="" selected disabled>Select Version</option>
     </select>
-    <input type="submit" value="Download">
-  </form>
-</body>
-</html>
+  </div>
+  <input type="submit" id="download-button" value="Download" disabled>
+</form>
+
