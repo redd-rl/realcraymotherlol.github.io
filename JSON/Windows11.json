@@ -1,22 +1,6 @@
 {"22H2": {
-    "32bit": {
-      "22622-x86": "Link01"
-    },
     "64bit": {
       "22622-x64": "https://archive.org/download/windows-11_202108/Windows11.iso"
     },
-    "ARM": {
-      "22622-ARM": "Linka1"
-    }
-  }, "21H2": {
-    "32bit": {
-      "22622-x86": "Link01"
-    },
-    "64bit": {
-      "22622-x64": "Linka1"
-    },
-    "ARM": {
-      "22622-ARM": "Linka1"
-    }
-  }
+  },
 }
