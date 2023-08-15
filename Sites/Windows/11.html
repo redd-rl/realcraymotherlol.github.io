@@ -4,8 +4,8 @@
   <link rel="stylesheet" href="../../CSS/operatingSystemPages/windows11.css">
   <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet">
   <script>let OSInfo;async function fetchOSInfo(){try{var o=await fetch("https://realcraymotherlol.github.io/JSON/Windows11.json");if(o.ok)return o.json();throw new Error("Network response was not ok")}catch(o){return console.error("Error fetching OS information:",o),null}}document.addEventListener("DOMContentLoaded",async()=>{OSInfo=await fetchOSInfo()});  </script>
-  <script src="../../Javascript/Windows11.js"></script>
 </head>
+<body>
 <form onsubmit="validateForm(event)">
   <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/2560px-Windows_11_logo.svg.png" alt="Windows 11 Logo">
   <select name="build" id="build">
@@ -23,4 +23,5 @@
   </div>
   <input type="submit" id="download-button" value="Download" disabled>
 </form>
-
+  <script src="../../Javascript/Windows11.js"></script>
+</body>
