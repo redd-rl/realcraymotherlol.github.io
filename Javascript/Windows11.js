@@ -97,8 +97,14 @@ function validateForm(event) {
   const selectedVersion = versionDropdown.value;
 
   if (selectedBuild && selectedArchitecture && selectedVersion) {
-    console.log(OSInfo[selectedBuild][selectedArchitecture][selectedVersion]);
+    const downloadLink = globalOSInfo[selectedBuild][selectedArchitecture][selectedVersion];
+    if (downloadLink) {
+      window.location.href = downloadLink;
+    } else {
+      console.log("No download link found for the selected options.");
+    }
   } else {
     console.log("Please select all options.");
   }
 }
+
