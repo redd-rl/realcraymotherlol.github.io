@@ -10,8 +10,11 @@ async function fetchOSInfo() {
     return null;
   }
 }
+let OSInfo; // Declare a global variable
 
-const OSInfo = await fetchOSInfo();
+document.addEventListener('DOMContentLoaded', async () => {
+  OSInfo = await fetchOSInfo(); // Fetch and store the OS information
+});
 
 const buildDropdown = document.getElementById("build");
 const architectureContainer = document.getElementById("architecture-container");
