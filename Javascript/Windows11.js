@@ -107,4 +107,4 @@ fetchOSInfo().then(data => {
       console.log("Please select all options.");
     }
   }
-}
+})
