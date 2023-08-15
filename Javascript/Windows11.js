@@ -60,23 +60,25 @@ fetchOSInfo().then(data => {
   }
   
   function updateArchitectureDropdown() {
-    const selectedBuild = buildDropdown.value;
-    const architectures = Object.keys(OSInfo[selectedBuild]);
-  
-    architectureDropdown.innerHTML = '<option value="" selected disabled>Select Architecture</option>';
-    architectures.forEach(architecture => {
-      const option = document.createElement("option");
-      option.value = architecture;
-      option.textContent = architecture;
-      architectureDropdown.appendChild(option);
-    });
-  
-    fadeIn(architectureContainer);
-    fadeOut(versionContainer);
-    versionDropdown.innerHTML = '<option value="" selected disabled>Select Version</option>';
-    downloadButton.disabled = true;
+  const selectedBuild = buildDropdown.value;
+  const architectures = Object.keys(OSInfo[selectedBuild]);
+
+  architectureDropdown.innerHTML = '<option value="" selected disabled>Select Architecture</option>';
+  architectures.forEach(architecture => {
+    const option = document.createElement("option");
+    option.value = architecture;
+    option.textContent = architecture;
+    architectureDropdown.appendChild(option);
+  });
+
+  fadeIn(architectureContainer);
+  fadeOut(versionContainer);
+  versionDropdown.innerHTML = '<option value="" selected disabled>Select Version</option>';
+  downloadButton.disabled = true;
+
+  downloadButton.style.transform = `translateY(${50 * 1}px)`; // Slide down by a multiple of 50px
   }
-  
+
   function updateVersionDropdown() {
     const selectedBuild = buildDropdown.value;
     const selectedArchitecture = architectureDropdown.value;
@@ -89,6 +91,13 @@ fetchOSInfo().then(data => {
       option.textContent = version;
       versionDropdown.appendChild(option);
     });
+  
+    fadeIn(versionContainer);
+    downloadButton.disabled = true;
+  
+    downloadButton.style.transform = `translateY(${50 * 2}px)`; // Slide down by a multiple of 50px
+  }
+
   
     fadeIn(versionContainer);
     downloadButton.disabled = true;
