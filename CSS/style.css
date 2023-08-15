@@ -1,0 +1,132 @@
+
+a {
+    font-family:'Courier New', Courier, monospace;
+}
+.softbutton:link {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
+#bannerflex {
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 270;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#banner {
+    content:url('../Images/banner.png');
+    width: 929px;
+}
+
+.softbutton {
+    border-radius:5px;
+    border: 2px solid #15175e;
+    background-color: #3137e0;
+    padding: 16px;
+    color:white;
+    font-weight:bold;
+    font-family:'ProtoPixel';
+    font-size: 30px;
+    width: 150px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.softbutton:hover {padding: 20px; background-color:#474dfc; font-size: 32px;}
+
+@media only screen and (max-width: 600px) {
+    #flex {
+      flex-direction: column;
+      gap: 40px;
+    }
+    #bannerflex {
+        bottom: 530;
+    }
+    .softbutton {
+        padding-right:100px;
+        padding-left: 100px;
+    }
+    #banner {
+        max-width:100%;
+    }
+  }
+  
+
+@keyframes hover {
+    0% {padding: 16px;}
+    100% {padding: 20px;}
+}
+
+body {
+    background-color:black;
+    
+}
+
+#flex {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items:center
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../Fonts/Rubik.ttf');
+}
+
+@font-face {
+    font-family: 'ProtoPixel';
+    src: url('../Fonts/ProtoPixel1.ttf');
+}
+
+
+#credits {
+    color:white;
+    font-family: 'Rubik';
+    display:inline-flex;
+    position: absolute;
+    bottom: 25;
+    right: 20;
+}
+
+#credits span {
+    display: inline-block;
+    position: absolute;
+    right: 0;    
+}
+
+.parallax { 
+    height:100%;
+    width:100%;
+    background-repeat:repeat;
+    background-image: url(../Images/background.png);
+    filter: blur(10px);
+    animation: bokeh 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bokeh {
+    0% {opacity: 40%;}
+    100% {opacity: 75%}
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="Cray's music collection." property="og:title" />
+    <meta content="Cray's music collection." property="og:description" />
+    <meta content="realcraymotherlol.github.io/stuff/music" property="og:url" />
+    <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png" property="og:image" />
+    <meta content="#dea300" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="../CSS/musicstyle.css"/>
+</head>
+<body>
+    <div style="text-align: center; font-size:30px;" class="singletexts">Music</div><div style="text-align: center;" class="singletexts">My music mostly comprises of mash-ups.</div>
+    <div id="flexboxes">
+        <button class="btn" id="bt-1" onclick="toggleContent(1)">Albums</button>
+        <button class="btn" id="bt-2" onclick="toggleContent(2)">Singles</button>
+    </div>
+    <div style="display: flex;" id="flexalbum">
+        <div id="content1" style="display: none;" class="content">
+            <a class="albumtexts" href="" >Mash Collisions (coming soon which is probably never lol)</a>
+        </div>
+    </div>
+    <div style="display:flex;" id="flexsingle">
+        <div id="content2" style="display: none;" class="content" disabled="">
+            <a class="singletexts" href="https://drive.google.com/uc?export=download&id=1XIPIbZEciDkTanwa6z-UOKlhv9B4pHqW">Snow Quest [0:30 / 23 April 2023 / .mp3]</a>
+            <a class="singletexts" href="https://drive.google.com/uc?export=download&id=1XIPIbZEciDkTanwa6z-UOKlhv9B4pHqW">I Know You Want Rollercoaster Love On The Sun [2:24 / 23 April 2023 / .mp3]</a>
+            <a class="singletexts" href="https://drive.google.com/uc?export=download&id=1-aMS16vMg9wUJ91OkV1X13y7aJSAVMXR">Christmas Star [3:33 / 22 April 2023 / .mp3]</a>
+            <a class="singletexts" href="https://drive.google.com/uc?export=download&id=1XIPIbZEciDkTanwa6z-UOKlhv9B4pHqW">All Star House [0:53 / 21 April 2023 / .mp3]</a>
+        </div>
+    </div>
+    
+    <script>
+        function toggleContent(contentId) {
+            var content = document.getElementById("content" + contentId);
+            var button = document.getElementById(contentId === 1 ? "bt-1" : "bt-2");
+            var otherbutton = document.getElementById(contentId === 1 ? "bt-2" : "bt-1");
+            var buttonid = document.getElementById("bt-" + contentId);
+
+            if (content.style.display === "none") {
+                content.style.display = "inline-flex";
+                buttonid.classList.add("btn-selected"); // Add the btn-selected class to the selected button
+                hideOtherContent(contentId);
+                setTimeout(function () {
+                    content.classList.add("show");
+                }, 10);
+                button.disabled = true;
+                otherbutton.disabled = false;
+            } else {
+                content.style.display = "none";
+                buttonid.classList.remove("btn-selected"); // Remove the btn-selected class when the content is hidden
+                button.disabled = false;
+            }
+        }
+
+        function hideOtherContent(currentContentId) {
+            var contents = document.getElementsByClassName("content");
+            for (var i = 0; i < contents.length; i++) {
+                var content = contents[i];
+                var contentId = parseInt(content.id.replace("content", ""));
+                if (contentId !== currentContentId) {
+                    content.style.display = "none";
+                    var button = document.getElementById(contentId === 1 ? "bt-1" : "bt-2");
+                    button.classList.remove("btn-selected"); // Remove the btn-selected class from other buttons
+                }
+            }
+        }
+    </script>
+</body>
+</html>
