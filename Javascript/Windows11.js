@@ -12,9 +12,9 @@ async function fetchOSInfo() {
   }
 }
 
-console.log(OSInfo);
 fetchOSInfo().then(data => {
   const OSInfo = data;
+  console.log(OSInfo);
   // Data is available, proceed with the rest of the code
   const buildDropdown = document.getElementById("build");
   const architectureContainer = document.getElementById("architecture-container");
