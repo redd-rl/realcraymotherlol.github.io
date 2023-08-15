@@ -95,12 +95,21 @@ fetchOSInfo().then(data => {
   }
   
   function enableDownloadButton() {
-    if (versionDropdown.value !== "") {
-      downloadButton.disabled = false;
-    } else {
-      downloadButton.disabled = true;
-    }
+  const selectedBuild = buildDropdown.value;
+  const selectedArchitecture = architectureDropdown.value;
+  const selectedVersion = versionDropdown.value;
+
+  const allOptionsSelected = selectedBuild && selectedArchitecture && selectedVersion;
+
+  if (allOptionsSelected) {
+    downloadButton.disabled = false;
+    downloadButton.classList.add("blue"); // Add the "blue" class
+  } else {
+    downloadButton.disabled = true;
+    downloadButton.classList.remove("blue"); // Remove the "blue" class
   }
+}
+
   function fadeIn(element) {
     element.style.display = "block";
     setTimeout(() => {
