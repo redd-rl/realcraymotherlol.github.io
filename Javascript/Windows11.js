@@ -1,4 +1,5 @@
 // Define the fetchOSInfo function
+let OSIN;
 async function fetchOSInfo() {
   try {
     const response = await fetch('https://realcraymotherlol.github.io/JSON/Windows11.json');
@@ -11,9 +12,32 @@ async function fetchOSInfo() {
     return null;
   }
 }
-
+async function validateForm() {
+    event.preventDefault();
+    const buildDropdown = document.getElementById("build");
+    const architectureDropdown = document.getElementById("architecture");
+		const versionDropdown = document.getElementById("version");
+    OSInfo = await fetchOSInfo();
+    const selectedBuild = buildDropdown.value;
+    const selectedArchitecture = architectureDropdown.value;
+    const selectedVersion = versionDropdown.value;
+  	console.log(selectedBuild);
+    console.log(selectedArchitecture);
+    console.log(selectedVersion);
+    if (selectedBuild && selectedArchitecture && selectedVersion) {
+      const downloadLink = OSInfo[selectedBuild][selectedArchitecture][selectedVersion];
+      if (downloadLink) {
+        window.location.href = downloadLink;
+      } else {
+        console.log("No download link found for the selected options.");
+      }
+    } else {
+      console.log("Please select all options.");
+    }
+  }
 fetchOSInfo().then(data => {
   const OSInfo = data;
+  OSIN = OSInfo
   console.log(OSInfo);
   // Data is available, proceed with the rest of the code
   const buildDropdown = document.getElementById("build");
@@ -90,21 +114,5 @@ fetchOSInfo().then(data => {
       element.style.display = "none";
     }, 500);
   }
-  function validateForm(event) {
-    event.preventDefault();
-    const selectedBuild = buildDropdown.value;
-    const selectedArchitecture = architectureDropdown.value;
-    const selectedVersion = versionDropdown.value;
-  
-    if (selectedBuild && selectedArchitecture && selectedVersion) {
-      const downloadLink = globalOSInfo[selectedBuild][selectedArchitecture][selectedVersion];
-      if (downloadLink) {
-        window.location.href = downloadLink;
-      } else {
-        console.log("No download link found for the selected options.");
-      }
-    } else {
-      console.log("Please select all options.");
-    }
-  }
 })
+
