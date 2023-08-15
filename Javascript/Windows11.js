@@ -1,26 +1,17 @@
-const OSInfo = {
-  "22H2": {
-    "32bit": {
-      "22622-x86": "Link01"
-    },
-    "64bit": {
-      "22622-x64": "Linka1"
-    },
-    "ARM": {
-      "22622-ARM": "Linka1"
+async function fetchOSInfo() {
+  try {
+    const response = await fetch('https://realcraymotherlol.github.io/JSON/Windows11.json');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
     }
-  }, "21H2": {
-    "32bit": {
-      "22622-x86": "Link01"
-    },
-    "64bit": {
-      "22622-x64": "Linka1"
-    },
-    "ARM": {
-      "22622-ARM": "Linka1"
-    }
-  },
-};
+    return response.json();
+  } catch (error) {
+    console.error('Error fetching OS information:', error);
+    return null;
+  }
+}
+
+const OSInfo = await fetchOSInfo();
 
 const buildDropdown = document.getElementById("build");
 const architectureContainer = document.getElementById("architecture-container");
