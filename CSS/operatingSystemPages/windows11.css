@@ -29,7 +29,7 @@ select, input[type="submit"] {
   width: 100%;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-  font-family: 'Lexend'
+  font-family: 'Lexend';
   font-size: 20px;
 }
 
