@@ -1,28 +1,110 @@
-var jsonData = {
-    "22H2": {
-      "001": {
-        "22622": "https://example.com/download/22H2_x86_22622"
-      },
-      "002": {
-        "22622": "https://archive.org/download/windows-11_202108/Windows11.iso"
-      },
-      "003": {
-        "22622": "https://example.com/download/22H2_ARM64_22622"
-      }
+const OSInfo = {
+  "22H2": {
+    "32bit": {
+      "22622-x86": "Link01"
+    },
+    "64bit": {
+      "22622-x64": "Linka1"
+    },
+    "ARM": {
+      "22622-ARM": "Linka1"
     }
-  };
+  }, "21H2": {
+    "32bit": {
+      "22622-x86": "Link01"
+    },
+    "64bit": {
+      "22622-x64": "Linka1"
+    },
+    "ARM": {
+      "22622-ARM": "Linka1"
+    }
+  },
+};
 
-function checkAndDownload() {
-    var build = document.getElementById("build").value;
-    var architecture = document.getElementById("architecture").value;
-    var version = document.getElementById("version").value;
-  
-    if (jsonData.hasOwnProperty(build) && jsonData[build].hasOwnProperty(architecture) && jsonData[build][architecture].hasOwnProperty(version)) {
-      var downloadURL = jsonData[build][architecture][version];
-      window.location.href = downloadURL;
-      return false; // Prevent the form from actually submitting
-    } else {
-      alert("Selected combination not found in JSON data.");
-      return false; // Prevent the form from submitting
-    }
+const buildDropdown = document.getElementById("build");
+const architectureContainer = document.getElementById("architecture-container");
+const architectureDropdown = document.getElementById("architecture");
+const versionContainer = document.getElementById("version-container");
+const versionDropdown = document.getElementById("version");
+const downloadButton = document.getElementById("download-button");
+
+buildDropdown.addEventListener("change", updateArchitectureDropdown);
+architectureDropdown.addEventListener("change", updateVersionDropdown);
+versionDropdown.addEventListener("change", enableDownloadButton);
+
+// Populate the "Build" dropdown based on the keys of the OSInfo dictionary
+for (const build in OSInfo) {
+  const option = document.createElement("option");
+  option.value = build;
+  option.textContent = build;
+  buildDropdown.appendChild(option);
+}
+
+function updateArchitectureDropdown() {
+  const selectedBuild = buildDropdown.value;
+  const architectures = Object.keys(OSInfo[selectedBuild]);
+
+  architectureDropdown.innerHTML = '<option value="" selected disabled>Select Architecture</option>';
+  architectures.forEach(architecture => {
+    const option = document.createElement("option");
+    option.value = architecture;
+    option.textContent = architecture;
+    architectureDropdown.appendChild(option);
+  });
+
+  fadeIn(architectureContainer);
+  fadeOut(versionContainer);
+  versionDropdown.innerHTML = '<option value="" selected disabled>Select Version</option>';
+  downloadButton.disabled = true;
+}
+
+function updateVersionDropdown() {
+  const selectedBuild = buildDropdown.value;
+  const selectedArchitecture = architectureDropdown.value;
+  const versions = Object.keys(OSInfo[selectedBuild][selectedArchitecture]);
+
+  versionDropdown.innerHTML = '<option value="" selected disabled>Select Version</option>';
+  versions.forEach(version => {
+    const option = document.createElement("option");
+    option.value = version;
+    option.textContent = version;
+    versionDropdown.appendChild(option);
+  });
+
+  fadeIn(versionContainer);
+  downloadButton.disabled = true;
+}
+
+function enableDownloadButton() {
+  if (versionDropdown.value !== "") {
+    downloadButton.disabled = false;
+  } else {
+    downloadButton.disabled = true;
   }
+}
+function fadeIn(element) {
+  element.style.display = "block";
+  setTimeout(() => {
+    element.style.opacity = "1";
+  }, 10);
+}
+
+function fadeOut(element) {
+  element.style.opacity = "0";
+  setTimeout(() => {
+    element.style.display = "none";
+  }, 500);
+}
+function validateForm(event) {
+  event.preventDefault();
+  const selectedBuild = buildDropdown.value;
+  const selectedArchitecture = architectureDropdown.value;
+  const selectedVersion = versionDropdown.value;
+
+  if (selectedBuild && selectedArchitecture && selectedVersion) {
+    console.log(OSInfo[selectedBuild][selectedArchitecture][selectedVersion]);
+  } else {
+    console.log("Please select all options.");
+  }
+}
