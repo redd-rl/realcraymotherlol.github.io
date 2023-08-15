@@ -37,20 +37,23 @@ a {
 
 #win11{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/2560px-Windows_11_logo.svg.png);
-    border: 2px solid #1c5d92;
-    background-color: #11193a;
+    display:block;
+    padding: 31px;
+    padding-right:200px;  
 }
 
 #win10{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Windows_10_Logo.svg/1920px-Windows_10_Logo.svg.png);
-    border: 2px solid #0006a8;
-    background-color: #11193a;
+    display:block;
+    padding: 31px;
+    padding-right:200px;   
 }
 
 #win8{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Windows_8_logo_and_wordmark.svg/1920px-Windows_8_logo_and_wordmark.svg.png);
-    border: 2px solid #491f79;
-    background-color: #2e113a;
+    display:block;
+    padding: 31px;
+    padding-right:200px; 
 }
 
 #win7{
@@ -118,6 +121,30 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.5s;
+}
+
+#win11div{
+    border: 2px solid #0b3e72;
+    transition: 0.5s;
+    background-color: #191852;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#win10div{
+    border: 2px solid #0b3e72;
+    transition: 0.5s;
+    background-color:#183152;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#win8div{
+    border: 2px solid #0b4c72;
+    transition: 0.5s;
+    background-color:#043c5c;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #win7div{
@@ -223,9 +250,9 @@ a {
 #xp:hover{filter: drop-shadow(0 0 3px rgb(0,0,0)); padding:34px; padding-right:220px; backdrop-filter: blur(0px);}
 #vista:hover{padding:34px; padding-right:220px; filter: drop-shadow(0 0 2px #fff); backdrop-filter: blur(0px);}
 #win7:hover {filter: drop-shadow(0 0 2px rgb(255,255,255)); padding:34px; padding-right:220px;}
-#win8:hover {background-color: #8036a0;}
-#win10:hover {background-color: rgb(17, 0, 100);}
-#win11:hover {background-color: white;}
+#win8:hover {background-color: #3682a0; padding:34px; padding-right:220px;}
+#win10:hover {background-color: #2a5792; padding:34px; padding-right:220px;}
+#win11:hover {background-color: white; padding:34px; padding-right:220px;}
 .softbutton:hover {padding: 22px;  background-size: 220px; background-color:#5851b9; font-size: 32px;}
 
 @keyframes hover {
