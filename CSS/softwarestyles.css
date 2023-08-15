@@ -6,23 +6,6 @@ a {
     text-decoration: none;
 }
 
-#bannerflex {
-    display: inline-flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    bottom: 270;
-    top: 0;
-    right: 0;
-    left: 0;
-}
-
-#banner {
-    content:url('../Images/banner.jpg');
-    width: 929px;
-    height: 165px;
-}
-
 #softbutton {
     border-radius:5px;
     border: 2px solid #155e27;
