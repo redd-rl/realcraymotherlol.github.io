@@ -34,11 +34,20 @@ select, input[type="submit"] {
 }
 
 input[type="submit"] {
-  background-color: #007bff;
+  background-color: #666666;
   color: white;
   border: none;
   cursor: pointer;
 }
+input[type="submit"].blue {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+
 
 select.show {
   opacity: 1;
