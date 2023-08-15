@@ -97,11 +97,6 @@ fetchOSInfo().then(data => {
   
     downloadButton.style.transform = `translateY(${50 * 2}px)`; // Slide down by a multiple of 50px
   }
-
-  
-    fadeIn(versionContainer);
-    downloadButton.disabled = true;
-  }
   
   function enableDownloadButton() {
   const selectedBuild = buildDropdown.value;
