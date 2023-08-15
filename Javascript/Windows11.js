@@ -1,7 +1,7 @@
 // Define the fetchOSInfo function
 async function fetchOSInfo() {
   try {
-    const response = await fetch('https://pastebin.com/raw/EixvbwXn');
+    const response = await fetch('https://realcraymotherlol.github.io/JSON/Windows11.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
