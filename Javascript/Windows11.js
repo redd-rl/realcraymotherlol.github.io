@@ -1,20 +1,4 @@
-async function fetchOSInfo() {
-  try {
-    const response = await fetch('https://realcraymotherlol.github.io/JSON/Windows11.json');
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  } catch (error) {
-    console.error('Error fetching OS information:', error);
-    return null;
-  }
-}
-let OSInfo; // Declare a global variable
-
-document.addEventListener('DOMContentLoaded', async () => {
-  OSInfo = await fetchOSInfo(); // Fetch and store the OS information
-});
+console.log(OSInfo);
 
 const buildDropdown = document.getElementById("build");
 const architectureContainer = document.getElementById("architecture-container");
