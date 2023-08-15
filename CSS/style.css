@@ -30,7 +30,7 @@ a {
 }
 
 #banner {
-    content:url('../Images/banner.png');
+    content:url(../images/banner.png);
     width: 929px;
 }
 
