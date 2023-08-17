@@ -126,4 +126,3 @@ fetchOSInfo().then(data => {
     }, 500);
   }
 })
-

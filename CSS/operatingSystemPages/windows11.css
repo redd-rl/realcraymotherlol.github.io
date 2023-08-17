@@ -4,15 +4,17 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #333;
+  background-image: url("../../images/setupbgwin11.png");
+  background-size: cover;
   color: #fff;
   font-family: 'Lexend';
 }
 #logo {
-  display: block;
-  margin: 0 auto;
+  max-height: 100%;
   max-width: 25vw;
   padding: 20px 0;
+  position:relative;
+  top:0;
 }
 .center {
   text-align: center;
@@ -24,31 +26,50 @@ body {
 }
 
 select, input[type="submit"] {
-  margin-top: 10px;
-  padding: 8px;
-  width: 100%;
+  padding: 15px 36px 15px 36px;
+  border-radius: 10px;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-  font-family: 'Lexend';
-  font-size: 1.5em;
+  font-family: 'SegoeUIWin11';
+  font-size: 1em;
 }
 select#build{
   opacity: 1;
 }
 input[type="submit"] {
-  background-color: #666666;
+  background-color: #bbbec2;
   color: white;
   border: none;
-  cursor: pointer;
-  transform: translateY(0); /* Initial position, no translation */
-  transition: transform 0.5s ease-in-out; /* Apply transition to the transform property */
+  position: absolute;
+  transform: translate(270px, 270px);
+  cursor: default;  
 }
-input[type="submit"].blue {
-  background-color: #007bff;
+
+input[type="submit"] {
+  background-color: #bbbec2;
   color: white;
   border: none;
-  cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
+  position: absolute;
+  transform: translate(270px, 270px);
+  cursor: default;
+  transition: background-color 0.5s;
+}
+
+
+input[type="submit"].blue {
+  background-color: #0067c0;  
+  color: white;
+  border: none;
+}
+
+input[type="submit"].blue:hover {
+  background-color: #1775c5;  
+  transition: none !important;
+}
+
+input[type="submit"].blue:active {
+  background-color: #003d72;  
+  transition: none !important;
 }
 
 .slide-down {
@@ -76,24 +97,30 @@ select.show {
 form {
   text-align: center;
   width: 40vw;
-  margin: 0 auto;
-  padding: 20px;
-  border: 4px solid #5f5e5e;
-  border-radius: 5px;
+  height: 33vw;
+  display:inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;  
+  background-color:rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Lexend', sans-serif;
+  font-family: 'SegoeUIWin11';
 }
 select {
     appearance: none;
     padding: 8px;
-    width: 100%;
+    width: 300px;
+    margin-bottom: 5px;
     max-width: 300px;
     border: none;
+    position:relative;
     border-radius: 5px;
-    background-color: #444;
+    background-color: rgba(255, 255, 255, 0.6);
     opacity: 1;
-    color: #fff;
-    transition: background-color 0.3s ease-in-out;
+    color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg);
     background-position: 100%;
     background-size: 20px;
@@ -102,8 +129,15 @@ select {
 
 select:focus {
   outline: none;
-  background-color: #555;
+  background-color: rgba(230, 230, 230, 0.6);
   background-image: url(../../images/Arrow-down.svg);
 }
 
+option:checked select {
+  background-color: rgba(255, 255, 255, 0.6);
+}
 
+@font-face {
+  font-family: 'SegoeUIWin11';
+  src: url('../../Fonts/Segoe-UI-Variable-Static-Text.ttf');
+}
