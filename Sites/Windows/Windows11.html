@@ -14,16 +14,16 @@
 <body>
 <form onsubmit="validateForm(event)">
   <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Windows_11_logo.svg" alt="Windows 11 Logo">
-  <select name="build" id="build">
+  <select autocomplete="off" name="build" id="build">
     <option value="" selected disabled>Select Build</option>
   </select>
-  <div id="architecture-container" class="fade-in" style="display: none;">
-    <select name="architecture" id="architecture">
+  <div id="architecture-container" class="fade-in" style="display: none; max-width: 100%; width:20em;">
+    <select autocomplete="off" name="architecture" id="architecture">
       <option value="" selected disabled>Select Architecture</option>
     </select>
   </div>
-  <div id="version-container" class="fade-in" style="display: none;">
-    <select name="version" id="version">
+  <div id="version-container" class="fade-in" style="display: none; max-width: 100%; width:20em;">
+    <select autocomplete="off" name="version" id="version">
       <option value="" selected disabled>Select Version</option>
     </select>
   </div>

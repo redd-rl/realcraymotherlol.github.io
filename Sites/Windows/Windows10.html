@@ -13,17 +13,17 @@
 </head>
 <body>
 <form onsubmit="validateForm(event)">
-  <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Windows_10_Logo.svg" alt="Windows 11 Logo">
-  <select name="build" id="build">
+  <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Windows_10_Logo.svg" alt="Windows 10 Logo">
+  <select autocomplete="off" name="build" id="build">
     <option value="" selected disabled>Select Build</option>
   </select>
   <div id="architecture-container" class="fade-in" style="display: none;">
-    <select name="architecture" id="architecture">
+    <select autocomplete="off" name="architecture" id="architecture">
       <option value="" selected disabled>Select Architecture</option>
     </select>
   </div>
   <div id="version-container" class="fade-in" style="display: none;">
-    <select name="version" id="version">
+    <select autocomplete="off" name="version" id="version">
       <option value="" selected disabled>Select Version</option>
     </select>
   </div>

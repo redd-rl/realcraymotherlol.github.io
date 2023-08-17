@@ -40,7 +40,8 @@ input[type="submit"] {
   opacity: 0.5;
   border: none;
   position: absolute;
-  transform: translate(42vw, 37vh);
+  bottom: 8%;
+  right: 2%;
   cursor: default;
 }
 
