@@ -12,7 +12,7 @@ function zoom(contentId){
   
 
 if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"))) {
-    grid.style.width = "41vh"
+    grid.style.width = "23vw"
     grid.style.height = "400px";
     originalJA3gridWidth = grid.style.width;
     originalJA3gridHeight = grid.style.height;
@@ -98,7 +98,7 @@ if (!(document.getElementById("GRID-" + contentId).classList.contains("selected"
         logo.style.height = "170px";
         dese2.style.opacity = "1";
         downbtn2.style.opacity = "0.75";
-        logo.style.width = "80%";
+        logo.style.width = "15vw";
         logo.style.transform = "scale(100%)";
         logo.style.top = "0%";
         year.style.transform = "translateY(120px)";
