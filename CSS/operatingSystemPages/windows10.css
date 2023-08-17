@@ -9,11 +9,10 @@ body {
 }
 #logo {
   max-height: 100%;
-  max-width: 25vw;
-  padding: 20px 0;
+  width: 48vw;
   position:relative;
-  top:0;
 }
+
 .center {
   text-align: center;
   max-width: 400px;
@@ -24,7 +23,7 @@ body {
 }
 
 select, input[type="submit"] {
-  padding: 15px 36px 15px 36px;
+  padding: 15px 52px 15px 52px;
   border: none;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
@@ -41,9 +40,8 @@ input[type="submit"] {
   opacity: 0.5;
   border: none;
   position: absolute;
-  transform: translate(270px, 270px);
+  transform: translate(42vw, 37vh);
   cursor: default;
-  transition: background-color 0.5s;
 }
 
 
@@ -54,12 +52,15 @@ input[type="submit"].blue {
 }
 
 input[type="submit"].blue:hover {
-  background-color: #1775c5;  
+  background-color: #1775c5;
+  border: 2px solid #66a3d8; 
   transition: none !important;
 }
 
 input[type="submit"].blue:active {
-  background-color: #003d72;  
+  background-color: #3677ac;
+  opacity: 0.5;
+  border: none !important;  
   transition: none !important;
 }
 
@@ -91,6 +92,7 @@ form {
   height: 90%;
   display:inline-flex;
   flex-direction: column;
+  gap:20px;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;  
