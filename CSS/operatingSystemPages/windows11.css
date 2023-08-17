@@ -141,7 +141,7 @@ select:focus {
     width: 80vw;
   }
   input[type="submit"] {
-    bottom:33vh;
+    bottom:300px;
     right: auto;
   }
   #logo {
