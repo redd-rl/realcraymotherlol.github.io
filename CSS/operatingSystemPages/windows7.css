@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://wparena.com/wp-content/uploads/2009/09/img0.jpg");
+  background-size:cover;
+  color: #fff;
+  font-family: 'Lexend';
+}
+
+#aeroborder {
+  text-align: center;
+  width: 40vw;
+  padding-top: 34px;
+  height: 67vh;
+  border:1px solid rgba(2,3,4,0.86);
+  display:inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;  
+  background:repeating-linear-gradient(45deg, rgba(47, 76, 104, 0.75) 35%, rgba(106, 138, 163, 0.75) 40%, rgba(108, 141, 167, 0.75) 42%, rgba(63, 101, 139, 0.75) 50%, rgba(67, 107, 148, 0.75) 55%, rgba(123, 149, 175, 0.75) 60%, rgba(113, 137, 161, 0.75) 75%, rgba(66, 105, 145, 0.75) 90%);
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px rgba(246,246,247,0.92), 0 7px 19px rgba(0,0,0,0.9);
+  font-family: 'SegoeUIWin11';
+}
+
+#logo {
+  max-height: 25vh;
+  max-width: 25vw;
+  margin-bottom:5%;
+  position:relative;
+}
+.center {
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+select#build{
+  opacity: 1;
+}
+
+button[type="submit"] {
+  width:100px;
+  position: absolute;
+  bottom:18%;
+  right: 32%;
+  cursor: default;
+  font-size: 1em;
+}
+
+.slide-down {
+  transform: translateY(100px); /* Slide button down */
+}
+
+.slide-up {
+  transform: translateY(0); /* Slide button back up */
+}
+
+
+select.show {
+  opacity: 1;
+}
+
+/* Add a CSS class for fade-in animation */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Display elements after fade-in animation */
+.show {
+  opacity: 1;
+}
+
+form {
+  text-align: center;
+  width: 39vw;
+  height: 65vh;
+  border: 1px solid rgba(24,29,31,0.71);
+  border-radius: 1px;
+  display:inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;  
+  background:white;
+  font-family: 'SegoeUIWin11';
+}
+
+select {
+    font: 12pt 'Segoe UI',sans-serif;
+    width: 20em;
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+
+select:focus {
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  background-image: url(../../images/Arrow-down.svg);
+}
+
+@font-face {
+  font-family: 'SegoeUIWin11';
+  src: url('../../Fonts/Segoe-UI-Variable-Static-Text.ttf');
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    height:40vh;
+    width: 80vw;
+  }
+  button[type="submit"] {
+    right: auto;
+    bottom: 17rem;
+  }
+  #logo {
+    max-width: 70vw;
+    padding: 0;
+    margin-bottom: 9px;
+  }
+}
