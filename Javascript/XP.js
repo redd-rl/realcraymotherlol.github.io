@@ -2,7 +2,7 @@
 let OSIN;
 async function fetchOSInfo() {
   try {
-    const response = await fetch('https://realcraymotherlol.github.io/JSON/Server2008.json');
+    const response = await fetch('https://realcraymotherlol.github.io/JSON/XP.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
