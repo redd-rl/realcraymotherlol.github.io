@@ -113,6 +113,10 @@ select:focus {
 }
 
 @media only screen and (max-width: 600px) {
+  #aeroborder {
+    width:82vw;
+    height:42vh;
+  }
   form {
     height:40vh;
     width: 80vw;

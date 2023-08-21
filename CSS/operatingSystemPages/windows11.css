@@ -24,7 +24,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-select, input[type="submit"] {
+select, button[type="submit"] {
   border-radius: 10px;
   opacity: 1;
   -webkit-appearance: none;
@@ -36,7 +36,7 @@ select#build{
   opacity: 1;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   height: 50px;
   width:140px;
   background-color: #bbbec2;
@@ -50,18 +50,18 @@ input[type="submit"] {
 }
 
 
-input[type="submit"].blue {
+button[type="submit"].blue {
   background-color: #0067c0;  
   color: white;
   border: none;
 }
 
-input[type="submit"].blue:hover {
+button[type="submit"].blue:hover {
   background-color: #1775c5;  
   transition: none !important;
 }
 
-input[type="submit"].blue:active {
+button[type="submit"].blue:active {
   background-color: #003d72;  
   transition: none !important;
 }
@@ -140,9 +140,9 @@ select:focus {
     height:40vh;
     width: 80vw;
   }
-  input[type="submit"] {
+  button[type="submit"] {
     right: auto;
-    bottom: 17rem;
+    bottom: 32%;
   }
   #logo {
     max-width: 70vw;
