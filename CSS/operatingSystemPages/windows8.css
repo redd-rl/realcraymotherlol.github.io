@@ -1,7 +1,6 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   margin: 0;
   background-color: #180053;
@@ -9,7 +8,7 @@ body {
 }
 #logo {
   max-height: 100%;
-  width: 48vw;
+  width: 24vw;
   position:relative;
 }
 
@@ -48,20 +47,19 @@ input[type="submit"] {
 
 
 input[type="submit"].blue {
-  background-color: #0062b0;  
+  background-color: #4617b5;  
   border: 2px solid #ffffff; 
   color: white;
 }
 
 input[type="submit"].blue:hover {
-  background-color: #4617b5;
+  background-color: #511dca;
   transition: none !important;
 }
 
 input[type="submit"].blue:active {
-  background-color: #3677ac;
+  background-color: #260d63;
   opacity: 0.5;
-  border: none !important;  
   transition: none !important;
 }
 
@@ -89,14 +87,14 @@ select.show {
 }
 form {
   text-align: center;
-  width: 100%;
+  width: 90%;
   height: 90%;
   display:inline-flex;
   flex-direction: column;
   gap:20px;
   justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;  
+  align-items: flex-start;
+  flex-wrap: wrap; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 select {
@@ -126,4 +124,11 @@ select:focus {
 @font-face {
   font-family: 'SegoeUIWin11';
   src: url('../../Fonts/Segoe-UI-Variable-Static-Text.ttf');
+}
+
+@media only screen and (max-width: 600px) {
+  #logo {
+    width: 70vw;
+    padding: 0;
+  }
 }
