@@ -2,7 +2,7 @@
 let OSIN;
 async function fetchOSInfo() {
   try {
-    const response = await fetch(' Windows8.json');
+    const response = await fetch('https://realcraymotherlol.github.io/JSON/Windows8.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
