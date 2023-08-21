@@ -1,6 +1,6 @@
 {"9200 (Win 8 RTM)": 
   {
-    "x64/Pro": {"English": "https://archive.org/download/windows-8-x-64/Windows%208%20x64.iso"},
+    "x64/Core_Pro": {"English": "https://archive.org/download/windows-8-x-64/Windows%208%20x64.iso"},
     "x86/Pro": {"English": "https://archive.org/download/windows-8-pro-rtm-english-isos/en_windows_8_x86_dvd_915417.iso"}
   }
   ,"9271 (Win 8.1 MILESTONE 1)": 
@@ -9,7 +9,7 @@
   }
   ,"9600 (Win 8.1 RTM)": 
   {
-    "x64/HomePro": {
+    "x64/Home_Pro": {
       "Arabic": "https://archive.org/download/win-8.1/Win8.1_Arabic_x64.iso",
       "Brazilian Portugese": "https://archive.org/download/win-8.1/Win8.1_BrazilianPortuguese_x64.iso",
       "Bulgarian": "https://archive.org/download/win-8.1/Win8.1_Bulgarian_x64.iso",
@@ -47,7 +47,7 @@
       "Turkish": "https://archive.org/download/win-8.1/Win8.1_Turkish_x64.iso",
       "Ukrainian": "https://archive.org/download/win-8.1/Win8.1_Ukrainian_x64.iso"
     },
-    "x86/HomePro": {
+    "x86/Home_Pro": {
       "Arabic": "https://archive.org/download/win-8.1/Win8.1_Arabic_x32.iso",
       "Brazilian Portugese": "https://archive.org/download/win-8.1/Win8.1_BrazilianPortuguese_x32.iso",
       "Bulgarian": "https://archive.org/download/win-8.1/Win8.1_Bulgarian_x32.iso",
