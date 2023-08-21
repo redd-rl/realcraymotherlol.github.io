@@ -28,10 +28,11 @@ body {
 }
 
 #logo {
-  max-height: 25vh;
-  max-width: 25vw;
+  max-height: 27vh;
+  max-width: 27vw;
   margin-bottom:5%;
   position:relative;
+  image-rendering: crisp-edges;
 }
 .center {
   text-align: center;
@@ -53,6 +54,11 @@ button[type="submit"] {
   right: 32%;
   cursor: default;
   font-size: 1em;
+  transition: all 0.5s;
+}
+
+button:hover {
+  transition: all 0.5s;
 }
 
 .slide-down {

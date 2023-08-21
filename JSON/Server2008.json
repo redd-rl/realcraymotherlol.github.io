@@ -1,0 +1,15 @@
+{"6003 (Service Pack 2)": 
+  {
+    "x64": {
+      "English": "https://archive.org/download/sw-dvd-5-windows-svr-2008w-sp-2-english-x-64-dc-ee-se-x-15-41371/SW_DVD5_Windows_Svr_2008w_SP2_English__x64_DC_EE_SE_X15-41371.ISO"
+    },
+    "x86": {
+      "English": "https://archive.org/download/sw-dvd-5-windows-svr-2008w-sp-2-english-x-64-dc-ee-se-x-15-41371/SW_DVD5_Windows_Svr_2008w_SP2_English__x86_DC_EE_SE_X15-41116.ISO"
+    },
+    "7601/R2 (Service Pack 1)": {
+      "x64": {"English": "https://archive.org/download/Windows_Server_2008_R2_x64.iso_reupload/Windows_Server_2008_R2_x64.iso"}
+    }
+  }
+}
+
+

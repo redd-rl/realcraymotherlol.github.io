@@ -4,16 +4,37 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url("../../images/setupbgwin11.png");
-  background-size: cover;
+  background-image: url("https://cdn.wallpapersafari.com/35/60/g46fz9.jpg");
+  background-position-y: bottom;
+  background-size:cover;
+  background-repeat: no-repeat;
   color: #fff;
   font-family: 'Lexend';
 }
+
+#aeroborder {
+  text-align: center;
+  width: 40vw;
+  padding-top: 34px;
+  height: 67vh;
+  border:1px solid rgba(2,3,4,0.86);
+  display:inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;  
+  background:repeating-linear-gradient(45deg, rgba(47, 76, 104, 0.75) 35%, rgba(106, 138, 163, 0.75) 40%, rgba(108, 141, 167, 0.75) 42%, rgba(63, 101, 139, 0.75) 50%, rgba(67, 107, 148, 0.75) 55%, rgba(123, 149, 175, 0.75) 60%, rgba(113, 137, 161, 0.75) 75%, rgba(66, 105, 145, 0.75) 90%);
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px rgba(246,246,247,0.92), 0 7px 19px rgba(0,0,0,0.9);
+  font-family: 'SegoeUIWin11';
+}
+
 #logo {
-  max-height: 25vh;
-  max-width: 25vw;
-  padding: 20px 0;
+  max-height: 27vh;
+  max-width: 27vw;
+  margin-bottom:5%;
   position:relative;
+  image-rendering: crisp-edges;
 }
 .center {
   text-align: center;
@@ -24,46 +45,22 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-select, button[type="submit"] {
-  border-radius: 10px;
-  opacity: 1;
-  -webkit-appearance: none; /* Dont change this otherwise it will add border radius on Webkit based browsers (Thanks Apple..) */
-  transition: opacity 0.5s ease-in-out;
-  font-family: 'SegoeUIWin11';
-  font-size: 1em;
-}
 select#build{
   opacity: 1;
 }
 
 button[type="submit"] {
-  height: 50px;
-  width:140px;
-  background-color: #bbbec2;
-  color: white;
-  border: none;
+  width:100px;
   position: absolute;
   bottom:18%;
   right: 32%;
   cursor: default;
-  transition: background-color 0.5s;
+  font-size: 1em;
+  transition: all 0.5s;
 }
 
-
-button[type="submit"].blue {
-  background-color: #0067c0;  
-  color: white;
-  border: none;
-}
-
-button[type="submit"].blue:hover {
-  background-color: #1775c5;  
-  transition: none !important;
-}
-
-button[type="submit"].blue:active {
-  background-color: #003d72;  
-  transition: none !important;
+button:hover {
+  transition: all 0.5s;
 }
 
 .slide-down {
@@ -92,36 +89,24 @@ select.show {
 
 form {
   text-align: center;
-  width: 40vw;
-  height: 70vh;
+  width: 39vw;
+  height: 65vh;
+  border: 1px solid rgba(24,29,31,0.71);
+  border-radius: 1px;
   display:inline-flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;  
-  background-color:rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  box-shadow: 0 3px 24px rgba(0, 0, 0, 0.3);
+  background:white;
   font-family: 'SegoeUIWin11';
 }
 
 select {
-    appearance: none;
-    padding: 8px;
+    font: 12pt 'Segoe UI',sans-serif;
     width: 20em;
     margin-bottom: 5px;
     max-width: 100%;
-    border: none;
-    position:relative;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.6);
-    opacity: 1;
-    color: #000000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg);
-    background-position: 100%;
-    background-size: 20px;
-    background-repeat: no-repeat;
 }
 
 select:focus {
@@ -136,13 +121,17 @@ select:focus {
 }
 
 @media only screen and (max-width: 600px) {
+  #aeroborder {
+    width:82vw;
+    height:42vh;
+  }
   form {
     height:40vh;
     width: 80vw;
   }
   button[type="submit"] {
     right: auto;
-    bottom: 32%;
+    bottom: 17rem;
   }
   #logo {
     max-width: 70vw;

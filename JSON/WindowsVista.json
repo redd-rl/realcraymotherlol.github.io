@@ -1,0 +1,163 @@
+{"6000 (RTM)": 
+  {
+    "x64/Ultimate": {
+      "English": "https://archive.org/download/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332_202212/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso"
+    },
+    "x86/Ultimate": {
+      "English": "https://archive.org/download/en_windows_7_ultimate_x86_dvd_x15-65921_202107/en_windows_7_ultimate_x86_dvd_x15-65921.iso"
+    },
+    "x64/Enterprise": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x64_dvd_x15-70749_202107/en_windows_7_enterprise_x64_dvd_x15-70749.iso"
+    },
+    "x86/Enterprise": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x86_dvd_x15-70745_202107/en_windows_7_enterprise_x86_dvd_x15-70745.isoo"
+    },
+    "x64/Business": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x64_dvd_x15-70749_202107/en_windows_7_enterprise_x64_dvd_x15-70749.iso"
+    },
+    "x86/Business": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x86_dvd_x15-70745_202107/en_windows_7_enterprise_x86_dvd_x15-70745.isoo"
+    },
+    "x64/Professional": {
+      "English": "https://archive.org/download/win-7-pro-sp1-english/Win7_Pro_SP1_English_x64.iso"
+    },
+    "x86/Professional": {
+      "English": "https://archive.org/download/win-7-pro-sp1-english/Win7_Pro_SP1_English_x32.iso"
+    },
+    "x64/HomePremium": {
+      "English": "https://archive.org/download/en_windows_7_home_premium_x64_dvd_x15-65733_202107/en_windows_7_home_premium_x64_dvd_x15-65733.iso",
+      "Dutch": "https://archive.org/download/win7-home-prem-sp1-dutch/Win7_HomePrem_SP1_Dutch_x64.iso"
+    },
+    "x86/HomePremium": {
+      "English": "https://archive.org/download/en_windows_7_home_premium_x64_dvd_x15-65733_202107/en_windows_7_home_premium_x64_dvd_x15-65733.iso",
+      "Dutch": "https://archive.org/download/win7-home-prem-sp1-dutch/Win7_HomePrem_SP1_Dutch_x32.iso"
+    },
+    "x64/HomeBasic": {
+      "English": "https://archive.org/download/Win7HomeBasicSP1x64/Windows%207%20Home%20Basic%20SP1%20%2864%20Bit%29.iso"
+    },
+    "x86/HomeBasic": {
+      "English": "https://archive.org/download/Win7HomeBasicSP1x86/en_windows_7_home_basic_with_sp1_x86_dvd_u_676470.iso"
+    },
+    "x64/HomeBasic_N": {
+      "English": "https://archive.org/download/Win7HomeBasicNx86x64/en_windows_7_home_basic_n_x64_dvd.iso"
+    },
+    "x86/HomeBasic_N": {
+      "English": "https://archive.org/download/Win7HomeBasicNx86x64/en_windows_7_home_basic_n_x86_dvd.iso"
+    },
+    "x86/Starter": {
+      "English": "https://archive.org/download/Win7StarterENU/en_windows_7_starter_with_sp1_x86_dvd_u_678562.iso",
+      "Dutch": "https://archive.org/download/Windows7StarterSP1x86Dutch/Windows%207%20Starter%20Met%20Service%20Pack%201%2032%20Bits%20NL%20%5Bmp3pro1986%5D.iso"
+    },
+    "x86/Starter_N": {
+      "Dutch_SP1": "https://archive.org/download/Windows7StarterNwithServicePack1x86Dutch/nl_windows_7_starter_n_with_sp1_x86_dvd_u_678606.iso"
+    }
+  },
+  "6001 (Service Pack 1)": {
+    "x64/Ultimate": {
+      "English": "https://archive.org/download/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332_202212/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso"
+    },
+    "x86/Ultimate": {
+      "English": "https://archive.org/download/en_windows_7_ultimate_x86_dvd_x15-65921_202107/en_windows_7_ultimate_x86_dvd_x15-65921.iso"
+    },
+    "x64/Enterprise": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x64_dvd_x15-70749_202107/en_windows_7_enterprise_x64_dvd_x15-70749.iso"
+    },
+    "x86/Enterprise": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x86_dvd_x15-70745_202107/en_windows_7_enterprise_x86_dvd_x15-70745.isoo"
+    },
+    "x64/Business": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x64_dvd_x15-70749_202107/en_windows_7_enterprise_x64_dvd_x15-70749.iso"
+    },
+    "x86/Business": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x86_dvd_x15-70745_202107/en_windows_7_enterprise_x86_dvd_x15-70745.isoo"
+    },
+    "x64/Professional": {
+      "English": "https://archive.org/download/win-7-pro-sp1-english/Win7_Pro_SP1_English_x64.iso"
+    },
+    "x86/Professional": {
+      "English": "https://archive.org/download/win-7-pro-sp1-english/Win7_Pro_SP1_English_x32.iso"
+    },
+    "x64/HomePremium": {
+      "English": "https://archive.org/download/en_windows_7_home_premium_x64_dvd_x15-65733_202107/en_windows_7_home_premium_x64_dvd_x15-65733.iso",
+      "Dutch": "https://archive.org/download/win7-home-prem-sp1-dutch/Win7_HomePrem_SP1_Dutch_x64.iso"
+    },
+    "x86/HomePremium": {
+      "English": "https://archive.org/download/en_windows_7_home_premium_x64_dvd_x15-65733_202107/en_windows_7_home_premium_x64_dvd_x15-65733.iso",
+      "Dutch": "https://archive.org/download/win7-home-prem-sp1-dutch/Win7_HomePrem_SP1_Dutch_x32.iso"
+    },
+    "x64/HomeBasic": {
+      "English": "https://archive.org/download/Win7HomeBasicSP1x64/Windows%207%20Home%20Basic%20SP1%20%2864%20Bit%29.iso"
+    },
+    "x86/HomeBasic": {
+      "English": "https://archive.org/download/Win7HomeBasicSP1x86/en_windows_7_home_basic_with_sp1_x86_dvd_u_676470.iso"
+    },
+    "x64/HomeBasic_N": {
+      "English": "https://archive.org/download/Win7HomeBasicNx86x64/en_windows_7_home_basic_n_x64_dvd.iso"
+    },
+    "x86/HomeBasic_N": {
+      "English": "https://archive.org/download/Win7HomeBasicNx86x64/en_windows_7_home_basic_n_x86_dvd.iso"
+    },
+    "x86/Starter": {
+      "English": "https://archive.org/download/Win7StarterENU/en_windows_7_starter_with_sp1_x86_dvd_u_678562.iso",
+      "Dutch": "https://archive.org/download/Windows7StarterSP1x86Dutch/Windows%207%20Starter%20Met%20Service%20Pack%201%2032%20Bits%20NL%20%5Bmp3pro1986%5D.iso"
+    },
+    "x86/Starter_N": {
+      "Dutch_SP1": "https://archive.org/download/Windows7StarterNwithServicePack1x86Dutch/nl_windows_7_starter_n_with_sp1_x86_dvd_u_678606.iso"
+    }
+  },
+  "6003 (Service Pack 2)": {
+    "x64/Ultimate": {
+      "English": "https://archive.org/download/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332_202212/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso"
+    },
+    "x86/Ultimate": {
+      "English": "https://archive.org/download/en_windows_7_ultimate_x86_dvd_x15-65921_202107/en_windows_7_ultimate_x86_dvd_x15-65921.iso"
+    },
+    "x64/Enterprise": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x64_dvd_x15-70749_202107/en_windows_7_enterprise_x64_dvd_x15-70749.iso"
+    },
+    "x86/Enterprise": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x86_dvd_x15-70745_202107/en_windows_7_enterprise_x86_dvd_x15-70745.isoo"
+    },
+    "x64/Business": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x64_dvd_x15-70749_202107/en_windows_7_enterprise_x64_dvd_x15-70749.iso"
+    },
+    "x86/Business": {
+      "English": "https://archive.org/download/en_windows_7_enterprise_x86_dvd_x15-70745_202107/en_windows_7_enterprise_x86_dvd_x15-70745.isoo"
+    },
+    "x64/Professional": {
+      "English": "https://archive.org/download/win-7-pro-sp1-english/Win7_Pro_SP1_English_x64.iso"
+    },
+    "x86/Professional": {
+      "English": "https://archive.org/download/win-7-pro-sp1-english/Win7_Pro_SP1_English_x32.iso"
+    },
+    "x64/HomePremium": {
+      "English": "https://archive.org/download/en_windows_7_home_premium_x64_dvd_x15-65733_202107/en_windows_7_home_premium_x64_dvd_x15-65733.iso",
+      "Dutch": "https://archive.org/download/win7-home-prem-sp1-dutch/Win7_HomePrem_SP1_Dutch_x64.iso"
+    },
+    "x86/HomePremium": {
+      "English": "https://archive.org/download/en_windows_7_home_premium_x64_dvd_x15-65733_202107/en_windows_7_home_premium_x64_dvd_x15-65733.iso",
+      "Dutch": "https://archive.org/download/win7-home-prem-sp1-dutch/Win7_HomePrem_SP1_Dutch_x32.iso"
+    },
+    "x64/HomeBasic": {
+      "English": "https://archive.org/download/Win7HomeBasicSP1x64/Windows%207%20Home%20Basic%20SP1%20%2864%20Bit%29.iso"
+    },
+    "x86/HomeBasic": {
+      "English": "https://archive.org/download/Win7HomeBasicSP1x86/en_windows_7_home_basic_with_sp1_x86_dvd_u_676470.iso"
+    },
+    "x64/HomeBasic_N": {
+      "English": "https://archive.org/download/Win7HomeBasicNx86x64/en_windows_7_home_basic_n_x64_dvd.iso"
+    },
+    "x86/HomeBasic_N": {
+      "English": "https://archive.org/download/Win7HomeBasicNx86x64/en_windows_7_home_basic_n_x86_dvd.iso"
+    },
+    "x86/Starter": {
+      "English": "https://archive.org/download/Win7StarterENU/en_windows_7_starter_with_sp1_x86_dvd_u_678562.iso",
+      "Dutch": "https://archive.org/download/Windows7StarterSP1x86Dutch/Windows%207%20Starter%20Met%20Service%20Pack%201%2032%20Bits%20NL%20%5Bmp3pro1986%5D.iso"
+    },
+    "x86/Starter_N": {
+      "Dutch_SP1": "https://archive.org/download/Windows7StarterNwithServicePack1x86Dutch/nl_windows_7_starter_n_with_sp1_x86_dvd_u_678606.iso"
+    }
+  } 
+}
+
+
