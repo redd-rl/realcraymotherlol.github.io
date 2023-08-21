@@ -1,14 +1,13 @@
-{"9200 (Win 8 RTM)": 
+{"9200": 
   {
     "x64/Core_Pro": {"English": "https://archive.org/download/windows-8-x-64/Windows%208%20x64.iso"},
     "x86/Pro": {"English": "https://archive.org/download/windows-8-pro-rtm-english-isos/en_windows_8_x86_dvd_915417.iso"}
-  }
-  ,"9271 (Win 8.1 MILESTONE 1)": 
+  },
+  "9271": 
   {
     "x64": {"121121-1401": "https://archive.org/download/9271.0.-fbl-partner-out-01.121121-1401-x-64-fre-client-noapps-en-us-im-1-ccs-x-64-fre-en-us-dv-5/9271.0.FBL_PARTNER_OUT01.121121-1401_X64FRE_CLIENT_NOAPPS_EN-US-IM1_CCS_X64FRE_EN-US_DV5.ISO"},
-  }
-  ,"9600 (Win 8.1 RTM)": 
-  {
+  },
+  "9600": {
     "x64/Home_Pro": {
       "Arabic": "https://archive.org/download/win-8.1/Win8.1_Arabic_x64.iso",
       "Brazilian Portugese": "https://archive.org/download/win-8.1/Win8.1_BrazilianPortuguese_x64.iso",
