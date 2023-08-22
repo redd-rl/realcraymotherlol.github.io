@@ -365,6 +365,7 @@ body {
 
 #businessflex {
     position: relative;
+    width:100%;
     height:90px;
     display: flex;
     gap: 10px;
@@ -384,6 +385,7 @@ body {
     font-family: 'Rubik';
     display:inline-flex;
     position: absolute;
+    font-size: 80%;
     bottom: 0;
     right: 0;
 }
