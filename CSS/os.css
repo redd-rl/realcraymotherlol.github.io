@@ -148,7 +148,8 @@ a {
 #win98div{
     border: 2px solid #174930;
     transition: 0.5s;
-    background: url(https://qph.cf2.quoracdn.net/main-qimg-1d52bb961c819d4589245f44e3320b8c.webp);
+    background-size: cover;
+    background: url(https://i.redd.it/55673b3dfo191.png);
 }
 
 #win98{
@@ -276,12 +277,11 @@ a {
 }
 
 #win95div{
-    border: 2px solid #174930;
+    border: 2px solid #004d4d;
+    background: #018281;
     transition: 0.5s;
-    background: url(https://qph.cf2.quoracdn.net/main-qimg-1d52bb961c819d4589245f44e3320b8c.webp);
     background-size: cover;
     background-position: bottom;
-    background-repeat: no-repeat;
 }
 
 #win31{
@@ -407,8 +407,14 @@ body {
         backdrop-filter: none;
     }
     }
+
 @media only screen and (max-width: 600px) {
-    #win11, #win10, #win8, #win7, #vista, #xp, #win2000, #me, #win98, #win95, #win31, #win123, #srv, #srv16, #srv12, #srv08, #srv03, #nt4 {
-        padding: 2.3vh 5.53vw 2.3vh 5.53vw
+    #consumerflex, #businessflex {
+        flex-direction: column;
+        height:280px;
+    }
+    #win11, #win10, #win8, #win7, #vista, #xp, #win2000, #me, #win98, #win95, #win31, #win123, #srv, #srv16, #srv12, #srv08, #srv03, #nt4, #nt35 {
+        padding: 2.3vh 10.53vw 2.3vh 10.53vw;
+        background-size: contain;
     }
 }
