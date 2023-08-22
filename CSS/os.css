@@ -25,12 +25,10 @@ a {
 
 .softbutton_ex{
     border-radius:5px;
-    padding: 22px;
-    padding-right: 200px;
     color:white;
     transition: 0.5s;
     -moz-transition: 0.5s;
-    background-size:200px;
+    background-size:9vw;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -38,46 +36,40 @@ a {
 #win11{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/2560px-Windows_11_logo.svg.png);
     display:block;
-    padding: 31px;
-    padding-right:200px;  
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;  
 }
 
 #win10{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Windows_10_Logo.svg/1920px-Windows_10_Logo.svg.png);
     display:block;
-    padding: 31px;
-    padding-right:200px;   
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw; 
 }
 
 #win8{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Windows_8_logo_and_wordmark.svg/1920px-Windows_8_logo_and_wordmark.svg.png);
     display:block;
-    padding: 31px;
-    padding-right:200px; 
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
 #win7{
     background-image: url(https://upload.wikimedia.org/wikipedia/it/thumb/4/49/Logo_Microsoft_Windows_7.svg/2560px-Logo_Microsoft_Windows_7.svg.png);
     display:block;
     filter: none;
-    padding: 31px;
-    padding-right:200px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
 #vista{
     background-image: url(../images/Windows_Vista_logo.svg.png);
     display: block;
-    padding: 31px;
-    padding-right:200px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     filter: none;
     backdrop-filter: blur(5px);
 }
 
 #me{
     background-image: url(https://www.betaarchive.com/wiki/images/7/73/Windows_ME_Logo.png);
-    display: block;
-    padding: 31px;
-    padding-right:200px; 
+    image-rendering: crisp-edges;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
 #mediv{
@@ -89,8 +81,7 @@ a {
 #win2000{
     background-image: url(../images/win2000logo.png);
     display: block;
-    padding: 31px;
-    padding-right:200px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
 #win2000div{
@@ -102,8 +93,7 @@ a {
 #xp{
     background-image: url(../images/Microsoft_Windows_XP_Logo.svg.png);
     display: block;
-    padding: 31px;
-    padding-right:200px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     backdrop-filter: blur(5px);
 }
 
@@ -164,12 +154,27 @@ a {
 #win98{
     background-image: url(../images/windows98.png);
     display: block;
-    padding: 31px;
-    padding-right:200px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#nt35div{
+    border: 2px solid #535244;
+    transition: 0.5s;
+    background: url(../images/dither_it_bg.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#nt35{
+    background-image: url(../images/winnt35logo.svg);
+    image-rendering: crisp-edges;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    filter: drop-shadow(0 3px 4px rgb(0, 0, 0))
 }
 
 #nt4div{
-    border: 2px solid #174930;
+    border: 2px solid #173149;
     transition: 0.5s;
     background: url(https://cdn.wallpapersafari.com/61/31/0MXQKU.jpg);
     background-size: cover;
@@ -180,16 +185,93 @@ a {
 #nt4{
     background-image: url(../images/nt4.png);
     display: block;
-    padding: 31px;
-    padding-right:200px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     filter: drop-shadow(0 0 0px rgb(134, 207, 255))
 }
+
+#srv03div{
+    border: 2px solid #4d4d4d;
+    transition: 0.5s;
+    background: url(../images/srv2003bg.png);
+    background-size: cover;
+    background-position: 0 -40px;
+}
+
+#srv03{
+    background-image: url(../images/srv2003logo.png);
+    display: block;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    filter: drop-shadow(2px 2px 3px rgb(58, 58, 58))
+}
+
+#srv08div{
+    border: 2px solid #4d4d4d;
+    transition: 0.5s;
+    background: url(https://static.miraheze.org/windowswallpaperwiki/9/97/Setup_background_%28Windows_Server_2008_%28Window%29_%26_2008_R2%29.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#srv08{
+    background-image: url(../images/server2008logohori.png);
+    display: block;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    filter: drop-shadow(0 0 0px rgb(189, 189, 189))
+}
+
+#srv12div{
+    border: 2px solid rgb(19, 9, 102);
+    transition: 0.5s;
+    background: #001589;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#srv16{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Windows_Server_2016_logo.svg);
+    display: block;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    filter: drop-shadow(0 0 2px rgb(126, 126, 126))
+}
+
+#srv16div{
+    border: 2px solid rgb(165, 165, 165);
+    transition: 0.5s;
+    background: #ffffff;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#srv{
+    background-image: url(https://betawiki.net/images/2/26/Windows_Server_logo.svg);
+    display: block;
+    padding:3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#srvdiv{
+    border: 2px solid rgb(165, 165, 165);
+    transition: 0.5s;
+    background: #ffffff;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#srv12{
+    background-image: url(../images/srv2012logo.svg);
+    display: block;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    filter: drop-shadow(0 2px 2px rgb(87, 87, 87))
+}
+
 
 #win95{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Windows_95_logo_with_wordmark.svg/5782px-Microsoft_Windows_95_logo_with_wordmark.svg.png);
     display: block;
-    padding: 31px;
-    padding-right:200px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     filter: none;   
 }
 
@@ -205,9 +287,8 @@ a {
 #win31{
     background-image: url(../images/win31.png);
     display: block;
-    padding: 31px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     image-rendering: auto;
-    padding-right:200px;
     filter: none;   
 }
 
@@ -223,9 +304,8 @@ a {
 #win123{
     background-image:url(../images/win123.png);
     display: block;
-    padding: 31px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     image-rendering: auto;
-    padding-right:200px;
     filter: none;   
 }
 
@@ -239,21 +319,27 @@ a {
 }
 
 
-.softbutton_ex:hover {padding: 22px; padding-right: 220px; background-size: 220px; font-size: 32px;}
-#me:hover{filter: drop-shadow(0 0 5px rgb(94, 141, 92)); padding:34px; padding-right:220px;}
-#win95:hover{filter: drop-shadow(0 0 8px rgb(255, 255, 255)); padding:34px; padding-right:220px;}
-#win123:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255)); padding:34px; padding-right:220px;}
-#win31:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255)); padding:34px; padding-right:220px;}
-#nt4:hover{filter: drop-shadow(0 0 8px rgb(134, 207, 255)); padding:34px; padding-right:220px;}
-#win98:hover{filter: drop-shadow(0 0 5px rgb(255, 255, 255)); padding:34px; padding-right:220px;}
-#win2000:hover{filter: drop-shadow(0 0 5px rgb(0,0,0)); padding:34px; padding-right:220px;}
-#xp:hover{filter: drop-shadow(0 0 3px rgb(0,0,0)); padding:34px; padding-right:220px; backdrop-filter: blur(0px);}
-#vista:hover{padding:34px; padding-right:220px; filter: drop-shadow(0 0 2px #fff); backdrop-filter: blur(0px);}
-#win7:hover {filter: drop-shadow(0 0 2px rgb(255,255,255)); padding:34px; padding-right:220px;}
-#win8:hover {background-color: #3682a0; padding:34px; padding-right:220px;}
-#win10:hover {background-color: #2a5792; padding:34px; padding-right:220px;}
-#win11:hover {background-color: white; padding:34px; padding-right:220px;}
-.softbutton:hover {padding: 22px;  background-size: 220px; background-color:#5851b9; font-size: 32px;}
+.softbutton_ex:hover {padding: 22px; padding-right: 13vw; background-size: 13vw; font-size: 32px;}
+#me:hover{filter: drop-shadow(0 0 5px rgb(94, 141, 92)); padding:34px; padding-right:13vw;}
+#win95:hover{filter: drop-shadow(0 0 8px rgb(255, 255, 255)); padding:34px; padding-right:13vw;}
+#win123:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255)); padding:34px; padding-right:13vw;}
+#win31:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255)); padding:34px; padding-right:13vw;}
+#nt35:hover{filter: drop-shadow(0 3px 2px rgb(63, 63, 63)); padding:34px; padding-right:13vw;}
+#nt4:hover{filter: drop-shadow(0 4px 1px rgb(126, 191, 245)); padding:34px; padding-right:13vw;}
+#srv03:hover{filter: drop-shadow(0 2px 1px rgb(43, 43, 43)); padding:34px; padding-right:13vw;}
+#srv08:hover{filter: drop-shadow(0 2px 1px rgb(0, 0, 0)); padding:34px; padding-right:13vw;}
+#srv12:hover{filter: drop-shadow(0 2px 1px rgb(165, 165, 165)); padding:34px; padding-right:13vw;}
+#srv16:hover{filter: drop-shadow(0 2px 1px rgb(165, 165, 165)); padding:34px; padding-right:13vw;}
+#srv:hover{padding:34px; padding-right:13vw;}
+#win98:hover{filter: drop-shadow(0 0 5px rgb(255, 255, 255)); padding:34px; padding-right:13vw;}
+#win2000:hover{filter: drop-shadow(0 0 5px rgb(0,0,0)); padding:34px; padding-right:13vw;}
+#xp:hover{filter: drop-shadow(0 0 3px rgb(0,0,0)); padding:34px; padding-right:13vw; backdrop-filter: blur(0px);}
+#vista:hover{padding:34px; padding-right:13vw; filter: drop-shadow(0 0 2px #fff); backdrop-filter: blur(0px);}
+#win7:hover {filter: drop-shadow(0 0 2px rgb(255,255,255)); padding:34px; padding-right:13vw;}
+#win8:hover {background-color: #3682a0; padding:34px; padding-right:13vw;}
+#win10:hover {background-color: #2a5792; padding:34px; padding-right:13vw;}
+#win11:hover {background-color: white; padding:34px; padding-right:13vw;}
+.softbutton:hover {padding: 22px;  background-size: 13vw; background-color:#5851b9; font-size: 32px;}
 
 @keyframes hover {
     0% {padding: 16px;}
@@ -265,14 +351,23 @@ body {
     
 }
 
-.flex {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: inline-flex;
-    gap: 60px;
+#consumerflex {
+    width:100%;
+    position: relative;
+    height:180px;
+    display: flex;
+    gap: 10px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#businessflex {
+    position: relative;
+    height:90px;
+    display: flex;
+    gap: 10px;
     flex-wrap:wrap;
     justify-content: center;
     align-content: center;
@@ -284,24 +379,22 @@ body {
     src: url('../Fonts/Rubik.ttf');
 }
 
-
-@font-face {
-    font-family: 'ProtoPixel';
-    src: url('../Fonts/ProtoPixel1.ttf');
-}
-
-@font-face {
-    font-family: 'FixedSys';
-    src: url('../Fonts/FSEX300.ttf');
-}
-
 #credits {
     color:white;
     font-family: 'Rubik';
     display:inline-flex;
     position: absolute;
-    bottom: 25;
-    right: 20;
+    bottom: 0;
+    right: 0;
+}
+
+.textseperator {
+    color:white;
+    position:relative;
+    margin:0;
+    font-family: 'Rubik';
+    text-align:center;
+    font-size:large;
 }
 
 /** Mozilla Firefox */
@@ -314,3 +407,8 @@ body {
         backdrop-filter: none;
     }
     }
+@media only screen and (max-width: 600px) {
+    #win11, #win10, #win8, #win7, #vista, #xp, #win2000, #me, #win98, #win95, #win31, #win123, #srv, #srv16, #srv12, #srv08, #srv03, #nt4 {
+        padding: 2.3vh 5.53vw 2.3vh 5.53vw
+    }
+}

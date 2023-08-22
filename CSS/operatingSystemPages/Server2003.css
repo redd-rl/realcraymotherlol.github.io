@@ -4,14 +4,14 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color:#003399;
+  background-color:#3d464d;
   color: #fff;
   font-family: 'Lexend';
 }
 
 #logo {
-  max-height: 27vh;
-  max-width: 27vw;
+  max-height: 32vh;
+  max-width: 32vw;
   margin-bottom: 2%;
   position:relative;
   image-rendering: crisp-edges;
@@ -64,25 +64,20 @@ form {
   text-align: center;
   width: 100%;
   height: 85vh;
-  background: radial-gradient(circle at top left, #7f96db 5%, transparent 20%),
-              radial-gradient(circle at bottom right, #7f96db 2%, #4e6fd6 20%);
+  background: radial-gradient(circle at top left, #7c8992 5%, transparent 20%),
+              radial-gradient(circle at bottom right, #7c8992 2%, #596269 20%);
   border-radius: 1px;
   display:inline-flex;
   flex-direction: column;
-  border-image: linear-gradient(0.25turn, #4e6fd6 , whitesmoke, #4e6fd6 60%) 10; 
-  border-top-width: 2px;
-  border-top-style: solid;
+  border-image: linear-gradient(0.25turn, #596269 , rgb(212, 212, 212), #596269 60%) 10; 
+  border-width: 2px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;  
   font-family: 'SegoeUIWin11';
-}
-
-#border-bottom {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-image: linear-gradient(0.25turn, #4e6fd6 , rgb(255, 126, 6), #4e6fd6 60%) 10;
-  width: 100%;
 }
 
 select {
