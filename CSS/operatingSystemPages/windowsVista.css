@@ -56,11 +56,7 @@ button[type="submit"] {
   right: 32%;
   cursor: default;
   font-size: 1em;
-  transition: all 0.5s;
-}
 
-button:hover {
-  transition: all 0.5s;
 }
 
 .slide-down {
@@ -120,7 +116,7 @@ select:focus {
   src: url('../../Fonts/Segoe-UI-Variable-Static-Text.ttf');
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   #aeroborder {
     width:82vw;
     height:42vh;
@@ -131,7 +127,8 @@ select:focus {
   }
   button[type="submit"] {
     right: auto;
-    bottom: 17rem;
+    bottom: 0;
+    position:relative;
   }
   #logo {
     max-width: 70vw;

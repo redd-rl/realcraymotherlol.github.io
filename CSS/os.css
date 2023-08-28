@@ -411,9 +411,12 @@ body {
     }
 
 @media only screen and (max-width: 600px) {
-    #consumerflex, #businessflex {
+    #consumerflex {
         flex-direction: column;
         height:280px;
+    }
+    #businessflex {
+        height: 120px;
     }
     #win11, #win10, #win8, #win7, #vista, #xp, #win2000, #me, #win98, #win95, #win31, #win123, #srv, #srv16, #srv12, #srv08, #srv03, #nt4, #nt35 {
         padding: 2.3vh 10.53vw 2.3vh 10.53vw;

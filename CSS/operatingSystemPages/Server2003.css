@@ -64,8 +64,8 @@ form {
   text-align: center;
   width: 100%;
   height: 85vh;
-  background: radial-gradient(circle at top left, #7c8992 5%, transparent 20%),
-              radial-gradient(circle at bottom right, #7c8992 2%, #596269 20%);
+  background: radial-gradient(circle at top left, #8a8a8a 5%, transparent 20%),
+              radial-gradient(circle at bottom right, #8a8a8a 2%, #596269 20%);
   border-radius: 1px;
   display:inline-flex;
   flex-direction: column;
@@ -108,8 +108,7 @@ select:focus {
     height:42vh;
   }
   form {
-    height:40vh;
-    width: 80vw;
+    height:85vh;
   }
   button[type="submit"] {
     right: auto;

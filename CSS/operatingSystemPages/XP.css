@@ -113,8 +113,7 @@ select:focus {
     height:42vh;
   }
   form {
-    height:40vh;
-    width: 80vw;
+    height:85vh;
   }
   button[type="submit"] {
     right: auto;
