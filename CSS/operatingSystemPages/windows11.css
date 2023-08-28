@@ -141,9 +141,8 @@ select:focus {
     width: 80vw;
   }
   button[type="submit"] {
-    right: auto;
-    bottom:36%;
-    position:fixed;
+    margin-top: 5%;
+    position:static;
   }
   #logo {
     max-width: 70vw;
