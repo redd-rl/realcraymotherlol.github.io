@@ -1,20 +1,20 @@
-{"2600.5512 (Service Pack 3)": 
+{"5.0.2195.1 (RTM)": 
   {
-    "x64": {
-      "English": "https://archive.org/download/sw-dvd-5-windows-svr-2008w-sp-2-english-x-64-dc-ee-se-x-15-41371/SW_DVD5_Windows_Svr_2008w_SP2_English__x64_DC_EE_SE_X15-41371.ISO"
-    },
     "x86": {
-      "English": "https://archive.org/download/sw-dvd-5-windows-svr-2008w-sp-2-english-x-64-dc-ee-se-x-15-41371/SW_DVD5_Windows_Svr_2008w_SP2_English__x86_DC_EE_SE_X15-41116.ISO"
+      "English": "https://archive.org/download/Win2kAllInOne/Win2kProRTM.iso"
     }
   },
-  "2600.2180 (Service Pack 2)": {
-    "x64": {"English": "https://archive.org/download/Windows_Server_2008_R2_x64.iso_reupload/Windows_Server_2008_R2_x64.iso"}
+  "5.0.2195.1620 (SP1)": {
+    "x86": {"English": "https://archive.org/download/Win2kAllInOne/Win2kProSP1.iso"}
   },
-  "2600.1106 (Service Pack 1)": {
-    "x64": {"English": "https://archive.org/download/Windows_Server_2008_R2_x64.iso_reupload/Windows_Server_2008_R2_x64.iso"}
+  "5.0.2195.2951 (SP2)": {
+    "x86": {"English": "https://archive.org/download/Win2kAllInOne/Win2kProSP2.iso"}
   },
-  "2600 (RTM)": {
-    "x64": {"English": "https://archive.org/download/Windows_Server_2008_R2_x64.iso_reupload/Windows_Server_2008_R2_x64.iso"}
+  "5.0.2195.5438 (SP3)": {
+    "x86": {"English": "https://archive.org/download/Win2kAllInOne/Win2kProSP3.iso"}
+  },
+  "5.0.2195.6717 (SP4)": {
+    "x86": {"English": "https://archive.org/download/Win2kAllInOne/Win2kProSP4.iso"}
   }
 }
 
