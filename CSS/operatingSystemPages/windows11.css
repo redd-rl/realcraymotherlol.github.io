@@ -135,9 +135,9 @@ select:focus {
   src: url('../../Fonts/Segoe-UI-Variable-Static-Text.ttf');
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   form {
-    height:46vh;
+    height:48vh;
     width: 80vw;
   }
   button[type="submit"] {
