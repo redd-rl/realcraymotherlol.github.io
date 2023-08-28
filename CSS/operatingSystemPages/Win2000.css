@@ -1,0 +1,151 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url(../../images/2000setupbg169.png);
+  image-rendering:pixelated;
+  background-size:contain;
+  color: #fff;
+  font-family: 'Lexend';
+}
+.title-bar {
+  background: #0000aa;
+}
+
+#window-banner {
+  background:white;
+  padding: 16px 16px 16px 16px;
+  color:black;
+  background-image: url(../../images/setupicon2000.png);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+}
+
+#outline {
+  background: gray;
+  border: 1px solid white;
+  border-top:none;
+  border-left:none;
+  width: 97%;
+  margin: auto;
+  padding: 0.5px 0.5px 0.5px 0.5px;
+}
+
+#outlinebtn {
+  background: gray;
+  border: 1px solid white;
+  border-top:none;
+  border-left:none;
+  position:absolute;
+  top:71%;
+  width: 32%;
+  padding: 0.5px 0.5px 0.5px 0.5px;
+}
+
+.center {
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+select#build{
+  opacity: 1;
+}
+
+button[type="submit"] {
+  width:100px;
+  height: 26px;
+  position: absolute;
+  font-family: 'MSSansSerif'; /*reduces blurryness on the font */
+  bottom:25%;
+  right:34%;    
+  cursor: default;
+}
+
+.slide-down {
+  transform: translateY(100px); 
+}
+
+.slide-up {
+  transform: translateY(0);
+}
+
+
+select.show {
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+.window {
+  height: 53vh;
+  width: 33vw;
+}
+
+form {
+  border-radius: 1px;
+  display:flex;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  font-family: 'SegoeUIWin11';
+}
+
+#border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-image: linear-gradient(0.25turn, #4e6fd6 , rgb(255, 126, 6), #4e6fd6 60%) 10;
+  width: 100%;
+}
+
+select {
+    width: 30em;
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+
+select:focus {
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  background-image: url(../../images/Arrow-down.svg);
+}
+
+@font-face {
+  font-family: 'SegoeUIWin11';
+  src: url('../../Fonts/Segoe-UI-Variable-Static-Text.ttf');
+}
+
+@font-face {
+  font-family: 'MSSansSerif';
+  src: url('../../Fonts/ms-sans-serif-1.ttf');
+}
+
+@media only screen and (max-width: 600px) {
+  .window {
+    height:45vh;
+    width:41vh;  
+  }
+  #outlinebtn {
+    top: 68%;
+    width: 38vh;
+  }
+  button[type="submit"] {
+    right: auto;
+    bottom: 17rem;
+  }
+}

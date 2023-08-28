@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 8" width="9" height="8">
+	<title>gray-svg</title>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { fill: #808080 } 
+	</style>
+	<path id="Layer copy" fill-rule="evenodd" class="s0" d="m1 1h2v1h1v1h2v-1h1v-1h2v1h-1v1h-1v1h-1v1h1v1h1v1h1v1h-2v-1h-1v-1h-2v1h-1v1h-2v-1h1v-1h1v-1h1v-1h-1v-1h-1v-1h-1z"/>
+	<path id="Layer" fill-rule="evenodd" class="s1" d="m0 0h2v1h1v1h2v-1h1v-1h2v1h-1v1h-1v1h-1v1h1v1h1v1h1v1h-2v-1h-1v-1h-2v1h-1v1h-2v-1h1v-1h1v-1h1v-1h-1v-1h-1v-1h-1z"/>
+</svg>
