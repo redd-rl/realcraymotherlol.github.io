@@ -114,15 +114,11 @@ fetchOSInfo().then(data => {
 
   function fadeIn(element) {
     element.style.display = "block";
-    setTimeout(() => {
       element.style.opacity = "1";
-    }, 10);
   }
   
   function fadeOut(element) {
     element.style.opacity = "0";
-    setTimeout(() => {
       element.style.display = "none";
-    }, 500);
   }
 })
