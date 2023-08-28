@@ -116,8 +116,8 @@ select:focus {
     height:85vh;
   }
   button[type="submit"] {
-    right: auto;
-    bottom: 17rem;
+    margin-top: 5%;
+    position:static;
   }
   #logo {
     max-width: 70vw;

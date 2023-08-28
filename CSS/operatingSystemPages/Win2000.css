@@ -9,6 +9,8 @@ body {
   background-size:contain;
   color: #fff;
   font-family: 'Lexend';
+  background-repeat: repeat;
+  background-position-x: center;
 }
 .title-bar {
   background: #0000aa;
