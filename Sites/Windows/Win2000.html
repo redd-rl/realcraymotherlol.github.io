@@ -14,11 +14,14 @@
   <link rel="stylesheet" href="../../CSS/operatingSystemPages/Win2000.css">
 </head>
 <body>
+  <img src="../../images/2000reducedcolorlogo.png" id="logo"></img>
 <div class="window">
   <div class="title-bar"><b>Windows 2000 ISO Repository</b><div class="title-bar-controls">
+    <button id="fullbtn" onclick="fullscreen();"  aria-label="Maximize"></button>
     <a href="../os"><button aria-label="Close"></button></a>
   </div></div><div id="window-banner"><b>Choose your build of Windows 2000.</b><br><br>&nbsp;&nbsp;Placeholder</div><div id="outline"></div>
 <form onsubmit="validateForm(event)">
+  <p style="text-align:center; color:black;">Welcome to the Windows 2000 Repository Wizard.</p>
   <select autocomplete="off" name="build" id="build">
     <option value="" selected disabled>Select Build</option>
   </select>
