@@ -5,6 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   background: url(../../images/2000setupbg169.png);
+  cursor: url('../../WinSiteCursors/cursor.cur'), auto;
   image-rendering:pixelated;
   background-size:contain;
   color: #fff;
