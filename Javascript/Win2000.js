@@ -127,11 +127,12 @@ fetchOSInfo().then(data => {
 var elem = document.documentElement;
 const maxminbtn = document.getElementById("fullbtn");
 function fullscreen() {
-    if (maxminbtn.setAttribute('aria-label', 'Maximize')) {
+    if (maxminbtn.getAttribute('aria-label') == 'Maximize') {
       elem.requestFullscreen();
       maxminbtn.setAttribute('aria-label', 'Restore');
     }
-    else (
-      console.log = "Condition is not true"
-    )
+    else {
+      document.exitFullscreen();
+      maxminbtn.setAttribute('aria-label', 'Maximize');
+    }
   }
