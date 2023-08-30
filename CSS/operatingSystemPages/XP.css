@@ -7,6 +7,7 @@ body {
   background-color:#003399;
   color: #fff;
   font-family: 'Lexend';
+  cursor: url('../../WinSiteCursors/cursor.cur'), auto;
 }
 
 #logo {
