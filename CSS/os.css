@@ -351,17 +351,7 @@ body {
     
 }
 
-#consumerflex {
-    width:100%;
-    display: flex;
-    gap: 10px;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-#businessflex {
+#osflex-1, #osflex-2 {
     width:100%;
     display: flex;
     gap: 10px;
@@ -395,6 +385,35 @@ body {
     font-size:1vw
 }
 
+li {
+    display:inline;
+    font-family: 'Rubik';
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+ul {
+    padding: 0;
+    column-gap: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.active-list-item {
+    background-color: #969696;
+    transition: 0.3s;
+}
+
+.deactive-list-item {
+    background-color: #000000;
+    transition: 0.5s;
+}
+
 /** Mozilla Firefox */
 @-moz-document url-prefix() {
     #vista{
@@ -405,13 +424,12 @@ body {
         backdrop-filter: none;
     }
     }
-
 @media only screen and (max-width: 600px) {
-    #consumerflex {
+    #osflex-1 {
         flex-direction: column;
         height:280px;
     }
-    #businessflex {
+    #osflex-2 {
         height: 120px;
     }
     #win11, #win10, #win8, #win7, #vista, #xp, #win2000, #me, #win98, #win95, #win31, #win123, #srv, #srv16, #srv12, #srv08, #srv03, #nt4, #nt35 {
