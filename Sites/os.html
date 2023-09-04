@@ -1,88 +1,101 @@
 <!doctype html>
 <html>
-    <head>
-        <meta content="Cray's operating system repository." property="og:title" />
-        <meta content="Cray's operating system repository." property="og:description" />
-        <meta content="realcraymotherlol.github.io/stuff/os" property="og:url" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png" property="og:image" />
-        <meta content="#dea300" data-react-helmet="true" name="theme-color" />
-        <title>Softwares</title>
-        <link rel="stylesheet" href="../CSS/os.css"/>
-    </head>
- <body>
+
+<head>
+    <meta content="Cray's operating system repository." property="og:title" />
+    <meta content="Cray's operating system repository." property="og:description" />
+    <meta content="realcraymotherlol.github.io/stuff/os" property="og:url" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
+        property="og:image" />
+    <meta content="#dea300" data-react-helmet="true" name="theme-color" />
+    <title>Softwares</title>
+    <link rel="stylesheet" href="../CSS/os.css" />
+</head>
+
+<body>
     <ul style="color:white;">
-       <li class="active-list-item" onclick="toggleOsFlex('osflex-1', 'osli-1')" id="osli-1">Windows</li>
-       <li class="deactive-list-item" onclick="toggleOsFlex('osflex-2', 'osli-2')" id="osli-2">Mac OS</li>
-       <li class="deactive-list-item" onclick="toggleOsFlex('osflex-3', 'osli-3')" id="osli-3">Linux</li>    
+        <li class="active-list-item" onclick="toggleOsFlex('osflex-1', 'osli-1')" id="osli-1">Windows</li>
+        <li class="deactive-list-item" onclick="toggleOsFlex('osflex-2', 'osli-2')" id="osli-2">Mac OS</li>
+        <li class="deactive-list-item" onclick="toggleOsFlex('osflex-3', 'osli-3')" id="osli-3">Linux</li>
     </ul>
     <div style="display:flex;" id="osflex-1">
-        <div id="win11div" style="display:inline-flex; border-radius: 5px;">
-            <a id="win11" class="softbutton_ex" href="Windows/Windows11"></a>
+        <div class="textseperator">Consumer Editions
         </div>
-        <div id="win10div" style="display:inline-flex; border-radius: 5px;">
-            <a id="win10" class="softbutton_ex" href="Windows/Windows10"></a>
+        <div id="osinflex-2">
+            <div id="win11div" style="display:inline-flex; border-radius: 5px;">
+                <a id="win11" class="softbutton_ex" href="Windows/Windows11"></a>
+            </div>
+            <div id="win10div" style="display:inline-flex; border-radius: 5px;">
+                <a id="win10" class="softbutton_ex" href="Windows/Windows10"></a>
+            </div>
+            <div id="win8div" style="display:inline-flex; border-radius: 5px;">
+                <a id="win8" class="softbutton_ex" href="Windows/Windows8"></a>
+            </div>
+            <div id="win7div" style="display:inline-flex;  border-radius: 5px;">
+                <a id="win7" class="softbutton_ex" href="Windows/Windows7"></a>
+            </div>
+            <div id="vistadiv" style="display:inline-flex;  border-radius: 5px;">
+                <a id="vista" class="softbutton_ex" href="Windows/WindowsVista"></a>
+            </div>
+            <div id="xpdiv" style="display:inline-flex;  border-radius: 5px;">
+                <a id="xp" class="softbutton_ex" href="Windows/WindowsXP"></a>
+            </div>
+            <div id="win2000div" style="display:inline-flex;  border-radius: 5px;">
+                <a id="win2000" class="softbutton_ex" href="Windows/Win2000"></a>
+            </div>
+            <div id="mediv" style="display:inline-flex;  border-radius: 5px;">
+                <a id="me" class="softbutton_ex" href="tools"></a>
+            </div>
+            <div id="win98div" style="display:inline-flex;  border-radius: 5px;">
+                <a id="win98" class="softbutton_ex" href="tools"></a>
+            </div>
+            <div id="win95div" style="display:inline-flex;  border-radius: 5px;">
+                <a id="win95" class="softbutton_ex" href="tools"></a>
+            </div>
+            <div id="win31div" style="display:inline-flex; border-radius: 5px;">
+                <a id="win31" class="softbutton_ex" href="tools"></a>
+            </div>
+            <div id="win123div" style="display:inline-flex; border-radius: 5px;">
+                <a id="win123" class="softbutton_ex" href="tools"></a>
+            </div>
         </div>
-        <div id="win8div" style="display:inline-flex; border-radius: 5px;">
-            <a id="win8" class="softbutton_ex" href="Windows/Windows8"></a>
+        <div class="textseperator">Server Editions
         </div>
-        <div id="win7div" style="display:inline-flex;  border-radius: 5px;">
-            <a id="win7" class="softbutton_ex" href="Windows/Windows7"></a>
-        </div>
-        <div id="vistadiv" style="display:inline-flex;  border-radius: 5px;">
-            <a id="vista" class="softbutton_ex" href="Windows/WindowsVista"></a>
-        </div>
-        <div id="xpdiv" style="display:inline-flex;  border-radius: 5px;">
-            <a id="xp" class="softbutton_ex" href="Windows/WindowsXP"></a>
-        </div>
-        <div id="win2000div" style="display:inline-flex;  border-radius: 5px;">
-            <a id="win2000" class="softbutton_ex" href="Windows/Win2000"></a>
-        </div>
-        <div id="mediv" style="display:inline-flex;  border-radius: 5px;">
-            <a id="me" class="softbutton_ex" href="tools"></a>
-        </div>
-        <div id="win98div" style="display:inline-flex;  border-radius: 5px;">
-            <a id="win98" class="softbutton_ex" href="tools"></a>
-        </div>
-        <div id="win95div" style="display:inline-flex;  border-radius: 5px;">
-            <a id="win95" class="softbutton_ex" href="tools"></a>
-        </div>
-        <div id="win31div" style="display:inline-flex; border-radius: 5px;">
-            <a id="win31" class="softbutton_ex" href="tools"></a>
-        </div>
-        <div id="win123div" style="display:inline-flex; border-radius: 5px;">
-            <a id="win123" class="softbutton_ex" href="tools"></a>
-        </div>
-        <div id="srvdiv" style="display:inline-flex; border-radius: 5px;">
-            <a id="srv" class="softbutton_ex" href="Windows/Server2019"></a>
-        </div>
-        <div id="srv16div" style="display:inline-flex; border-radius: 5px;">
-            <a id="srv16" class="softbutton_ex" href="Windows/Server2016"></a>
-        </div>
-        <div id="srv12div" style="display:inline-flex; border-radius: 5px;">
-            <a id="srv12" class="softbutton_ex" href="Windows/Server2012"></a>
-        </div>
-        <div id="srv08div" style="display:inline-flex; border-radius: 5px;">
-            <a id="srv08" class="softbutton_ex" href="Windows/Server2008"></a>
-        </div>
-        <div id="srv03div" style="display:inline-flex; border-radius: 5px;">
-            <a id="srv03" class="softbutton_ex" href="Windows/Server2003"></a>
-        </div>
-        <div id="nt4div" style="display:inline-flex;  border-radius: 5px;">
-            <a id="nt4" class="softbutton_ex" href="Windows/NT4"></a>
-        </div>
-        <div id="nt35div" style="display:inline-flex;  border-radius: 5px;">
-            <a id="nt35" class="softbutton_ex" href="Windows/NT35"></a>
+        <div id="osinflex-2">
+            <div id="srvdiv" style="display:inline-flex; border-radius: 5px;">
+                <a id="srv" class="softbutton_ex" href="Windows/Server2019"></a>
+            </div>
+            <div id="srv16div" style="display:inline-flex; border-radius: 5px;">
+                <a id="srv16" class="softbutton_ex" href="Windows/Server2016"></a>
+            </div>
+            <div id="srv12div" style="display:inline-flex; border-radius: 5px;">
+                <a id="srv12" class="softbutton_ex" href="Windows/Server2012"></a>
+            </div>
+            <div id="srv08div" style="display:inline-flex; border-radius: 5px;">
+                <a id="srv08" class="softbutton_ex" href="Windows/Server2008"></a>
+            </div>
+            <div id="srv03div" style="display:inline-flex; border-radius: 5px;">
+                <a id="srv03" class="softbutton_ex" href="Windows/Server2003"></a>
+            </div>
+            <div id="nt4div" style="display:inline-flex;  border-radius: 5px;">
+                <a id="nt4" class="softbutton_ex" href="Windows/NT4"></a>
+            </div>
+            <div id="nt35div" style="display:inline-flex;  border-radius: 5px;">
+                <a id="nt35" class="softbutton_ex" href="Windows/NT35"></a>
+            </div>
         </div>
     </div>
-<div style="display:none;" id="osflex-2">
-    <div id="sysdiv" style="display:inline-flex;  border-radius: 5px;">
-        <a id="sys" class="softbutton_ex" href="Mac/System"></a>
+    <div style="display:none;" id="osflex-2">
+        <div id="sysdiv" style="display:inline-flex;  border-radius: 5px;">
+            <a id="sys" class="softbutton_ex" href="Mac/System"></a>
+        </div>
     </div>
-</div>
-<div id="osflex-3">
-</div>
-    <div id="credits">My website does&NonBreakingSpace;<b>NOT</b>&NonBreakingSpace;provide the downloads, they are just links for making navigating to get a Windows ISO less frustrating.</div>
+    <div id="osflex-3">
+    </div>
+    <div id="credits">My website does&NonBreakingSpace;<b>NOT</b>&NonBreakingSpace;provide the downloads, they are just
+        links for making navigating to get a Windows ISO less frustrating.</div>
     <script src="../Javascript/OS.js"></script>
- </body>
+</body>
+
 </html>

@@ -372,6 +372,26 @@ body {
     align-items: center;
 }
 
+#osinflex-1, #osinflex-2 {
+    width: 100%;
+    gap: 10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.textseperator {
+    color:white;
+    font-family: 'Rubik';
+    border: 2px solid white;
+    border-radius: 7px;
+    text-align: center;
+    height: 2.5vh;
+    width: 14vw;
+}
+
 @font-face {
     font-family: 'Rubik';
     src: url('../Fonts/Rubik.ttf');
