@@ -106,7 +106,7 @@ a {
 }
 
 #vistadiv{
-    border: 2px solid #649399;
+    border: 2px solid #214142;
     background: url(https://c4.wallpaperflare.com/wallpaper/1003/80/842/windows-vista-original-logon-wallpaper-preview.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,6 +172,19 @@ a {
     image-rendering: crisp-edges;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     filter: drop-shadow(0 3px 4px rgb(0, 0, 0))
+}
+
+#sys{
+    background-image: url(../images/systembox.png);
+    image-rendering: crisp-edges;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#sysdiv{
+    border: 2px solid #535244;
+    transition: 0.5s;
+    background: url(../images/systembg.svg);
+    background-repeat: repeat;
 }
 
 #nt4div{
@@ -319,27 +332,26 @@ a {
 }
 
 
-.softbutton_ex:hover {padding: 22px; padding-right: 13vw; background-size: 13vw; font-size: 32px;}
-#me:hover{filter: drop-shadow(0 0 5px rgb(94, 141, 92)); padding:34px; padding-right:13vw;}
-#win95:hover{filter: drop-shadow(0 0 8px rgb(255, 255, 255)); padding:34px; padding-right:13vw;}
-#win123:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255)); padding:34px; padding-right:13vw;}
-#win31:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255)); padding:34px; padding-right:13vw;}
-#nt35:hover{filter: drop-shadow(0 3px 2px rgb(63, 63, 63)); padding:34px; padding-right:13vw;}
-#nt4:hover{filter: drop-shadow(0 4px 1px rgb(126, 191, 245)); padding:34px; padding-right:13vw;}
-#srv03:hover{filter: drop-shadow(0 2px 1px rgb(43, 43, 43)); padding:34px; padding-right:13vw;}
-#srv08:hover{filter: drop-shadow(0 2px 1px rgb(0, 0, 0)); padding:34px; padding-right:13vw;}
-#srv12:hover{filter: drop-shadow(0 2px 1px rgb(165, 165, 165)); padding:34px; padding-right:13vw;}
-#srv16:hover{filter: drop-shadow(0 2px 1px rgb(165, 165, 165)); padding:34px; padding-right:13vw;}
-#srv:hover{padding:34px; padding-right:13vw;}
-#win98:hover{filter: drop-shadow(0 0 5px rgb(255, 255, 255)); padding:34px; padding-right:13vw;}
-#win2000:hover{filter: drop-shadow(0 0 5px rgb(0,0,0)); padding:34px; padding-right:13vw;}
-#xp:hover{filter: drop-shadow(0 0 3px rgb(0,0,0)); padding:34px; padding-right:13vw; backdrop-filter: blur(0px);}
-#vista:hover{padding:34px; padding-right:13vw; filter: drop-shadow(0 0 2px #fff); backdrop-filter: blur(0px);}
-#win7:hover {filter: drop-shadow(0 0 2px rgb(255,255,255)); padding:34px; padding-right:13vw;}
-#win8:hover {background-color: #3682a0; padding:34px; padding-right:13vw;}
-#win10:hover {background-color: #2a5792; padding:34px; padding-right:13vw;}
-#win11:hover {background-color: white; padding:34px; padding-right:13vw;}
-.softbutton:hover {padding: 22px;  background-size: 13vw; background-color:#5851b9; font-size: 32px;}
+.softbutton_ex:hover {padding: 3vh; padding-right: 4vw; background-size: 10vw; font-size: 32px;}
+#me:hover{filter: drop-shadow(0 0 5px rgb(94, 141, 92));}
+#win95:hover{filter: drop-shadow(0 0 8px rgb(255, 255, 255));}
+#win123:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255));}
+#win31:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255)); }
+#nt35:hover{filter: drop-shadow(0 3px 2px rgb(63, 63, 63));}
+#nt4:hover{filter: drop-shadow(0 4px 1px rgb(126, 191, 245));}
+#srv03:hover{filter: drop-shadow(0 2px 1px rgb(43, 43, 43));}
+#srv08:hover{filter: drop-shadow(0 2px 1px rgb(0, 0, 0));}
+#srv12:hover{filter: drop-shadow(0 2px 1px rgb(165, 165, 165));}
+#srv16:hover{filter: drop-shadow(0 2px 1px rgb(165, 165, 165));}
+#win98:hover{filter: drop-shadow(0 0 5px rgb(255, 255, 255));}
+#win2000:hover{filter: drop-shadow(0 0 5px rgb(0,0,0));}
+#xp:hover{filter: drop-shadow(0 0 3px rgb(0,0,0));backdrop-filter: blur(0px);}
+#vista:hover{filter: drop-shadow(0 0 2px #fff); backdrop-filter: blur(0px);}
+#win7:hover {filter: drop-shadow(0 0 2px rgb(255,255,255)); }
+#win8:hover {background-color: #3682a0;}
+#win10:hover {background-color: #2a5792;}
+#win11:hover {background-color: white;}
+.softbutton:hover {background-size: 11vw; background-color:#5851b9; font-size: 32px;}
 
 @keyframes hover {
     0% {padding: 16px;}
@@ -353,7 +365,6 @@ body {
 
 #osflex-1, #osflex-2 {
     width:100%;
-    display: flex;
     gap: 10px;
     flex-wrap:wrap;
     justify-content: center;
@@ -392,26 +403,29 @@ li {
     font-weight: bolder;
     border: 2px solid white;
     padding: 8px;
-    border-radius: 5px;
-    cursor:pointer;
+    border-radius: 4px;
 }
 
 ul {
     padding: 0;
+    margin:0;
     column-gap: 20px;
     margin-bottom: 20px;
     display:flex;
+    align-items: center;
     justify-content: center;
 }
 
 .active-list-item {
     background-color: #969696;
     transition: 0.3s;
+    cursor:default;
 }
 
 .deactive-list-item {
     background-color: #000000;
     transition: 0.5s;
+    cursor:pointer;
 }
 
 /** Mozilla Firefox */
