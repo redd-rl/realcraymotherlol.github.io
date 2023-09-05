@@ -75,7 +75,9 @@ body {
 #osinflex-consumer,
 #osinflex-server,
 #osinflex-embedded,
-#osinflex-mobile   {
+#osinflex-mobile,
+#osinflex-classic,
+#osinflex-macos   {
     width: 100%;
     gap: 10px;
     display: flex;

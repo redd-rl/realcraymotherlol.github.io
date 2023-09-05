@@ -148,6 +148,93 @@
     background-repeat: repeat;
 }
 
+#macos8 {
+    background-image: url(https://betawiki.net/images/3/3a/MacOS8Wordmark.svg);
+    image-rendering: crisp-edges;
+    filter: drop-shadow(0 1px 0.5px rgb(255, 255, 255));
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#macos8div {
+    border: 2px solid #535244;
+    transition: 0.5s;
+    background: url(https://www.onemorething.nl/wp-content/uploads/2020/07/mac-os-8-wallpaper-16x9-1.png);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+#macos9div {
+    border: 2px solid #535244;
+    transition: 0.5s;
+    background: url(https://512pixels.net/downloads/os9-5k/Quantum-Foam.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+#macos9 {
+    background-image: url(../images/os9.png);
+    image-rendering: crisp-edges;
+    backdrop-filter: blur(4px);
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#osX100div {
+    border: 2px solid #152c46;
+    transition: 0.5s;
+    background: url(https://512pixels.net/downloads/macos-wallpapers/10-0_10.1.png);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+#osX100 {
+    background-image: url(../images/macosx.png);
+    image-rendering: crisp-edges;
+    backdrop-filter: blur(4px);
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#osX101div {
+    border: 2px solid #152c46;
+    transition: 0.5s;
+    background: url(https://512pixels.net/downloads/macos-wallpapers-thumbs/10-2--thumb.png);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+#osX101 {
+    background-image: url(https://i.imgur.com/hlOQTd8.png);
+    image-rendering: crisp-edges;
+    backdrop-filter: blur(4px);
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#osX103div {
+    border: 2px solid #3d3d3d;
+    background-color: #0a0a0a;
+    transition: 0.5s;
+}
+
+#osX103 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/31/Mac_OS_X_Panther_Logo.png);
+    background-size: 45px;
+    filter:drop-shadow(0px 0px 2px rgba(255,255,255,1));
+    backdrop-filter: blur(4px);
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#osX104div {
+    border: 2px solid #3d3d3d;
+    background-color: #0a0a0a;
+    transition: 0.5s;
+}
+
+#osX104 {
+    background-image: url(../images/Mac_OS_X_Tiger_logo.svg);
+    background-size: 140px;
+    backdrop-filter: blur(4px);
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
 #nt4div {
     border: 2px solid #173149;
     transition: 0.5s;
@@ -460,4 +547,12 @@
 
 #win11:hover {
     background-color: white;
+}
+
+#osX103:hover {
+    background-size: 50px;
+}
+
+#osX104:hover {
+    background-size: 150px;
 }
