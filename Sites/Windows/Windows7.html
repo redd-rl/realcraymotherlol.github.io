@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Cray's Windows 7 Download Repository.</title>
   <meta content="Cray's Windows 7 Download Repository." property="og:title" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Cray's Windows 11 Download Repository." property="og:description" />
-    <meta content="realcraymotherlol.github.io/stuff/os/Windows7" property="og:url" />
-    <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png" property="og:image" />
-    <meta content="#dea300" data-react-helmet="true" name="theme-color" />
-    <link rel="stylesheet" href="../../CSS/operatingSystemPages/windows7.css">
-    <link rel="stylesheet" href="https://unpkg.com/7.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Cray's Windows 11 Download Repository." property="og:description" />
+  <meta content="realcraymotherlol.github.io/stuff/os/Windows7" property="og:url" />
+  <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
+    property="og:image" />
+  <meta content="#dea300" data-react-helmet="true" name="theme-color" />
+  <link rel="stylesheet" href="../../CSS/operatingSystemPages/windows7.css">
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
   <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet">
 </head>
+
 <body>
-<div id="aeroborder">
-<form onsubmit="validateForm(event)">
-  <img id="logo" src="../../images/win7logo.webp" alt="Windows 11 Logo">
-  <select autocomplete="off" name="build" id="build">
-    <option value="" selected disabled>Select Build</option>
-  </select>
-  <div id="architecture-container" class="fade-in" style="display: none; max-width: 100%; width:20em;">
-    <select autocomplete="off" name="architecture" id="architecture">
-      <option value="" selected disabled>Select Architecture</option>
-    </select>
+  <div id="aeroborder">
+    <form onsubmit="validateForm(event)">
+      <img id="logo" src="../../images/win7logo.webp" alt="Windows 11 Logo">
+      <select autocomplete="off" name="build" id="build">
+        <option value="" selected disabled>Select Build</option>
+      </select>
+      <div id="architecture-container" class="fade-in" style="display: none; max-width: 100%; width:20em;">
+        <select autocomplete="off" name="architecture" id="architecture">
+          <option value="" selected disabled>Select Architecture</option>
+        </select>
+      </div>
+      <div id="version-container" class="fade-in" style="display: none; max-width: 100%; width:20em;">
+        <select autocomplete="off" name="version" id="version">
+          <option value="" selected disabled>Select Version</option>
+        </select>
+      </div>
+      <button class="gray" type="submit" id="download-button" value="Download" disabled>Download</button>
+    </form>
   </div>
-  <div id="version-container" class="fade-in" style="display: none; max-width: 100%; width:20em;">
-    <select autocomplete="off" name="version" id="version">
-      <option value="" selected disabled>Select Version</option>
-    </select>
-  </div>
-  <button class="gray" type="submit" id="download-button" value="Download" disabled>Download</button>
-</form>
-</div>
   <script src="../../Javascript/Windows7.js"></script>
 </body>

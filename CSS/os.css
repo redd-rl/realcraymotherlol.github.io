@@ -1,20 +1,20 @@
-
 a {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 .softbutton:link {
     text-decoration: none;
 }
 
 
 .softbutton {
-    border-radius:5px;
+    border-radius: 5px;
     border: 2px solid #155e27;
     background-color: #2d831c;
     padding: 20px;
-    color:white;
-    font-weight:bold;
-    font-family:'ProtoPixel';
+    color: white;
+    font-weight: bold;
+    font-family: 'ProtoPixel';
     font-size: 30px;
     width: 150px;
     box-sizing: border-box;
@@ -23,42 +23,42 @@ a {
     transition-property: all;
 }
 
-.softbutton_ex{
-    border-radius:5px;
-    color:white;
+.softbutton_ex {
+    border-radius: 5px;
+    color: white;
     transition: 0.5s;
     -moz-transition: 0.5s;
-    background-size:9vw;
+    background-size: 9vw;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#win11{
+#win11 {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/2560px-Windows_11_logo.svg.png);
-    display:block;
-    padding: 3.2vh 5.53vw 3.2vh 5.53vw;  
-}
-
-#win10{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Windows_10_Logo.svg/1920px-Windows_10_Logo.svg.png);
-    display:block;
-    padding: 3.2vh 5.53vw 3.2vh 5.53vw; 
-}
-
-#win8{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Windows_8_logo_and_wordmark.svg/1920px-Windows_8_logo_and_wordmark.svg.png);
-    display:block;
+    display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
-#win7{
+#win10 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Windows_10_Logo.svg/1920px-Windows_10_Logo.svg.png);
+    display: block;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#win8 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Windows_8_logo_and_wordmark.svg/1920px-Windows_8_logo_and_wordmark.svg.png);
+    display: block;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#win7 {
     background-image: url(https://upload.wikimedia.org/wikipedia/it/thumb/4/49/Logo_Microsoft_Windows_7.svg/2560px-Logo_Microsoft_Windows_7.svg.png);
-    display:block;
+    display: block;
     filter: none;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
-#vista{
+#vista {
     background-image: url(../images/Windows_Vista_logo.svg.png);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
@@ -66,38 +66,38 @@ a {
     backdrop-filter: blur(5px);
 }
 
-#me{
+#me {
     background-image: url(https://www.betaarchive.com/wiki/images/7/73/Windows_ME_Logo.png);
     image-rendering: crisp-edges;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
-#mediv{
+#mediv {
     border: 2px solid #649399;
     background-color: white;
     transition: 0.5s;
 }
 
-#win2000{
+#win2000 {
     background-image: url(../images/win2000logo.png);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
-#win2000div{
+#win2000div {
     border: 2px solid #649399;
     background-color: white;
     transition: 0.5s;
 }
 
-#xp{
+#xp {
     background-image: url(../images/Microsoft_Windows_XP_Logo.svg.png);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     backdrop-filter: blur(5px);
 }
 
-#xpdiv{
+#xpdiv {
     border: 2px solid #649399;
     background-image: url(https://wallpaperaccess.com/full/90278.jpg);
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@ a {
     transition: 0.5s;
 }
 
-#vistadiv{
+#vistadiv {
     border: 2px solid #214142;
     background: url(https://c4.wallpaperflare.com/wallpaper/1003/80/842/windows-vista-original-logon-wallpaper-preview.jpg);
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ a {
     transition: 0.5s;
 }
 
-#win11div{
+#win11div {
     border: 2px solid #0b3e72;
     transition: 0.5s;
     background-color: #191852;
@@ -121,23 +121,23 @@ a {
     background-repeat: no-repeat;
 }
 
-#win10div{
+#win10div {
     border: 2px solid #0b3e72;
     transition: 0.5s;
-    background-color:#183152;
+    background-color: #183152;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#win8div{
+#win8div {
     border: 2px solid #0b4c72;
     transition: 0.5s;
-    background-color:#043c5c;
+    background-color: #043c5c;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#win7div{
+#win7div {
     border: 2px solid #0b3e72;
     transition: 0.5s;
     background: url(https://wallpapercave.com/wp/wp8729295.jpg);
@@ -145,20 +145,20 @@ a {
     background-repeat: no-repeat;
 }
 
-#win98div{
+#win98div {
     border: 2px solid #174930;
     transition: 0.5s;
     background-size: cover;
     background: url(https://i.redd.it/55673b3dfo191.png);
 }
 
-#win98{
+#win98 {
     background-image: url(../images/windows98.png);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
-#nt35div{
+#nt35div {
     border: 2px solid #535244;
     transition: 0.5s;
     background: url(../images/dither_it_bg.png);
@@ -167,27 +167,27 @@ a {
     background-repeat: no-repeat;
 }
 
-#nt35{
+#nt35 {
     background-image: url(../images/winnt35logo.svg);
     image-rendering: crisp-edges;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     filter: drop-shadow(0 3px 4px rgb(0, 0, 0))
 }
 
-#sys{
+#sys {
     background-image: url(../images/systembox.png);
     image-rendering: crisp-edges;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
-#sysdiv{
+#sysdiv {
     border: 2px solid #535244;
     transition: 0.5s;
     background: url(../images/systembg.svg);
     background-repeat: repeat;
 }
 
-#nt4div{
+#nt4div {
     border: 2px solid #173149;
     transition: 0.5s;
     background: url(https://cdn.wallpapersafari.com/61/31/0MXQKU.jpg);
@@ -196,14 +196,14 @@ a {
     background-repeat: no-repeat;
 }
 
-#nt4{
+#nt4 {
     background-image: url(../images/nt4.png);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     filter: drop-shadow(0 0 0px rgb(134, 207, 255))
 }
 
-#srv03div{
+#srv03div {
     border: 2px solid #4d4d4d;
     transition: 0.5s;
     background: url(../images/srv2003bg.png);
@@ -211,14 +211,14 @@ a {
     background-position: 0 -40px;
 }
 
-#srv03{
+#srv03 {
     background-image: url(../images/srv2003logo.png);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     filter: drop-shadow(2px 2px 3px rgb(58, 58, 58))
 }
 
-#srv08div{
+#srv08div {
     border: 2px solid #4d4d4d;
     transition: 0.5s;
     background: url(https://static.miraheze.org/windowswallpaperwiki/9/97/Setup_background_%28Windows_Server_2008_%28Window%29_%26_2008_R2%29.png);
@@ -227,14 +227,14 @@ a {
     background-repeat: no-repeat;
 }
 
-#srv08{
+#srv08 {
     background-image: url(../images/server2008logohori.png);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     filter: drop-shadow(0 0 0px rgb(189, 189, 189))
 }
 
-#srv12div{
+#srv12div {
     border: 2px solid rgb(19, 9, 102);
     transition: 0.5s;
     background: #001589;
@@ -243,14 +243,14 @@ a {
     background-repeat: no-repeat;
 }
 
-#srv16{
+#srv16 {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Windows_Server_2016_logo.svg);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     filter: drop-shadow(0 0 2px rgb(126, 126, 126))
 }
 
-#srv16div{
+#srv16div {
     border: 2px solid rgb(165, 165, 165);
     transition: 0.5s;
     background: #ffffff;
@@ -259,13 +259,13 @@ a {
     background-repeat: no-repeat;
 }
 
-#srv{
+#srv {
     background-image: url(https://betawiki.net/images/2/26/Windows_Server_logo.svg);
     display: block;
-    padding:3.2vh 5.53vw 3.2vh 5.53vw;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
-#srvdiv{
+#srvdiv {
     border: 2px solid rgb(165, 165, 165);
     transition: 0.5s;
     background: #ffffff;
@@ -274,7 +274,7 @@ a {
     background-repeat: no-repeat;
 }
 
-#srv12{
+#srv12 {
     background-image: url(../images/srv2012logo.svg);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
@@ -282,14 +282,14 @@ a {
 }
 
 
-#win95{
+#win95 {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Windows_95_logo_with_wordmark.svg/5782px-Microsoft_Windows_95_logo_with_wordmark.svg.png);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
-    filter: none;   
+    filter: none;
 }
 
-#win95div{
+#win95div {
     border: 2px solid #004d4d;
     background: #018281;
     transition: 0.5s;
@@ -297,15 +297,15 @@ a {
     background-position: bottom;
 }
 
-#win31{
+#win31 {
     background-image: url(../images/win31.png);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     image-rendering: auto;
-    filter: none;   
+    filter: none;
 }
 
-#win31div{
+#win31div {
     border: 2px solid #173949;
     transition: 0.5s;
     background-color: #3da0c7;
@@ -314,15 +314,15 @@ a {
     background-repeat: no-repeat;
 }
 
-#win123{
-    background-image:url(../images/win123.png);
+#win123 {
+    background-image: url(../images/win123.png);
     display: block;
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
     image-rendering: auto;
-    filter: none;   
+    filter: none;
 }
 
-#win123div{
+#win123div {
     border: 2px solid #1a1749;
     transition: 0.5s;
     background-color: #2000af;
@@ -332,58 +332,131 @@ a {
 }
 
 
-.softbutton_ex:hover {padding: 3vh; padding-right: 4vw; background-size: 10vw; font-size: 32px;}
-#me:hover{filter: drop-shadow(0 0 5px rgb(94, 141, 92));}
-#win95:hover{filter: drop-shadow(0 0 8px rgb(255, 255, 255));}
-#win123:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255));}
-#win31:hover{filter: drop-shadow(0 0 2px rgb(255, 255, 255)); }
-#nt35:hover{filter: drop-shadow(0 3px 2px rgb(63, 63, 63));}
-#nt4:hover{filter: drop-shadow(0 4px 1px rgb(126, 191, 245));}
-#srv03:hover{filter: drop-shadow(0 2px 1px rgb(43, 43, 43));}
-#srv08:hover{filter: drop-shadow(0 2px 1px rgb(0, 0, 0));}
-#srv12:hover{filter: drop-shadow(0 2px 1px rgb(165, 165, 165));}
-#srv16:hover{filter: drop-shadow(0 2px 1px rgb(165, 165, 165));}
-#win98:hover{filter: drop-shadow(0 0 5px rgb(255, 255, 255));}
-#win2000:hover{filter: drop-shadow(0 0 5px rgb(0,0,0));}
-#xp:hover{filter: drop-shadow(0 0 3px rgb(0,0,0));backdrop-filter: blur(0px);}
-#vista:hover{filter: drop-shadow(0 0 2px #fff); backdrop-filter: blur(0px);}
-#win7:hover {filter: drop-shadow(0 0 2px rgb(255,255,255)); }
-#win8:hover {background-color: #3682a0;}
-#win10:hover {background-color: #2a5792;}
-#win11:hover {background-color: white;}
-.softbutton:hover {background-size: 11vw; background-color:#5851b9; font-size: 32px;}
+.softbutton_ex:hover {
+    padding: 3vh;
+    padding-right: 4vw;
+    background-size: 10vw;
+    font-size: 32px;
+}
+
+#me:hover {
+    filter: drop-shadow(0 0 5px rgb(94, 141, 92));
+}
+
+#win95:hover {
+    filter: drop-shadow(0 0 8px rgb(255, 255, 255));
+}
+
+#win123:hover {
+    filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+}
+
+#win31:hover {
+    filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+}
+
+#nt35:hover {
+    filter: drop-shadow(0 3px 2px rgb(63, 63, 63));
+}
+
+#nt4:hover {
+    filter: drop-shadow(0 4px 1px rgb(126, 191, 245));
+}
+
+#srv03:hover {
+    filter: drop-shadow(0 2px 1px rgb(43, 43, 43));
+}
+
+#srv08:hover {
+    filter: drop-shadow(0 2px 1px rgb(0, 0, 0));
+}
+
+#srv12:hover {
+    filter: drop-shadow(0 2px 1px rgb(165, 165, 165));
+}
+
+#srv16:hover {
+    filter: drop-shadow(0 2px 1px rgb(165, 165, 165));
+}
+
+#win98:hover {
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+}
+
+#win2000:hover {
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+}
+
+#xp:hover {
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+    backdrop-filter: blur(0px);
+}
+
+#vista:hover {
+    filter: drop-shadow(0 0 2px #fff);
+    backdrop-filter: blur(0px);
+}
+
+#win7:hover {
+    filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+}
+
+#win8:hover {
+    background-color: #3682a0;
+}
+
+#win10:hover {
+    background-color: #2a5792;
+}
+
+#win11:hover {
+    background-color: white;
+}
+
+.softbutton:hover {
+    background-size: 11vw;
+    background-color: #5851b9;
+    font-size: 32px;
+}
 
 @keyframes hover {
-    0% {padding: 16px;}
-    100% {padding: 20px;}
+    0% {
+        padding: 16px;
+    }
+
+    100% {
+        padding: 20px;
+    }
 }
 
 body {
-    background-color:black;
-    
+    background-color: black;
+
 }
 
-#osflex-1, #osflex-2 {
-    width:100%;
+#osflex-1,
+#osflex-2 {
+    width: 100%;
     gap: 10px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
-#osinflex-1, #osinflex-2 {
+#osinflex-1,
+#osinflex-2 {
     width: 100%;
     gap: 10px;
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
 .textseperator {
-    color:white;
+    color: white;
     font-family: 'Rubik';
     border: 2px solid white;
     border-radius: 7px;
@@ -398,9 +471,9 @@ body {
 }
 
 #credits {
-    color:white;
+    color: white;
     font-family: 'Rubik';
-    display:inline-flex;
+    display: inline-flex;
     position: absolute;
     font-size: 80%;
     bottom: 0;
@@ -408,16 +481,16 @@ body {
 }
 
 .textseperator {
-    color:white;
-    position:relative;
-    margin:0;
+    color: white;
+    position: relative;
+    margin: 0;
     font-family: 'Rubik';
-    text-align:center;
-    font-size:1vw
+    text-align: center;
+    font-size: 1vw
 }
 
 li {
-    display:inline;
+    display: inline;
     font-family: 'Rubik';
     font-size: 20px;
     font-weight: bolder;
@@ -428,10 +501,10 @@ li {
 
 ul {
     padding: 0;
-    margin:0;
+    margin: 0;
     column-gap: 20px;
     margin-bottom: 20px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -439,34 +512,55 @@ ul {
 .active-list-item {
     background-color: #969696;
     transition: 0.3s;
-    cursor:default;
+    cursor: default;
 }
 
 .deactive-list-item {
     background-color: #000000;
     transition: 0.5s;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /** Mozilla Firefox */
 @-moz-document url-prefix() {
-    #vista{
+    #vista {
         backdrop-filter: none;
     }
 
     #xp {
         backdrop-filter: none;
     }
-    }
+}
+
 @media only screen and (max-width: 600px) {
     #osflex-1 {
         flex-direction: column;
-        height:280px;
+        height: 280px;
     }
+
     #osflex-2 {
         height: 120px;
     }
-    #win11, #win10, #win8, #win7, #vista, #xp, #win2000, #me, #win98, #win95, #win31, #win123, #srv, #srv16, #srv12, #srv08, #srv03, #nt4, #nt35 {
+
+    #win11,
+    #win10,
+    #win8,
+    #win7,
+    #vista,
+    #xp,
+    #win2000,
+    #me,
+    #win98,
+    #win95,
+    #win31,
+    #win123,
+    #srv,
+    #srv16,
+    #srv12,
+    #srv08,
+    #srv03,
+    #nt4,
+    #nt35 {
         padding: 2.3vh 10.53vw 2.3vh 10.53vw;
         background-size: contain;
     }

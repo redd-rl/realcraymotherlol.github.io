@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Windows Vista Download Repository</title>
   <meta content="Windows Vista Download Repository" property="og:title" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Windows Vista Download Repository" property="og:description" />
-    <meta content="realcraymotherlol.github.io/stuff/os/Windowsvista" property="og:url" />
-    <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png" property="og:image" />
-    <meta content="#dea300" data-react-helmet="true" name="theme-color" />
-    <link rel="stylesheet" href="../../CSS/operatingSystemPages/windowsVista.css">
-    <link rel="stylesheet" href="https://unpkg.com/7.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Windows Vista Download Repository" property="og:description" />
+  <meta content="realcraymotherlol.github.io/stuff/os/Windowsvista" property="og:url" />
+  <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
+    property="og:image" />
+  <meta content="#dea300" data-react-helmet="true" name="theme-color" />
+  <link rel="stylesheet" href="../../CSS/operatingSystemPages/windowsVista.css">
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
   <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet">
 </head>
+
 <body>
-<div id="aeroborder">
-<form onsubmit="validateForm(event)">
-  <img id="logo" src="../../images/winvistalogo.png" alt="Windows 11 Logo">
-  <select autocomplete="off" name="build" id="build">
-    <option value="" selected disabled>Select Build</option>
-  </select>
-  <div id="architecture-container" class="fade-in" style="display: none; max-width: 100%; width:20em;">
-    <select autocomplete="off" name="architecture" id="architecture">
-      <option value="" selected disabled>Select Architecture</option>
-    </select>
+  <div id="aeroborder">
+    <form onsubmit="validateForm(event)">
+      <img id="logo" src="../../images/winvistalogo.png" alt="Windows 11 Logo">
+      <select autocomplete="off" name="build" id="build">
+        <option value="" selected disabled>Select Build</option>
+      </select>
+      <div id="architecture-container" class="fade-in" style="display: none; max-width: 100%; width:20em;">
+        <select autocomplete="off" name="architecture" id="architecture">
+          <option value="" selected disabled>Select Architecture</option>
+        </select>
+      </div>
+      <div id="version-container" class="fade-in" style="display: none; max-width: 100%; width:20em;">
+        <select autocomplete="off" name="version" id="version">
+          <option value="" selected disabled>Select Version</option>
+        </select>
+      </div>
+      <button class="gray" type="submit" id="download-button" value="Download" disabled>Download</button>
+    </form>
   </div>
-  <div id="version-container" class="fade-in" style="display: none; max-width: 100%; width:20em;">
-    <select autocomplete="off" name="version" id="version">
-      <option value="" selected disabled>Select Version</option>
-    </select>
-  </div>
-  <button class="gray" type="submit" id="download-button" value="Download" disabled>Download</button>
-</form>
-</div>
   <script src="../../Javascript/WindowsVista.js"></script>
 </body>
