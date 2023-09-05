@@ -114,25 +114,21 @@ a {
 }
 
 #win11div {
-    border: 2px solid #0b3e72;
+    border: 2px solid #25407c;
     transition: 0.5s;
-    background-color: #191852;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #182652;
 }
 
 #win10div {
     border: 2px solid #0b3e72;
     transition: 0.5s;
     background-color: #183152;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #win8div {
-    border: 2px solid #0b4c72;
+    border: 2px solid #1c0338;
     transition: 0.5s;
-    background-color: #043c5c;
+    background-color: #2d045c;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -322,6 +318,102 @@ a {
     filter: none;
 }
 
+
+#mddiv {
+    border: 2px solid #44003e;
+    transition: 0.5s;
+    background: linear-gradient(#ff0000, #0000FF);
+}
+
+#md {
+    background-image: url(../images/mdwin.svg);
+    display: block;
+    filter: drop-shadow(0 1px 1px rgba(17, 26, 109, 0.712));
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    image-rendering: auto;
+}
+
+#winem2009div {
+    border: 2px solid #173949;
+    transition: 0.5s;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/74c3ad32-ce0a-4e42-9494-7de4536aaea9/ddy5em6-ce6ae2be-bca0-4efa-804a-3708db9c8f02.jpg/v1/fill/w_1280,h_960,q_75,strp/windows_embedded_posready_2009__no_logo__by_dvorak128_ddy5em6-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvNzRjM2FkMzItY2UwYS00ZTQyLTk0OTQtN2RlNDUzNmFhZWE5XC9kZHk1ZW02LWNlNmFlMmJlLWJjYTAtNGVmYS04MDRhLTM3MDhkYjljOGYwMi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZAyOw00EqVMcKR2niCBwcwSXh_m84yT1wwUMOOWtG70");
+    background-size: cover;
+}
+
+#winem2009 {
+    background-image: url(../images/winem2009logo.svg);
+    display: block;
+    filter: drop-shadow(0 1px 1px rgba(17, 26, 109, 0.712));
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    image-rendering: auto;
+}
+
+#winem7div {
+    border: 2px solid #173949;
+    transition: 0.5s;
+    background-image: url("https://wallpapercave.com/wp/wp8729295.jpg");
+    background-size: cover;
+}
+
+#winem7 {
+    background-image: url(../images/winem7logo-svg.svg);
+    display: block;
+    filter: drop-shadow(0 1px 1px rgba(17, 26, 109, 0.712));
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    image-rendering: auto;
+}
+
+#winem8div {
+    background: url("https://i.imgur.com/Ix90YjI.png") padding-box, linear-gradient(90deg, rgb(30, 152, 233), rgb(194, 122, 28)) border-box;
+    border: 2px solid transparent;
+    transition: 0.5s;
+    background-size: cover;
+    background-position: center;
+}
+
+#winem8 {
+    background-image: url(https://betawiki.net/images/1/17/Windows_Embedded_8_logo_and_wordmark.svg);
+    display: block;
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(1px 1px 3px rgb(0, 67, 112));
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    image-rendering: auto;
+}
+
+#pocket2000div {
+    background-color: white;
+    border: 2px solid rgb(187, 187, 187);
+    transition: 0.5s;
+    background-size: cover;
+    background-position: center;
+}
+
+#pocket2000 {
+    background-image: url(../images/PPC2000logo.svg);
+    display: block;
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    image-rendering: auto;
+}
+
+#pocket2002div {
+    background-color: white;
+    border: 2px solid rgb(187, 187, 187);
+    transition: 0.5s;
+    background-size: cover;
+    background-position: center;
+}
+
+#pocket2002 {
+    background-image: url(../images/ppc2002logo.svg);
+    display: block;
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+    image-rendering: auto;
+}
+
 #win123div {
     border: 2px solid #1a1749;
     transition: 0.5s;
@@ -402,7 +494,7 @@ a {
 }
 
 #win8:hover {
-    background-color: #3682a0;
+    background-color: #57189e;
 }
 
 #win10:hover {
@@ -444,8 +536,10 @@ body {
     align-items: center;
 }
 
-#osinflex-1,
-#osinflex-2 {
+#osinflex-consumer,
+#osinflex-server,
+#osinflex-embedded,
+#osinflex-mobile   {
     width: 100%;
     gap: 10px;
     display: flex;
@@ -458,10 +552,11 @@ body {
 .textseperator {
     color: white;
     font-family: 'Rubik';
+    margin: 0;
     border: 2px solid white;
     border-radius: 7px;
     text-align: center;
-    height: 2.5vh;
+    height: 22px;
     width: 14vw;
 }
 
