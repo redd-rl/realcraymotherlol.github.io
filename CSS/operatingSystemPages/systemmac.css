@@ -44,9 +44,7 @@ select#build{
 }
 
 button[type="submit"] {
-  position: relative;
-  right:auto;
-  cursor: default;
+  cursor: url('../../WinSiteCursors/cursor.cur'), auto;
 }
 
 .slide-down {
@@ -71,7 +69,8 @@ select.show {
   opacity: 1;
 }
 
-form {
+.window-pane {
+  width:90.5%;
   text-align: center;
   border-radius: 1px;
   display:inline-flex;
@@ -89,6 +88,7 @@ select {
     width: 20rem;
     margin-bottom: 5px;
     max-width: 100%;
+    cursor: url('../../WinSiteCursors/cursor.cur'), auto;
 }
 
 @font-face {
