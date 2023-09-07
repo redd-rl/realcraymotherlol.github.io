@@ -8,7 +8,17 @@ body {
   color: #fff;
   font-family: 'Lexend';
   cursor: url('../../WinSiteCursors/cursor.cur'), auto;
+} 
+
+.title-bar .title {
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
 }
+
+.window {
+  width: 35%;
+}
+
 .window-pane {
   padding: 6rem 2rem;
 }
@@ -63,31 +73,22 @@ select.show {
 
 form {
   text-align: center;
-  width: 100%;
-  height: 81vh;
   border-radius: 1px;
   display:inline-flex;
   flex-direction: column;
   border-top-width: 2px;
   border-top-style: solid;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;  
   font-family: 'SegoeUIWin11';
 }
 
 
-
 select {
-    width: 30em;
+    width: 20rem;
     margin-bottom: 5px;
     max-width: 100%;
-}
-
-select:focus {
-  outline: none;
-  background-color: rgba(230, 230, 230, 0.6);
-  background-image: url(../../images/Arrow-down.svg);
 }
 
 @font-face {
