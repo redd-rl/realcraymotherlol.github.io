@@ -235,6 +235,66 @@
     padding: 3.2vh 5.53vw 3.2vh 5.53vw;
 }
 
+#osX105div {
+    background-image: url(https://9to5mac.com/wp-content/uploads/sites/6/2017/07/leopard.jpg?quality=82&strip=all&w=1600);
+    border: 2px solid #3d3d3d;
+    background-position: center;
+    background-size: 220px;
+    transition: 0.5s;
+}
+
+#osX105 {
+    background-image: url(https://betawiki.net/images/d/db/OSXLeopard.svg);
+    filter:drop-shadow(0px 0px 1px rgba(255,255,255,1));
+    background-size: 40px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#osX106div {
+    background-image: url(https://blog.greggant.com/images/posts/2021-09-25-preview/aurora-preview.jpg);
+    border: 2px solid #3d3d3d;
+    background-position: center;
+    background-size: 220px;
+    transition: 0.5s;
+}
+
+#osX106 {
+    background-image: url(../images/osxsnowleopard.svg);
+    filter:drop-shadow(0px 0px 1px rgba(255,255,255,1));
+    background-size: 40px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#osX107div {
+    background-image: url(https://wallpaperaccess.com/full/910833.jpg);
+    border: 2px solid #3d3d3d;
+    background-position: center;
+    background-size: 220px;
+    transition: 0.5s;
+}
+
+#osX108 {
+    background-image: url(https://i.imgur.com/9oendSX.png);
+    filter:drop-shadow(0px 0px 1px rgba(255,255,255,1));
+    background-size: 40px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
+#osX108div {
+    background-image: url(https://wallpaperaccess.com/full/910833.jpg);
+    border: 2px solid #3d3d3d;
+    background-position: center;
+    background-size: 220px;
+    transition: 0.5s;
+}
+
+#osX107 {
+    background-image: url(https://i.imgur.com/9oendSX.png);
+    filter:drop-shadow(0px 0px 1px rgba(255,255,255,1));
+    background-size: 40px;
+    padding: 3.2vh 5.53vw 3.2vh 5.53vw;
+}
+
 #nt4div {
     border: 2px solid #173149;
     transition: 0.5s;
@@ -555,4 +615,16 @@
 
 #osX104:hover {
     background-size: 150px;
+}
+
+#osX105:hover {
+    background-size: 47px;
+}
+
+#osX106:hover {
+    background-size: 47px;
+}
+
+#osX107:hover {
+    background-size: 47px;
 }

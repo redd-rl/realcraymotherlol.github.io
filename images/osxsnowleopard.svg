@@ -1,0 +1,32 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186 236" width="186" height="236">
+	<title>OSXLeopard-svg</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(37.985,115.699,-224.883,73.831,92.937,11.281)">
+			<stop offset="0" stop-color="#000000"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(133.82,288.386,-355.132,164.792,71.738,62.341)">
+			<stop offset="0" stop-color="#000000"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: url(#g2) } 
+		.s2 { fill: #ffffff } 
+	</style>
+	<g id="layer1">
+		<path id="path2830" class="s0" d="m52.5 12h-52.5l48.8 79.6c0 0 27.4-18.7 35.5-22.5zm85.3 0l-25.2 41.8c0 0 44.7-20.5 59.9-20.9l13.4-20.9z"/>
+		<path id="path3615" class="s1" d="m48.6 91.4c0 0 33.6-21.7 35.5-22.5l8.8 15.5 20.4-31.6c0 0 44.6-19.7 59.3-20.2l-53.7 89.6 66.2 113.9h-46l-46-76.2-44.7 76.2h-48.1l69-113.2z"/>
+	</g>
+	<g id="layer 2">
+		<path id="Layer 1" class="s2" d="m0 13l52-1-1.6-1.5c-6.5-6-14.8-9.6-23.6-10l-5.5-0.3c-2.2-0.1-10.5 1-12.5 1.8-3.8 2.6-6.8 6.2-8.6 10.5zm0 0l52-1-1.6-1.5c-6.4-6-14.8-9.6-23.6-10.1l-5.5-0.2c-2.2-0.2-10.5 1-12.5 1.8-3.8 2.6-6.7 6.2-8.6 10.5z"/>
+		<path id="Layer 2" class="s2" d="m79 59l14 25 17-27c0 0-6.6 5.2-14 1-5.4-3-17 1-17 1z"/>
+		<path id="Layer 3" class="s2" d="m93 84l2 16 2 7 2 4.2 4 1.8c3.6-0.6 6.3-3.5 6.8-7l0.2-2 1-8 0.6-9.4-1.6-7.7-3.3-5.6c-0.9-1.8-3.4-1.9-4.8-3.5l-0.5-0.6z"/>
+		<path id="Shape 1" class="s2" d="m31 45v2.7c0 2.5 1.8 4.6 4.3 4.9l2.7 0.4-2-7"/>
+		<path id="Shape 1 copy" class="s2" d="m129 112v2.7c0 2.5 1.8 4.6 4.3 4.9l2.7 0.4-0.4-3.4c-0.3-3.3-3.5-5.4-6.6-4.6z"/>
+		<path id="Shape 1 copy 2" class="s2" d="m68 138v2.7c0 2.5 1.8 4.6 4.3 4.9l2.7 0.4-0.4-3.4c-0.3-3.3-3.5-5.4-6.6-4.6z"/>
+		<path id="Shape 1 copy 3" class="s2" d="m141 207v2.7c0 2.5 1.8 4.6 4.3 4.9l2.7 0.4-0.4-3.4c-0.3-3.3-3.5-5.4-6.6-4.6z"/>
+		<path id="Shape 1 copy 4" class="s2" d="m49 196v2.7c0 2.5 1.8 4.6 4.3 4.9l2.7 0.4-0.4-3.4c-0.3-3.3-3.5-5.4-6.6-4.6z"/>
+	</g>
+</svg>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Windows XP Download Repository</title>
+  <meta content="Windows XP Download Repository" property="og:title" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+  <meta content="Windows XP Download Repository" property="og:description" />
+  <meta content="realcraymotherlol.github.io/stuff/os/WindowsXP" property="og:url" />
+  <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
+    property="og:image" />
+  <meta content="#dea300" data-react-helmet="true" name="theme-color" />
+  <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet">
+  <link rel="stylesheet" href="../../CSS/operatingSystemPages/systemmac.css">
+</head>
+
+<body>
+  <div class="window">
+    <div class="title-bar">
+      <button aria-label="Close" class="close"></button>
+      <h1 style="color:black"class="title">System Repository</h1>
+      <button aria-label="Resize" class="resize"></button>
+    </div>
+    <div class="details-bar">
+      <span>some</span>
+      <span>more</span>
+      <span>details</span>
+    </div>
+
+    <div onsubmit="validateForm(event)" class="window-pane">
+      <select autocomplete="off" name="build" id="build">
+        <option value="" selected disabled>Select Build</option>
+      </select>
+      <div id="architecture-container" class="fade-in" style="display: none;">
+        <select autocomplete="off" name="architecture" id="architecture">
+          <option value="" selected disabled>Select Architecture</option>
+        </select>
+      </div>
+      <div id="version-container" class="fade-in" style="display: none;">
+        <select autocomplete="off" name="version" id="version">
+          <option value="" selected disabled>Select Version</option>
+        </select>
+      </div>
+      <button class="btn" type="submit" id="download-button" value="Download" disabled>Download</button>
+    </div>
+  </div>
+</body>
+<script src="../../Javascript/systemmac.js"></script>

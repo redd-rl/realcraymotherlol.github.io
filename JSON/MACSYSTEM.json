@@ -1,0 +1,25 @@
+{
+  "System 1.0": {
+    "68k": {
+      "English/Finder 0.85": "https://archive.org/download/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332_202212/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso",
+      "English/Finder 0.97": "https://archive.org/download/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332_202212/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso"
+    }
+  },
+  "System 1.1": {
+    "68k": {
+      "English/1.1d": "https://archive.org/download/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332_202212/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso",
+      "English/1.1g": "https://archive.org/download/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332_202212/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso",
+      "English/1.1h": "https://archive.org/download/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332_202212/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso"
+    }
+  },
+  "System 2.0": {
+    "68k": {
+      "English": ""
+    }
+  },
+  "System 2.1": {
+    "68k": {
+      "English": ""
+    }
+  }
+}
