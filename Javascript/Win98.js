@@ -118,7 +118,7 @@ fetchOSInfo().then(data => {
   }
   
   function fadeOut(element) {
-    element.style.opacity = "0";
+    element.style.opacity = "0"; 
       element.style.display = "none";
     }
   }

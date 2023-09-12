@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <title>Windows XP Download Repository</title>
+  <title>Windows 98 Download Repository</title>
   <meta content="Windows XP Download Repository" property="og:title" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
   <meta content="Windows XP Download Repository" property="og:description" />
   <meta content="realcraymotherlol.github.io/stuff/os/WindowsXP" property="og:url" />
   <link rel="stylesheet" href="https://unpkg.com/98.css" />
@@ -15,32 +15,34 @@
   <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet">
   <link rel="stylesheet" href="../../CSS/operatingSystemPages/Win98.css">
 </head>
+
 <body>
-<div id="setuplg"></div>
+  <div id="setuplg"></div>
   <div id="BG">
-  <div class="window">
-    <div class="title-bar"><b>Windows 98 ISO Repository</b>
-    </div>
-    <form onsubmit="validateForm(event)">
-      <div id="dia">Choose your build of Windows 98</div>
-      <p style="text-align:center; color:black;">Welcome to the Windows 98 Repository Wizard.</p>
-      <select autocomplete="off" name="build" id="build">
-        <option value="" selected disabled>Select Build</option>
-      </select>
-      <div id="architecture-container" class="fade-in" style="display: none;">
-        <select autocomplete="off" name="architecture" id="architecture">
-          <option value="" selected disabled>Select Architecture</option>
-        </select>
+    <div class="window">
+      <div class="title-bar"><b>Windows 98 ISO Repository</b>
       </div>
-      <div id="version-container" class="fade-in" style="display: none;">
-        <select autocomplete="off" name="version" id="version">
-          <option value="" selected disabled>Select Version</option>
-        </select>
-      </div>
+      <img src="../../images/setupvertbanner.png" id="setupbanner"></img>
       <div id="outlinebtn"></div>
-      <button class="gray" type="submit" id="download-button" value="Download" disabled>Download</button>
-    </form>
+      <form onsubmit="validateForm(event)">
+        <div style="text-align:center; color:black;">Welcome to the Windows 98 Repository Wizard.</div>
+        <select autocomplete="off" name="build" id="build">
+          <option value="" selected disabled>Select Build</option>
+        </select>
+        <div id="architecture-container" class="fade-in" style="display: none;">
+          <select autocomplete="off" name="architecture" id="architecture">
+            <option value="" selected disabled>Select Architecture</option>
+          </select>
+        </div>
+        <div id="version-container" class="fade-in" style="display: none;">
+          <select autocomplete="off" name="version" id="version">
+            <option value="" selected disabled>Select Version</option>  
+          </select>
+        </div>
+        <button class="gray" type="submit" id="download-button" value="Download" disabled>Download</button>
+      </form>
+    </div>
   </div>
-  </div>
-  <script src="../../Javascript/Win98.js"></script>
+  <script src="../../Javascript/Win98.js">
+  </script>
 </body>

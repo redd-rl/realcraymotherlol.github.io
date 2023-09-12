@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 29" width="488" height="29">
+	<title>New Project</title>
+	<defs>
+		<image aria-label="Choose your build of Windows 98."  width="490" height="31" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeoAAAAfAQMAAAASixxnAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TAP9bkSK1AAACvElEQVR4nKXUPW7bMBQAYKocXocWXDuJB6kgXinZVJSwaQSoRt+gPUokeNAW3yCgoKFjmMkcWLLvUbbrJG7awBxMiPYnmu+HjF02uAdzZlnQh7tiJc26cIJd28NyHksGnhbiK9xnXoTCSfP4hBepkxFnmf6DsxecJ6sSzur2n5zbM3xyC4mwFu1fOdvzjnlpLDvlYLymfTUM387xT5nzA1c98eLIhfHNnt8aacCC47gZ7wN0djJiwTvnvLzHk4vAGtWP42TFFp94PwbkTeYNH1K3tNJLD4FJ3kbo3c6IdENcRcYjck38wcnEE/Ip4SkaPXNINjkVZBCRCb5OyNOBLyODRPxz348PXiVI67YfkBu9FDk6MFnv67oqS8EErPFr4u2GuF4wsb7pmP469eMvXyuxbdtxCwZMUHHm/egaXVasEqgkIMez8cx9zSRsOlZ9Qe4bLQUM7bTFyPdBhZmvRqsbWbMKX9qWMPSYb8GnzEuMJvL6eqJNGin5MExrg0eis858stpL1RHflvyUuyPfrYgLfNpOa4dVF2Q68soLhYEx/K4m7p7z8hG5zXy627UJa17jz0+4jK9x95Qbtmi06nLeZw6xwgKL57m06cjjrqB9Gw/I9Z5LlipqrvLAN894sed9WLK8r8schjnyTM4cDrw/ibzYc4w8cYLeYS9Qx+W/Vb4XNZgiYN43xGHm+7wLuySOeUe+eMc7bpyHwTD1A7n3utZSYhV6LLKfxNvNdFJ1wi6IY9WtTVgI3mFlB2p1vG1WueZVpER6gV1BPN2kueZxAXmXOdW88bXAFCW7TMjxrlvZ3HG5jDxEHpF/TEWkjrvH+kIOXU1cPvDEfA2U907RNQcBueqEEx77nV3xUATkHyIL1O/fMZp/OPU7ayqO+2BXhZfX3NWZm+cN4zJe2Iu4uJB3l3FzEX/r+A3JX0Eeva3e7gAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Choose your build of Windows 98." href="#img1" x="-1" y="-1"/>
+</svg>
