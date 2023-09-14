@@ -51,7 +51,7 @@ body {
     border-radius: 50%;
     margin-left: 50px;
     width: 20%;
-    border: 2px solid white;
+    border: 3px solid white;
     background-size: cover;
     background-position: center;
     background-image: url(../images/pfp.png);
@@ -61,6 +61,48 @@ body {
     position: relative;
     left: 35%;
 }
+
+.fa-brands {
+    text-decoration: none;
+    color:white;
+}
+
+.fa-discord:hover #tooltipdiscord {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fa-brands:hover {
+    color:#d8d79e;
+}
+
+
+.fa-discord #tooltipdiscord {
+    visibility: hidden;
+    width: 120px;
+    background-color: #757300;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -5.8%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .fa-discord #tooltipdiscord::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #757300 transparent transparent transparent;
+  }
 
 #description {
     position: relative;
