@@ -98,25 +98,13 @@ body {
     font-weight: 700;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
-    left: -2rem;
+    bottom: 105%;
+    left: 74.27%;
     opacity: 0;
     transition: opacity 0.3s;
-  }
-  
-  .fa-discord #tooltipdiscord::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #fffeb6 transparent transparent transparent;
   }
 
 #description {
     position: relative;
-    /* left: 3%; */
     top: 15px;
 }
