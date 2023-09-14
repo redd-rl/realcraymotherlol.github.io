@@ -8,18 +8,25 @@ body {
 }
 
 #box {
-    width: 45rem;
-    height: 27rem;
+    width: 49rem;
+    min-height: 26rem;
+    padding:15px;
     border: 3px solid white;
     border-radius: 6px;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    box-sizing:border-box; 
+    box-sizing:border-box;
+    overflow-y: scroll; 
+    overflow-x: hidden;
 }
 
 #box p {
-    overflow-wrap: break-word;  
+    word-break: break-all;
+}
+
+#box::-webkit-scrollbar {
+    display:none;
 }
 
 .flex {
@@ -41,13 +48,11 @@ body {
 #title {
     font-size: xx-large;
     top: 25px;
-    left: 3%;
 }
 
 #title2 {
     font-size: large;
     top: 10px;
-    left: 3.3%;
 }
 
 #pfp {
@@ -64,7 +69,7 @@ body {
 
 #realname {
     position: relative;
-    left: 15.5rem;
+    left: 14rem;
 }
 
 .fa-brands {
@@ -94,7 +99,7 @@ body {
     position: absolute;
     z-index: 1;
     bottom: 125%;
-    left: -5.8%;
+    left: -2rem;
     opacity: 0;
     transition: opacity 0.3s;
   }
@@ -112,6 +117,6 @@ body {
 
 #description {
     position: relative;
-    left: 3%;
+    /* left: 3%; */
     top: 15px;
 }

@@ -52,7 +52,7 @@
     font-size: 23px;
     width: 150px;
     box-sizing: border-box;
-    transition: 0.5s;
+    transition: 0.3s;
     border-radius: 10px 20px 20px 10px;
 }
 
@@ -67,15 +67,15 @@
     font-size: 23px;
     width: 150px;
     box-sizing: border-box;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 #bt-1:hover {
-    background-color: #5c4eaf
+    background-color: #415dda
 }
 
 #bt-1:active {
-    background-color: #8475da;
+    background-color: #1b1e81;
 }
 
 #bt-2:hover {
@@ -83,7 +83,7 @@
 }
 
 #bt-2:active {
-    background-color: #d17792;
+    background-color: #552432;
 }
 
 body {
