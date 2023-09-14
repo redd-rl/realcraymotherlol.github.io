@@ -9,13 +9,15 @@ body {
 
 #box {
     width: 46rem;
-    height: 440px;
+    height: 27rem;
     border: 3px solid white;
     border-radius: 6px;
     overflow:hidden;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    overflow-wrap: break-word; 
+    box-sizing:border-box;
 }
 
 .flex {
@@ -47,11 +49,11 @@ body {
 }
 
 #pfp {
-    height: 40%;
+    height: 24rem;
     background-repeat: no-repeat;
     border-radius: 50%;
     margin-left: 50px;
-    width: 25rem;
+    width: 24rem;
     border: 3px solid white;
     background-size: cover;
     background-position: center;
@@ -60,7 +62,7 @@ body {
 
 #realname {
     position: relative;
-    left: 35%;
+    left: 15.5rem;
 }
 
 .fa-brands {
