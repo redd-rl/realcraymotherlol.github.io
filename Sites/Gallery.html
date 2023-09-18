@@ -1,0 +1,54 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta content="Cray's gallery" property="og:title" />
+    <meta content="Cray's gallery" property="og:description" />
+    <meta content="realcraymotherlol.github.io/stuff/games" property="og:url" />
+    <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
+        property="og:image" />
+    <meta content="#dea300" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/gallery.css">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <ul style="color:white;">
+        <li class="active-list-item" onclick="toggleliflex('galflex-1', 'li-1')" id="li-1">VIDEOS</li>
+        <li class="deactive-list-item" onclick="toggleliflex('galflex-2', 'li-2')" id="li-2">DRAWINGS</li>
+        <li class="deactive-list-item" onclick="toggleliflex('galflex-3', 'li-3')" id="li-3">RENDERS</li>
+    </ul>
+    <div class="parallax"></div>
+    <div style="display:flex;" id="galflex-1">
+        <div class="videoplayer">
+            <div width="100%" height="100vh" class="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yvnFklqr23I"></iframe>
+            </div>
+        </div>
+        <div class="videolist">
+            <div class="vid active">
+                <div class="source" src="yvnFklqr23I"></div>
+                <h3 class="title" style="text-align:center; color:white;">Rain Day</h3>
+            </div>
+            <div class="vid">
+                <div class="source" src="tW8jXR3pvDY"></div>
+                <h3 class="title" style="text-align:center; color:white;">Daddy, Daddy, Daddy</h3>
+            </div>
+            <div class="vid">
+                <div class="source" src="jenN2KhEdso"></div>
+                <h3 class="title" style="text-align:center; color:white;">MC Evolution EP2: Alpha 1.1.2</h3>
+            </div>
+            <div class="vid">
+                <div class="source" src="xZzEo1hZ6Cw"></div>
+                <h3 class="title" style="text-align:center; color:white;">MC Evolution EP1: Alpha 1.0.17_02</h3>
+            </div>
+        </div>
+    </div>
+    <div style="display:none; "id="galflex-2">
+    </div>
+    <div style="display:none; "id="galflex-3">
+    </div>
+</body>
+<script src="../Javascript/Gallery.js"></script>
+</html>
