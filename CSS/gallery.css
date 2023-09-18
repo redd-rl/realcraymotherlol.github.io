@@ -1,10 +1,12 @@
 
 body {
     background-color: black;
+    overflow:hidden;
 }
 
 .videoplayer {
     width: 60rem;
+    padding:15px;
     height: 36rem;  
     border: 3px solid white;
     border-radius: 6px;
@@ -17,7 +19,7 @@ body {
 }
 
 .videolist {
-    width: 28rem;
+    width: 26rem;
     min-height: 70vh;
     overflow-y:scroll;
     padding:15px;
@@ -27,13 +29,31 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     box-sizing:border-box;
-    overflow-y: scroll; 
-    overflow-x: hidden;
+}
+
+.parallax {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #galflex-1 {
     position: absolute;
     z-index: 1;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+#galflex-2 {
+    position: relative;
+    z-index: 2;
     bottom: 0;
     top: 0;
     left: 0;
@@ -52,6 +72,7 @@ body {
     padding: 10px;
     border: 2px solid white;
     cursor:pointer;
+    justify-content: center;
 }
     
 .vid.active {
@@ -102,4 +123,41 @@ ul {
     background-color: #000000;
     transition: 0.5s;
     cursor: pointer;
+}
+
+.imagebox {
+    width: 15rem;
+    height: fit-content;
+    border-radius: 5px;
+    border:2px solid white;
+    z-index: 1; 
+    background-size: contain;
+}
+
+#img-1{
+    content:url(https://cdn.discordapp.com/attachments/1141738348105453629/1152987928344154182/Deep_Belief.png);
+}
+
+#img-2{
+    content:url(https://drive.google.com/uc?id=1Y1SiG3mTMsk2fKo4vVb751xTzk8qx6Ge);
+}
+
+#img-3{
+    content:url(https://cdn.discordapp.com/attachments/924057221178998796/1153300379463864330/Sippy.png);
+}
+
+#img-4{
+    content:url(https://cdn.discordapp.com/attachments/924057221178998796/1153300100999819294/mouth_moods.png);
+}
+
+#img-5{
+    content:url(https://cdn.discordapp.com/attachments/924057221178998796/1153299363402108978/doorshardmode.png); 
+}
+
+#img-6{ 
+    content:url(https://cdn.discordapp.com/attachments/924057221178998796/1153302546190975026/danger.png); 
+}
+
+#img-7{ 
+    content:url(https://cdn.discordapp.com/attachments/924057221178998796/1153309774549622804/grimace_sheriff.png); 
 }
