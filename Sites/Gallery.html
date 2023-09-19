@@ -15,13 +15,13 @@
 </head>
 
 <body>
-    <ul style="color:white;">
+    <ul id="btns" style="color:white;">
         <li class="active-list-item" onclick="toggleliflex('galflex-1', 'li-1')" id="li-1">VIDEOS</li>
         <li class="deactive-list-item" onclick="toggleliflex('galflex-2', 'li-2')" id="li-2">DRAWINGS</li>
         <li class="deactive-list-item" onclick="toggleliflex('galflex-3', 'li-3')" id="li-3">RENDERS</li>
     </ul>
     <div class="parallax"></div>
-    <div style="display:flex;" id="galflex-1">
+    <div shown="true" id="galflex-1">
         <div class="videoplayer">
             <div width="100%" height="100vh" class="video">
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yvnFklqr23I"></iframe>
@@ -46,17 +46,21 @@
             </div>
         </div>
     </div>
-    <div style="display:none; " id="galflex-2">
-        <a class="imagebox" id="img-1" href="https://cdn.discordapp.com/attachments/1141738348105453629/1152987928344154182/Deep_Belief.png"></a>
-        <a class="imagebox" id="img-2" href="https://drive.google.com/uc?id=1Y1SiG3mTMsk2fKo4vVb751xTzk8qx6Ge"></a>
-        <a class="imagebox" id="img-3" href="https://cdn.discordapp.com/attachments/924057221178998796/1153300379463864330/Sippy.png"></a>
-        <a class="imagebox" id="img-4" href="https://cdn.discordapp.com/attachments/924057221178998796/1153300100999819294/mouth_moods.png"></a>
-        <a class="imagebox" id="img-5" href="https://cdn.discordapp.com/attachments/924057221178998796/1153299363402108978/doorshardmode.png"></a>
-        <a class="imagebox" id="img-6" href="https://cdn.discordapp.com/attachments/924057221178998796/1153302546190975026/danger.png"></a>
-        <a class="imagebox" id="img-7" href="https://cdn.discordapp.com/attachments/924057221178998796/1153309774549622804/grimace_sheriff.png"></a>
-    </div>
-    <div style="display:none; "id="galflex-3">
+    <div shown="false" id="galflex-2">
+            <div style="background-image: url(https://cdn.discordapp.com/attachments/921303980913594389/1153364732972109886/somewhat_of_a_new_design.png);" class="chrbox" id="chr-1">
+                <div class="textcontainer">
+                    <div class="textalign">Cray The Bunny</div>
+                </div>
+            </div>
+            <div style="background-image: url(https://cdn.discordapp.com/attachments/921303980913594389/1153364732972109886/somewhat_of_a_new_design.png);" class="chrbox" id="chr-2">
+                <div class="textcontainer">
+                    <div class="textalign">BowTop</div>
+                </div>
+            </div>
+        </div>
+    <div shown="false" id="galflex-3">
     </div>
 </body>
 <script src="../Javascript/Gallery.js"></script>
+
 </html>
