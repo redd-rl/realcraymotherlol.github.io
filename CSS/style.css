@@ -99,6 +99,15 @@ body {
     src: url('../Fonts/ProtoPixel1.ttf');
 }
 
+@font-face {
+    font-family: 'VHS';
+    src: url(../Fonts/easvhs.ttf);
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url(../Fonts/coolvetica.otf);
+}
 
 #credits {
     color:white;
