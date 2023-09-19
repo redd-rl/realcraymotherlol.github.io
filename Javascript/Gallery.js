@@ -29,12 +29,12 @@ let VIDEOPLAYER = document.querySelector(".videoplayer iframe");
 let TITLEVIDEO = document.querySelector(".videoplayer .title")
 
 VIDEOLIST.forEach(div => {
-    div.onclick = () => {
-        VIDEOLIST.forEach(div => div.classList.remove('active'));
-        div.classList.add('active');
-        if (div.classList.contains('active')) {
-            let src = div.children[0].getAttribute('src');
-            VIDEOPLAYER.src = "https://www.youtube.com/embed/" + src;
-        };
-    };
-});
+       div.onclick = () => {
+           VIDEOLIST.forEach(div => div.classList.remove('active'));
+           div.classList.add('active');
+           if (div.classList.contains('active')) {
+               let src = div.children[0].getAttribute('src');
+               VIDEOPLAYER.src = "https://www.youtube.com/embed/" + src;
+           };
+       };
+   }); 
