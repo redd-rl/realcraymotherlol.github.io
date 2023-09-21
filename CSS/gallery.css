@@ -37,6 +37,18 @@ body {
     right: 0;
 }
 
+#galflex-3 {
+    position: relative;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    width: 100%;
+    height: 90%;
+    z-index: 2;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
 #galflex-1 {
     position: absolute;
     z-index: 1;
@@ -53,8 +65,8 @@ body {
     position: relative;
     grid-template-columns: auto auto auto auto auto auto auto;
     grid-template-rows: auto auto auto auto auto auto auto;
-    width:100%;
-    height:90%;
+    width: 100%;
+    height: 90%;
     z-index: 2;
     gap: 5px;
     align-items: center;
@@ -67,7 +79,7 @@ body {
     gap: 15px;
     border-radius: 5px;
     margin: 10px;
-    overflow:hidden;
+    overflow: hidden;
     padding: 10px;
     border: 2px solid white;
     cursor: pointer;
@@ -89,12 +101,37 @@ body {
 
 .title {
     font-family: 'Rubik';
-    width:100%;
-    margin:0;
+    width: 100%;
+    margin: 0;
+}
+
+#pagination {
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    left:40%;
+}
+
+#pagination a {
+    color: rgb(255, 255, 255);
+    float: left;
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Rubik';
+    background-color: #393a19;
+    transition: background-color .3s;
+    border: 1px solid #0e0d00;
+}
+
+#pagination a.active {
+    color: rgb(0, 0, 0);
+    background-color: #eedf5a;
+    color: white;
 }
 
 .source {
-    display:none;
+    display: none;
 }
 
 iframe {
@@ -145,9 +182,11 @@ ul {
 }
 
 .hyperlinkbox {
-    width:100%;
-    height:100%;
-    display:block;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 3;
+    position: relative;
 }
 
 .chrbox {
@@ -157,6 +196,18 @@ ul {
     background-size: contain;
     width: 10vw;
     border: 2px solid white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.artbox {
+    background-size: cover;
+    height: 10vw;
+    border-radius: 5px;
+    z-index: 1;
+    width: 10vw;
+    border: 2px solid white;
+    background-repeat: no-repeat;
 }
 
 #galflex-1[shown="false"],
@@ -165,12 +216,12 @@ ul {
     display: none;
 }
 
-#galflex-1[shown="true"],
-#galflex-3[shown="true"] {
+#galflex-1[shown="true"] {
     display: flex;
 }
 
-#galflex-2[shown="true"] {
+#galflex-2[shown="true"],
+#galflex-3[shown="true"] {
     display: grid;
 }
 
@@ -198,26 +249,38 @@ ul {
         width: 12vh;
         height: 12vh;
     }
-    #li-1,#li-2,#li-3 {
-        font-size:1.5vh;
+
+    #li-1,
+    #li-2,
+    #li-3 {
+        font-size: 1.5vh;
     }
+
     .textalign {
         font-size: 1.5vh;
     }
+
     .videoplayer {
         width: 40vh;
-        height:20vh;
+        height: 20vh;
     }
+
     .videolist {
-        width:15vh;
+        width: 15vh;
         height: 15vh;
     }
+
     .vid {
-        width:5vh;
-        height:2vh;
+        width: 5vh;
+        height: 2vh;
     }
+
     .title {
-        font-size:1vh;
-        margin:0;
+        font-size: 1vh;
+        margin: 0;
+    }
+
+    #galflex-2 {
+        grid-template-columns: auto auto auto;
     }
 }
