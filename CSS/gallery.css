@@ -63,7 +63,7 @@ body {
 
 #galflex-2 {
     position: relative;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto ;
     grid-template-rows: auto auto auto auto auto auto auto;
     width: 100%;
     height: 90%;
@@ -108,8 +108,9 @@ body {
 #pagination {
     position: absolute;
     bottom: 0;
-    right: 40%;
-    left:40%;
+    display:flex;
+    width: 100%;
+    justify-content: center;
 }
 
 #pagination a {
