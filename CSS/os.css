@@ -6,6 +6,10 @@ a {
     text-decoration: none;
 }
 
+.divborder {
+    display:inline-flex;
+    border-radius: 5px;
+}
 
 .softbutton {
     border-radius: 5px;

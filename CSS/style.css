@@ -1,3 +1,39 @@
+body {
+    background-color:black;  
+    height:100%;
+    overflow:hidden;
+}
+
+@keyframes hover {
+    0% {padding: 16px;}
+    100% {padding: 20px;}
+}
+
+@keyframes bokeh {
+    0% {opacity: 40%;}
+    100% {opacity: 75%}
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../Fonts/Rubik.ttf');
+}
+
+@font-face {
+    font-family: 'ProtoPixel';
+    src: url('../Fonts/ProtoPixel1.ttf');
+}
+
+@font-face {
+    font-family: 'VHS';
+    src: url(../Fonts/easvhs.ttf);
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url(../Fonts/coolvetica.otf);
+}
+
 
 a {
     font-family:'Courier New', Courier, monospace;
@@ -23,7 +59,7 @@ a {
     position: absolute;
     justify-content: center;
     align-items: center;
-    bottom: 270;
+    bottom: 270px;
     top: 0;
     right: 0;
     left: 0;
@@ -67,16 +103,6 @@ a {
     }
   }
   
-
-@keyframes hover {
-    0% {padding: 16px;}
-    100% {padding: 20px;}
-}
-
-body {
-    background-color:black;  
-}
-
 #flex {
     position: absolute;
     bottom: 0;
@@ -89,33 +115,14 @@ body {
     align-items:center
 }
 
-@font-face {
-    font-family: 'Rubik';
-    src: url('../Fonts/Rubik.ttf');
-}
-
-@font-face {
-    font-family: 'ProtoPixel';
-    src: url('../Fonts/ProtoPixel1.ttf');
-}
-
-@font-face {
-    font-family: 'VHS';
-    src: url(../Fonts/easvhs.ttf);
-}
-
-@font-face {
-    font-family: 'Coolvetica';
-    src: url(../Fonts/coolvetica.otf);
-}
-
 #credits {
     color:white;
     font-family: 'Rubik';
     display:inline-flex;
     position: absolute;
-    bottom: 25;
-    right: 20;
+    bottom: 0;
+    right: 0;
+    margin-right: 0.5%;
 }
 
 #credits span {
@@ -126,6 +133,7 @@ body {
 
 .parallax { 
     height:100%;
+    position: absolute;
     width:100%;
     background-size: 750px;
     background-repeat:repeat;
@@ -135,7 +143,3 @@ body {
     animation-direction: alternate;
 }
 
-@keyframes bokeh {
-    0% {opacity: 40%;}
-    100% {opacity: 75%}
-}
