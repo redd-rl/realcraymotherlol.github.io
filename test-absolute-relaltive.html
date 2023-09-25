@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-    <meta content="Cray's gallery" property="og:title">
-    <meta content="Cray's gallery" property="og:description">
-    <meta content="realcraymotherlol.github.io/stuff/games" property="og:url" />
-    <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
-        property="og:image" />
-    <meta content="#dea300" data-react-helmet="true" name="theme-color" />
-    <link rel="preload" as="image" href="https://drive.google.com/uc?id=1xBh26CkXaud45e2pY6QV1HCdDQwhfAcg">
-    <link rel="stylesheet" href="../../CSS/characters.css">
-    <link rel="stylesheet" href="../../CSS/style.css">
-    <title>Gallery</title>
+    <style>
+        #grid {
+            grid-auto-flow: column;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            column-gap: 30px;
+        }
+
+        .chrbox {
+            height: 8vw;
+            border-radius: 5px;
+            z-index: 1;
+            background-size: contain;
+            width: 8vw;
+            border: 2px solid white;
+        }
+        body {
+            background-color:black;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="display:flex; flex-wrap:wrap; justify-content: flex-end; margin: 5px 0 5px 0;">
-        <button class="side-panel-toggle" onclick="openNav()">About this character</button>
-    </div>
-        <div id="grid" style="display:grid;">
-            <div style="background-size: 120%; background-position-x:25%; background-position-y: center; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40661217_WGIHHFsywKml1YH.png?1640817571);" class="chrbox">
+    <div
+        style="position:relative; left:10%; display:flex; justify-content: flex-start; width:67%;border: 1px solid red;">
+        <div id="grid" style="display:grid;border: 1px solid orange;">
+            <div style="" class="chrbox">
                 <div class="textcontainer">
                     <a href="Characters/craythebunny" class="hyperlinkbox"></a>
                 </div>
             </div>
-            <div style="background-size: 180%; background-position-x:70%; background-position-y: bottom; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40667383_7TLFzc3EPdmaPlX.png?1640817571);" class="chrbox">
+            <div style="" class="chrbox">
                 <div class="textcontainer">
-                    <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40667383_7TLFzc3EPdmaPlX.png?1640817571" class="hyperlinkbox"></a>
-                </div>
-            </div>
-            <div style="background-size: 100%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40706938_PEiEpMUm1WqUTtq.png?1640817571);" class="chrbox">
-                <div class="textcontainer">
-                    <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40706938_PEiEpMUm1WqUTtq.png?1640817571" class="hyperlinkbox"></a>
+                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
                 </div>
             </div>
             <div style="" class="chrbox">
@@ -91,20 +93,8 @@
                 </div>
             </div>
         </div>
-    <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <div class="aboutname">BOWTOP</div>
     </div>
-    <div class="parallax bowtop"></div>
-</body>
-<script>
-    function openNav() {
-        document.getElementById("mySidepanel").style.width = "24rem";
-    }
 
-    function closeNav() {
-        document.getElementById("mySidepanel").style.width = "0";
-    }
-</script>
+</body>
 
 </html>
