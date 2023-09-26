@@ -39,12 +39,18 @@ body {
     z-index: 1;
     place-items: center;
     color: #ffffff;
-    background: #f8b600;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
+.side-panel-toggle.bowtop {
+    background: #f8b600;
+}
+
+.side-panel-toggle.craythebunny {
+    background:#2bd850
+}
 
 .chrname {
     font-family: 'Coolvetica';
@@ -187,14 +193,24 @@ body {
     justify-content: center;
 }
 
-#pagination a {
+#pagination.bowtop a {
     background-color: #5a3e0b;
     border:none;
     margin-left:5px;
 }
 
-#pagination a.active {
+.pagination.bowtop a.active {
     background-color: #eeba5a;
+}
+
+#pagination.craythebunny a {
+    background-color: #1b5a0b;
+    border:none;
+    margin-left:5px;
+}
+
+#pagination.craythebunny a.active {
+    background-color: #5fee5a;
 }
 
 @media only screen and (max-width: 600px) {
