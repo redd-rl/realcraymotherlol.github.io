@@ -70,6 +70,13 @@ body {
     transition: 0.2s all;
 }
 
+#title {
+    color:white; 
+    font-size: 2rem; 
+    z-index: 2; 
+    font-family: 'Coolvetica';
+}
+
 .boximg:hover {
     opacity:70%;
 }
@@ -187,9 +194,10 @@ body {
 
 #pagination {
     position: absolute;
+    left:0;
+    right:0;
     bottom: 0;
     display:flex;
-    width: 100%;
     justify-content: center;
 }
 
@@ -214,6 +222,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    #pagination a {
+        padding: 3px 12px;
+    }
     .chrbox {
         width: 8vh;
         height: 8vh;
@@ -229,27 +240,14 @@ body {
         font-size: 1.5vh;
     }
 
-    .videoplayer {
-        width: 40vh;
-        height: 20vh;
-    }
-
-    .videolist {
-        width: 15vh;
-        height: 15vh;
-    }
-
-    .vid {
-        width: 5vh;
-        height: 2vh;
-    }
-
-    .title {
-        font-size: 1vh;
-        margin: 0;
+    #title {
+        font-size: 3rem;    
+        margin-top: 3vh;
     }
 
     #grid {
         grid-template-columns: auto auto auto;
+        row-gap:3%;
+        margin-top:5vh;  
     }
 }
