@@ -29,7 +29,9 @@ body {
 }
 
 .side-panel-toggle {
-    position: relative;
+    position: absolute;
+    top:5px;
+    right:5px;
     height: 40px;
     text-align: center;
     font-family: 'Rubik';
