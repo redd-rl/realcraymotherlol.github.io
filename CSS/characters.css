@@ -124,9 +124,13 @@ body {
     height: 100%;
     top: 0;
     right: 0;
-    background-color: #111;
+    border-left:none;
+    background-image: url(../images/fadebowtoppanelbg.png);
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-color: rgb(17, 17, 17);
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.5s all;
     padding-top: 60px;
 }
 

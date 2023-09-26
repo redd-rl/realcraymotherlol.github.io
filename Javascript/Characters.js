@@ -9,10 +9,12 @@ let currentPage = 1;
 
 function openNav() {
     document.getElementById("mySidepanel").style.width = "32rem";
+    document.getElementById("mySidepanel").style.borderLeft = "5px solid rgb(175, 118, 11)";
 }
 
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
+    document.getElementById("mySidepanel").style.borderLeft = "0px solid rgb(175, 118, 11)";
 }
 
 function displayItemsForPage(pageNumber) {
