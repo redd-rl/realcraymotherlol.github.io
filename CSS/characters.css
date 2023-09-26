@@ -56,6 +56,15 @@ body {
     height: 100%;
 }
 
+.boximg {
+    width:100%;
+    height:100%;
+    transition: 0.2s all;
+}
+
+.boximg:hover {
+    opacity:70%;
+}
 
 #grid {
     grid-template-columns: auto auto auto auto auto auto auto;
