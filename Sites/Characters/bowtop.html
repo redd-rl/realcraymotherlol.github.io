@@ -10,8 +10,9 @@
         property="og:image" />
     <meta content="#dea300" data-react-helmet="true" name="theme-color" />
     <link rel="preload" as="image" href="https://drive.google.com/uc?id=1xBh26CkXaud45e2pY6QV1HCdDQwhfAcg">
-    <link rel="stylesheet" href="../../CSS/characters.css">
+    <link rel="stylesheet" href="../../CSS/gallery.css">
     <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/characters.css">
     <title>Gallery</title>
 </head>
 
@@ -19,92 +20,149 @@
     <div style="display:flex; flex-wrap:wrap; justify-content: flex-end; margin: 5px 0 5px 0;">
         <button class="side-panel-toggle" onclick="openNav()">About this character</button>
     </div>
-        <div id="grid" style="display:grid;">
-            <div style="background-size: 120%; background-position-x:25%; background-position-y: center; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40661217_WGIHHFsywKml1YH.png?1640817571);" class="chrbox">
-                <div class="textcontainer">
-                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
-                </div>
+    <div style="margin-bottom:2%; z-index: 1;"id="pagination">
+        <a id="prevbtn" href="#">Previous</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#" id="nextbtn">Next</a>
+    </div>
+    <div id="grid" style="display:grid; margin-top:5%;">
+        <div style="background-size: 120%; background-position-x:25%; background-position-y: center; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40661217_WGIHHFsywKml1YH.png?1640817571);"
+            class="chrbox">
+            <div class="textcontainer">
+                <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40661217_WGIHHFsywKml1YH.png?1640817571"
+                    class="hyperlinkbox"></a>
             </div>
-            <div style="background-size: 180%; background-position: 70% 100%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40667383_7TLFzc3EPdmaPlX.png?1640817571);" class="chrbox">
-                <div class="textcontainer">
-                    <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40667383_7TLFzc3EPdmaPlX.png?1640817571" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-size: 180%; background-position: 70% 100%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40667383_7TLFzc3EPdmaPlX.png?1640817571);"
+            class="chrbox">
+            <div class="textcontainer">
+                <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40667383_7TLFzc3EPdmaPlX.png?1640817571"
+                    class="hyperlinkbox"></a>
             </div>
-            <div style="background-size: 100%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40706938_PEiEpMUm1WqUTtq.png?1640817571);" class="chrbox">
-                <div class="textcontainer">
-                    <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40706938_PEiEpMUm1WqUTtq.png?1640817571" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-size: 100%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40706938_PEiEpMUm1WqUTtq.png?1640817571);"
+            class="chrbox">
+            <div class="textcontainer">
+                <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40706938_PEiEpMUm1WqUTtq.png?1640817571"
+                    class="hyperlinkbox"></a>
             </div>
-            <div style="background-size: 110%; background-position:30% 0%; background-repeat:no-repeat; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40707015_0qvsq6yeHQo3BD3.png?1640817571);" class="chrbox">
-                <div class="textcontainer">
-                    <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40707015_0qvsq6yeHQo3BD3.png?1640817571" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-size: 110%; background-position:30% 0%; background-repeat:no-repeat; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40707015_0qvsq6yeHQo3BD3.png?1640817571);"
+            class="chrbox">
+            <div class="textcontainer">
+                <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40707015_0qvsq6yeHQo3BD3.png?1640817571"
+                    class="hyperlinkbox"></a>
             </div>
-            <div style="background-size: 250%; background-position: 60% 60%; background-repeat:no-repeat; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40736758_kk7nseeE76hDEqb.png?1640817571);" class="chrbox">
-                <div class="textcontainer">
-                    <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40736758_kk7nseeE76hDEqb.png?1640817571" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-size: 250%; background-position: 60% 60%; background-repeat:no-repeat; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/40736758_kk7nseeE76hDEqb.png?1640817571);"
+            class="chrbox">
+            <div class="textcontainer">
+                <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/40736758_kk7nseeE76hDEqb.png?1640817571"
+                    class="hyperlinkbox"></a>
             </div>
-            <div style="" class="chrbox">
-                <div class="textcontainer">
-                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-position: 5% 80%; background-size:350%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/41058330_4lsS5aWMExtAYNK.jpg?1645552189);"
+            class="chrbox">
+            <div class="textcontainer">
+                <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/41058330_4lsS5aWMExtAYNK.jpg?1645552189"
+                    class="hyperlinkbox"></a>
             </div>
-            <div style="background-size: 320%; background-position:30% 50%; background-repeat:no-repeat; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/41196627_AeGD7ea1duV2DPs.png?1640817571);" class="chrbox">
-                <div class="textcontainer">
-                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-size: 320%; background-position:30% 50%; background-repeat:no-repeat; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/41196627_AeGD7ea1duV2DPs.png?1640817571);"
+            class="chrbox">
+            <div class="textcontainer">
+                <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/41196627_AeGD7ea1duV2DPs.png?1640817571" class="hyperlinkbox"></a>
             </div>
-            <div style="" class="chrbox">
-                <div class="textcontainer">
-                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-size: 320%; background-position:15% 70%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/41196659_B1R3USnUOYPCzzF.png?1640817571);" class="chrbox">
+            <div class="textcontainer">
+                <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/41196659_B1R3USnUOYPCzzF.png?1640817571" class="hyperlinkbox"></a>
             </div>
-            <div style="" class="chrbox">
-                <div class="textcontainer">
-                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-size: 110%; background-position:50% 40%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/41350988_zpqiMKFRwGFhXOr.png?1640817571);" class="chrbox">
+            <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/41350988_zpqiMKFRwGFhXOr.png?1640817571" class="hyperlinkbox"></a>
+            <div class="textcontainer">
+                <a class="textalign" href="https://toyhou.se/GunSlinger">Credit</a>
             </div>
-            <div style="" class="chrbox">
-                <div class="textcontainer">
-                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-size: 350%; background-position:30% 55%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/41509052_j9iGGKljRxwScQk.png?1640817571);" class="chrbox">
+            <div class="textcontainer">
+                <a href="https://f2.toyhou.se/file/f2-toyhou-se/images/41509052_j9iGGKljRxwScQk.png?1640817571" class="hyperlinkbox"></a>
             </div>
-            <div style="" class="chrbox">
-                <div class="textcontainer">
-                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-position:90% 35%;background-size:270%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/41905893_anzyt821vBbyZGu.png?1640817581);" class="chrbox">
+            <div class="textcontainer">
+                <a href="Characters/craythebunny" class="hyperlinkbox"></a>
             </div>
-            <div style="" class="chrbox">
-                <div class="textcontainer">
-                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="background-size:340%; background-position:40% 50%; background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/42847519_HrgfK2Eo51vLqdL.png?1640817581);" class="chrbox">
+            <div class="textcontainer">
+                <a href="Characters/craythebunny" class="hyperlinkbox"></a>
             </div>
-            <div style="" class="chrbox">
-                <div class="textcontainer">
-                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
-                </div>
+        </div>
+        <div style="" class="chrbox">
+            <div class="textcontainer">
+                <a href="Characters/craythebunny" class="hyperlinkbox"></a>
             </div>
-            <div style="" class="chrbox">
-                <div class="textcontainer">
-                    <a href="Characters/craythebunny" class="hyperlinkbox"></a>
+        </div>
+        <div style="" class="chrbox">
+            <div class="textcontainer">
+                <a href="Characters/craythebunny" class="hyperlinkbox"></a>
+            </div>
+        </div>
+        <div style="" class="chrbox">
+            <div class="textcontainer">
+                <a href="Characters/craythebunny" class="hyperlinkbox"></a>
+            </div>
+        </div>
+        <div style="" class="chrbox">
+            <div class="textcontainer">
+                <a href="Characters/craythebunny" class="hyperlinkbox"></a>
+            </div>
+        </div>
+        <div style="" class="chrbox">
+            <div class="textcontainer">
+                <a href="Characters/craythebunny" class="hyperlinkbox"></a>
+            </div>
+        </div>
+        <div style="" class="chrbox">
+            <div class="textcontainer">
+                <a href="Characters/craythebunny" class="hyperlinkbox"></a>
+            </div>
+        </div>
+        <div style="" class="chrbox">
+            <div class="textcontainer">
+                <a href="Characters/craythebunny" class="hyperlinkbox"></a>
+            </div>
+        </div>
+    </div>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div style="display: flex;">
+            <div class="aboutname">BowTop
+                <div class="personality">
+                    Polite, Supportive<br>
+                    Male<br>
+                    Height: 2'4/71 cm<br>
+                    Creation date: December 22th 2019<br>
+                    ____________________________________
+                    <div class="description">
+                        BowTop is a Lego brick that seemingly has magician powers,<br>
+                        most of the time he is seen without his suit and tophat on.<br><br>
+                        He was my sona for a while until I decided to turn over to Cray The Bunny as I didn't have any
+                        interest for him anymore.<br>
+                    </div>
                 </div>
             </div>
         </div>
-    <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <div class="aboutname">BOWTOP</div>
     </div>
     <div class="parallax bowtop"></div>
 </body>
-<script>
-    function openNav() {
-        document.getElementById("mySidepanel").style.width = "24rem";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidepanel").style.width = "0";
-    }
+<script src="../../Javascript/Characters.js">
 </script>
 
 </html>
