@@ -5,107 +5,128 @@
         "boximg-1": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/40661217_WGIHHFsywKml1YH.png",
           "background-position": "25% 50%",
-          "background-size": "120%"
+          "background-size": "120%",
+          "credit-required": 0
         },
         "boximg-2": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/40667383_7TLFzc3EPdmaPlX.png",
           "background-position": "70% 100%",
-          "background-size": "180%"
+          "background-size": "180%",
+          "credit-required": 0
         },
         "boximg-3": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/40706938_PEiEpMUm1WqUTtq.png",
           "background-position": "center",
-          "background-size": "100%"
+          "background-size": "100%",
+          "credit-required": 0
         },
         "boximg-4": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/40707015_0qvsq6yeHQo3BD3.png",
           "background-position": "60% 60%",
-          "background-size": "110%"
+          "background-size": "110%",
+          "credit-required": 0
         },
         "boximg-5": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/40736758_kk7nseeE76hDEqb.png",
           "background-position": "30% 0%",
-          "background-size": "250%"
+          "background-size": "250%",
+          "credit-required": 0
         },
         "boximg-6": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/41058330_4lsS5aWMExtAYNK.jpg",
           "background-position": "60% 60%",
-          "background-size": "350%"
+          "background-size": "350%",
+          "credit-required": 0
         },
         "boximg-7": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/41196627_AeGD7ea1duV2DPs.png",
           "background-position": "30% 50%",
-          "background-size": "320%"
+          "background-size": "320%",
+          "credit-required": 0
         },
         "boximg-8": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/41196659_B1R3USnUOYPCzzF.png",
           "background-position": "15% 70%",
-          "background-size": "320%"
+          "background-size": "320%",
+          "credit-required": 0
         },
         "boximg-9": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/41350988_zpqiMKFRwGFhXOr.png",
           "background-position": "50% 40%",
-          "background-size": "110%"
+          "background-size": "110%",
+          "credit-required": 1
         },
         "boximg-10": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/41509052_j9iGGKljRxwScQk.png",
           "background-position": "30% 55%",
-          "background-size": "350%"
+          "background-size": "350%",
+          "credit-required": 0
         },
         "boximg-11": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/41905893_anzyt821vBbyZGu.png",
           "background-position": "90% 35%",
-          "background-size": "270%"
+          "background-size": "270%",
+          "credit-required": 0
         },
         "boximg-12": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/42847519_HrgfK2Eo51vLqdL.png",
           "background-position": "40% 50%",
-          "background-size": "340%"
+          "background-size": "340%",
+          "credit-required": 0
         },
         "boximg-13": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/42968367_l50A3D0LSxCWX6D.png",
           "background-position": "0% 100%",
-          "background-size": "350%"
+          "background-size": "350%",
+          "credit-required": 0
         },
         "boximg-14": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/43721686_edLHJegSee5rcSc.png",
           "background-position": "40% 70%",
-          "background-size": "200%"
+          "background-size": "200%",
+          "credit-required": 0
         },
         "boximg-15": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/43553185_dWtk9v3ag640mdB.png",
           "background-position": "50% 50%",
-          "background-size": "200%"
+          "background-size": "200%",
+          "credit-required": 0
         },
         "boximg-16": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/43134398_xeXtAiIIb65CbP9.png",
           "background-position": "90% 10%",
-          "background-size": "280%"
+          "background-size": "280%",
+          "credit-required": 0
         },
         "boximg-17": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/50760630_QbCNcVfK26rYXuH.png",
           "background-position": "center",
-          "background-size": "180%"
+          "background-size": "180%",
+          "credit-required": 1
         },
         "boximg-18": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/45459771_qHr041JtVsG7OQG.png",
           "background-position": "30% 55%",
-          "background-size": "870%"
+          "background-size": "870%",
+          "credit-required": 0
         },
         "boximg-19": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/50339526_lV3PSl0JIuPhYlR.png",
           "background-position": "75% 55%",
-          "background-size": "570%"
+          "background-size": "570%",
+          "credit-required": 0
         },
         "boximg-20": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/61897440_39rjfcghOgiuA82.png",
           "background-position": "45% 25%",
-          "background-size": "130%"
+          "background-size": "130%",
+          "credit-required": 1
         },
         "boximg-21": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/46845445_TDuvCkQkN6JjyEa.png",
           "background-position": "50% 65%",
-          "background-size": "300%"
+          "background-size": "300%",
+          "credit-required": 0
         }
       },
       "2" : {

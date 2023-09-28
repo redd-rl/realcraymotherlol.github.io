@@ -27,6 +27,11 @@ function displayItemsForPage(pageNumber) {
             artboxes.forEach((box, index) => {
                 if (index < itemsPerPage) {
                     const imgboxKey = "boximg-" + (index + 1);
+                    const creditvalue = currentPageData[imgboxKey]["credit-required"];
+                    if (creditvalue === 1) {
+                        const textcontainer = document.createElement('div');
+                        textcontainer.appendChild(box);
+                    }
                     if (currentPageData.hasOwnProperty(imgboxKey)) {
                         const backgroundImage = currentPageData[imgboxKey]["background-image"];
                         const backgroundPosition = currentPageData[imgboxKey]["background-position"];
