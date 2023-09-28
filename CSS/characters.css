@@ -207,7 +207,7 @@ body {
     margin-left:5px;
 }
 
-.pagination.bowtop a.active {
+#pagination.bowtop a.active {
     background-color: #eeba5a;
 }
 
