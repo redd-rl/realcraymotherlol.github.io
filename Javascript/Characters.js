@@ -19,22 +19,25 @@ function displayItemsForPage(pageNumber) {
     const artboxes = document.querySelectorAll(".boximg");
     const itemsPerPage = 21;
 
-    fetch('https://realcraymotherlol.github.io/JSON/paginationbowtop.json')
+    fetch('../../JSON/paginationbowtop.json') 
         .then(response => response.json())
-        .then(data => {
-            const currentPageData = data.ID.Currentpage[pageNumber.toString()];
+        .then(content => {
+            const currentPageData = content.ID.Currentpage[pageNumber.toString()];
 
             artboxes.forEach((box, index) => {
                 if (index < itemsPerPage) {
                     const imgboxKey = "boximg-" + (index + 1);
                     const creditvalue = currentPageData[imgboxKey]["credit-required"];
                     const creatorlink = currentPageData[imgboxKey]["href"];
+                    var hyperlink = box.querySelector('.hyperlinkbox');
                     if (currentPageData.hasOwnProperty(imgboxKey)) {
                         const backgroundImage = currentPageData[imgboxKey]["background-image"];
                         const backgroundPosition = currentPageData[imgboxKey]["background-position"];
                         const backgroundSize = currentPageData[imgboxKey]["background-size"];
                         box.style.background = `url(${backgroundImage})` + `${backgroundPosition}` + '/' + `${backgroundSize}`;
+                        hyperlink.setAttribute("href", `${backgroundImage}`);
                     } else {
+                        hyperlink.setAttribute("href", `UNDEFINED`);
                         box.style.background = "none";
                     }
                     if (creditvalue === 0 && box.parentElement.querySelector('.textcontainer')) {

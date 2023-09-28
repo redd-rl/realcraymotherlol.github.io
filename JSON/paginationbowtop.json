@@ -134,15 +134,15 @@
       },
       "2" : {
         "boximg-1": {
-          "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/40661217_WGIHHFsywKml1YH.png",
-          "background-position": "25% 50%",
-          "background-size": "120%",
+          "background-image": "https://cdn.discordapp.com/attachments/771890682234404875/1156645755898044436/cherry_blossoms.png",
+          "background-position": "40% 50%",
+          "background-size": "130%",
           "credit-required": 0
         },
         "boximg-2": {
-          "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/40667383_7TLFzc3EPdmaPlX.png",
-          "background-position": "70% 100%",
-          "background-size": "180%",
+          "background-image": "https://cdn.discordapp.com/attachments/771890682234404875/1070086498885574657/s.png",
+          "background-position": "50% 50%",
+          "background-size": "100%",
           "credit-required": 0
         },
         "boximg-3": {
