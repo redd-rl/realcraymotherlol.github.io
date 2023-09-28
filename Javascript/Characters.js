@@ -31,7 +31,7 @@ function displayItemsForPage(pageNumber) {
                         const backgroundImage = currentPageData[imgboxKey]["background-image"];
                         const backgroundPosition = currentPageData[imgboxKey]["background-position"];
                         const backgroundSize = currentPageData[imgboxKey]["background-size"];
-                        box.style.background = `url(${backgroundImage}) ${backgroundPosition} / ${backgroundSize}`;
+                        box.style.background = `url(${backgroundImage})` + `${backgroundPosition}` + '/' + `${backgroundSize}`;
                     } else {
                         box.style.background = "none";
                     }
