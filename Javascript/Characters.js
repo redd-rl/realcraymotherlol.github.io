@@ -28,10 +28,7 @@ function displayItemsForPage(pageNumber) {
                 if (index < itemsPerPage) {
                     const imgboxKey = "boximg-" + (index + 1);
                     const creditvalue = currentPageData[imgboxKey]["credit-required"];
-                    if (creditvalue === 1) {
-                        const textcontainer = document.createElement('div');
-                        textcontainer.appendChild(box);
-                    }
+  
                     if (currentPageData.hasOwnProperty(imgboxKey)) {
                         const backgroundImage = currentPageData[imgboxKey]["background-image"];
                         const backgroundPosition = currentPageData[imgboxKey]["background-position"];
@@ -39,6 +36,18 @@ function displayItemsForPage(pageNumber) {
                         box.style.background = `url(${backgroundImage})` + `${backgroundPosition}` + '/' + `${backgroundSize}`;
                     } else {
                         box.style.background = "none";
+                    }
+                     if (creditvalue === 1 && !box.parentElement.querySelector('.textcontainer')) {
+                        const txtcontainer = document.createElement('div');
+                        box.parentElement.appendChild(txtcontainer);
+                        txtcontainer.classList.add('textcontainer');
+                        const creditlink = document.createElement('a');
+                        creditlink.classList.add('textalign');
+                        txtcontainer.appendChild(creditlink);
+                        creditlink.textContent = "Credit";
+                    }
+                    if (creditvalue === 0 && box.parentElement.querySelector('.textcontainer')) {
+                        box.parentElement.querySelector('.textcontainer').remove;
                     }
                 } else {
                     box.style.background = "none";
@@ -51,9 +60,6 @@ function displayItemsForPage(pageNumber) {
 }
 
 displayItemsForPage(1);
-
-
-displayItemsForPage(currentPage);
 
 function navigateToPage(pageNumber) {
     currentPage = pageNumber;
