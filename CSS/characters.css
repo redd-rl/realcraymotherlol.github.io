@@ -110,6 +110,8 @@ body {
     border-radius: 5px;
     display:flex;
     z-index: 1;
+    flex-wrap: wrap;
+    justify-content: center;
     background-size: contain;
     width: 8vw;
     border: 2px solid white;

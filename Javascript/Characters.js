@@ -26,15 +26,17 @@ function displayItemsForPage(pageNumber) {
 
             artboxes.forEach((box, index) => {
                 if (index < itemsPerPage) {
-                    const imgboxKey = "imgbox-" + (index + 1);
+                    const imgboxKey = "boximg-" + (index + 1);
                     if (currentPageData.hasOwnProperty(imgboxKey)) {
                         const backgroundImage = currentPageData[imgboxKey]["background-image"];
-                        box.style.backgroundImage = `url(${backgroundImage})`;
+                        const backgroundPosition = currentPageData[imgboxKey]["background-position"];
+                        const backgroundSize = currentPageData[imgboxKey]["background-size"];
+                        box.style.background = `url(${backgroundImage}) ${backgroundPosition} / ${backgroundSize}`;
                     } else {
-                        box.style.backgroundImage = "none";
+                        box.style.background = "none";
                     }
                 } else {
-                    box.style.backgroundImage = "none";
+                    box.style.background = "none";
                 }
             });
         })
