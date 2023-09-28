@@ -54,7 +54,8 @@
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/41350988_zpqiMKFRwGFhXOr.png",
           "background-position": "50% 40%",
           "background-size": "110%",
-          "credit-required": 1
+          "credit-required": 1,
+          "href": "https://toyhou.se/GunSlinger"
         },
         "boximg-10": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/41509052_j9iGGKljRxwScQk.png",
@@ -102,7 +103,8 @@
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/50760630_QbCNcVfK26rYXuH.png",
           "background-position": "center",
           "background-size": "180%",
-          "credit-required": 1
+          "credit-required": 1,
+          "href": "https://toyhou.se/skithing"
         },
         "boximg-18": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/45459771_qHr041JtVsG7OQG.png",
@@ -120,7 +122,8 @@
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/61897440_39rjfcghOgiuA82.png",
           "background-position": "45% 25%",
           "background-size": "130%",
-          "credit-required": 1
+          "credit-required": 1,
+          "href": "https://toyhou.se/MothWithCrayonz"
         },
         "boximg-21": {
           "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/46845445_TDuvCkQkN6JjyEa.png",

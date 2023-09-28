@@ -28,7 +28,7 @@ function displayItemsForPage(pageNumber) {
                 if (index < itemsPerPage) {
                     const imgboxKey = "boximg-" + (index + 1);
                     const creditvalue = currentPageData[imgboxKey]["credit-required"];
-  
+                    const creatorlink = currentPageData[imgboxKey]["href"];
                     if (currentPageData.hasOwnProperty(imgboxKey)) {
                         const backgroundImage = currentPageData[imgboxKey]["background-image"];
                         const backgroundPosition = currentPageData[imgboxKey]["background-position"];
@@ -37,17 +37,18 @@ function displayItemsForPage(pageNumber) {
                     } else {
                         box.style.background = "none";
                     }
-                     if (creditvalue === 1 && !box.parentElement.querySelector('.textcontainer')) {
+                    if (creditvalue === 0 && box.parentElement.querySelector('.textcontainer')) {
+                        const remove = box.parentElement.querySelector('.textcontainer')
+                        box.parentElement.removeChild(remove);
+                    } else if (creditvalue === 1 && !box.parentElement.querySelector('.textcontainer')) {
                         const txtcontainer = document.createElement('div');
                         box.parentElement.appendChild(txtcontainer);
                         txtcontainer.classList.add('textcontainer');
                         const creditlink = document.createElement('a');
                         creditlink.classList.add('textalign');
+                        creditlink.setAttribute("href", `${creatorlink}`)
                         txtcontainer.appendChild(creditlink);
                         creditlink.textContent = "Credit";
-                    }
-                    if (creditvalue === 0 && box.parentElement.querySelector('.textcontainer')) {
-                        box.parentElement.querySelector('.textcontainer').remove;
                     }
                 } else {
                     box.style.background = "none";
