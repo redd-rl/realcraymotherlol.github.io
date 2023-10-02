@@ -258,7 +258,7 @@ body {
     #grid {
         grid-template-columns: auto auto auto;
         row-gap:3%;
-        margin-top:5vh;  
+        margin-top:2vh;  
     }
 
     .personality {
