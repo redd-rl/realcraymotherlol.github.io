@@ -67,7 +67,7 @@ body {
 .boximg {
     width:100%;
     height:100%;
-    transition: 0.2s all;
+    transition: 0.2s opacity;
 }
 
 #title {
