@@ -276,7 +276,9 @@ body {
 
     #grid {
         grid-template-columns: auto auto auto;
-        margin-top: 2vh;
+        height:72vh;
+        margin: 1vh 0 0 0 0;
+
     }
 
     .personality {
