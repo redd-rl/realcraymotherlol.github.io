@@ -1,11 +1,14 @@
-html, body{min-height:100vh;}
+html,
+body {
+    min-height: 100vh;
+}
 
 body {
     background-color: black;
     overflow: hidden;
-    height:100%;
-    width:100%;
-    margin:0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 .parallax {
@@ -29,18 +32,18 @@ body {
 
 #title {
     width: 100%;
-    color:white;
-    text-align: center; 
-    font-size: 3rem; 
-    z-index: 1; 
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    z-index: 1;
     font-family: 'Coolvetica';
     margin: 0;
 }
 
 .side-panel-toggle {
     position: absolute;
-    top:5px;
-    right:5px;
+    top: 5px;
+    right: 5px;
     height: 40px;
     text-align: center;
     font-family: 'Rubik';
@@ -58,7 +61,7 @@ body {
 }
 
 .side-panel-toggle.craythebunny {
-    background:#2bd850
+    background: #2bd850
 }
 
 .chrname {
@@ -74,14 +77,14 @@ body {
 }
 
 .boximg {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     transition: 0.2s opacity;
 }
 
 
 .boximg:hover {
-    opacity:70%;
+    opacity: 70%;
 }
 
 #grid {
@@ -110,7 +113,7 @@ body {
 .chrbox {
     height: 10em;
     border-radius: 5px;
-    display:flex;
+    display: flex;
     z-index: 1;
     flex-wrap: wrap;
     justify-content: center;
@@ -126,19 +129,19 @@ body {
 }
 
 .textalign {
-    position:relative;
-    display:block;
-    z-index:2;
+    position: relative;
+    display: block;
+    z-index: 2;
     font-size: 1vw;
     color: rgb(145, 196, 255);
     text-decoration: none;
 }
 
 #titleflex {
-    display:inline-flex;
+    display: inline-flex;
     justify-content: center;
-    margin-bottom:1%;
-    width:100%;
+    margin-bottom: 1%;
+    width: 100%;
 }
 
 .textalign:hover {
@@ -158,7 +161,7 @@ body {
     height: 100%;
     top: 0;
     right: 0;
-    border-left:none;
+    border-left: none;
     background-image: url(../images/fadebowtoppanelbg.png);
     background-position: 0% 100%;
     background-repeat: repeat-x;
@@ -186,7 +189,7 @@ body {
     font-size: 2rem;
     text-align: center;
     font-family: 'Rubik';
-    display:flex;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -203,19 +206,19 @@ body {
     margin-top: 5%;
     font-size: 1rem;
     font-family: 'Rubik';
-    width:85%;
+    width: 85%;
 }
 
 #pagination {
-    bottom:3%;
-    display:flex;
+    bottom: 3%;
+    display: flex;
     justify-content: center;
 }
 
 #pagination.bowtop a {
     background-color: #5a3e0b;
-    border:none;
-    margin-left:5px;
+    border: none;
+    margin-left: 5px;
 }
 
 #pagination.bowtop a.active {
@@ -224,8 +227,8 @@ body {
 
 #pagination.craythebunny a {
     background-color: #1b5a0b;
-    border:none;
-    margin-left:5px;
+    border: none;
+    margin-left: 5px;
 }
 
 #pagination.craythebunny a.active {
@@ -236,6 +239,11 @@ body {
     #pagination a {
         padding: 3px 12px;
     }
+
+    .pagination {
+        bottom: 0;
+    }
+
     .chrbox {
         width: 8vh;
         height: 8vh;
@@ -248,7 +256,7 @@ body {
     }
 
     #mySidePanel {
-        width:100%;
+        width: 100%;
     }
 
     .textalign {
@@ -256,19 +264,19 @@ body {
     }
 
     #titleflex {
-        width:fit-content;
-        margin-left:10%;
+        width: fit-content;
+        margin-left: 10%;
     }
 
     #title {
         font-size: 2.5rem;
-        position:relative;
-        text-align:left;
+        position: relative;
+        text-align: left;
     }
 
     #grid {
         grid-template-columns: auto auto auto;
-        margin-top:2vh;  
+        margin-top: 2vh;
     }
 
     .personality {
@@ -277,6 +285,6 @@ body {
 
     .description {
         font-size: 1.7vh;
-        width:85%;
+        width: 85%;
     }
 }
