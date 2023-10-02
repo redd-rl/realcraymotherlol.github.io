@@ -240,7 +240,7 @@ body {
         padding: 3px 12px;
     }
 
-    .pagination {
+    #pagination {
         bottom: 0;
     }
 
