@@ -3,10 +3,15 @@ const pagination = document.getElementById("pagination");
 const prevButton = document.getElementById("prevbtn");
 const nextButton = document.getElementById("nextbtn");
 const pageLinks = pagination.querySelectorAll("a");
+var mobile = window.matchMedia("(max-width: 600px)")
 let currentPage = 1;
 
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "32rem";
+    if (mobile.matches) {
+        document.getElementById("mySidepanel").style.width = "100%";
+    } else {
+        document.getElementById("mySidepanel").style.width = "32vw";
+    }
     document.getElementById("mySidepanel").style.borderLeft = "5px solid rgb(175, 118, 11)";
 }
 
@@ -19,7 +24,7 @@ function displayItemsForPage(pageNumber) {
     const artboxes = document.querySelectorAll(".boximg");
     const itemsPerPage = 21;
 
-    fetch('../../JSON/paginationbowtop.json') 
+    fetch('https://realcraymotherlol.github.io/JSON/paginationbowtop.json') 
         .then(response => response.json())
         .then(content => {
             const currentPageData = content.ID.Currentpage[pageNumber.toString()];

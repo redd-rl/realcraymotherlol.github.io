@@ -1,6 +1,7 @@
 body {
     background-color: black;
     overflow: hidden;
+    -webkit-text-size-adjust: 100%
 }
 
 .parallax {
@@ -73,7 +74,7 @@ body {
 #title {
     color:white; 
     font-size: 2rem; 
-    z-index: 2; 
+    z-index: 1; 
     font-family: 'Coolvetica';
 }
 
@@ -177,6 +178,9 @@ body {
     font-size: 2rem;
     text-align: center;
     font-family: 'Rubik';
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .personality {
@@ -190,8 +194,8 @@ body {
     color: white;
     margin-top: 5%;
     font-size: 1rem;
-    white-space: wrap;
     font-family: 'Rubik';
+    width:85%;
 }
 
 #pagination {
@@ -238,6 +242,10 @@ body {
         font-size: 1.5vh;
     }
 
+    #mySidePanel {
+        width:100%;
+    }
+
     .textalign {
         font-size: 1.5vh;
     }
@@ -251,5 +259,14 @@ body {
         grid-template-columns: auto auto auto;
         row-gap:3%;
         margin-top:5vh;  
+    }
+
+    .personality {
+        font-size: 2vh;
+    }
+
+    .description {
+        font-size: 1.7vh;
+        width:85%;
     }
 }
