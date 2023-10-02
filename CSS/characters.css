@@ -23,9 +23,13 @@ body {
     justify-content: center;
 }
 
-.title {
-    font-family: 'Rubik';
+#title {
     width: 100%;
+    color:white;
+    text-align: center; 
+    font-size: 3rem; 
+    z-index: 1; 
+    font-family: 'Coolvetica';
     margin: 0;
 }
 
@@ -37,7 +41,7 @@ body {
     text-align: center;
     font-family: 'Rubik';
     border-radius: 5px;
-    z-index: 1;
+    z-index: 2;
     place-items: center;
     color: #ffffff;
     border: none;
@@ -71,12 +75,6 @@ body {
     transition: 0.2s opacity;
 }
 
-#title {
-    color:white; 
-    font-size: 2rem; 
-    z-index: 1; 
-    font-family: 'Coolvetica';
-}
 
 .boximg:hover {
     opacity:70%;
@@ -107,14 +105,14 @@ body {
 }
 
 .chrbox {
-    height: 8vw;
+    height: 10em;
     border-radius: 5px;
     display:flex;
     z-index: 1;
     flex-wrap: wrap;
     justify-content: center;
     background-size: contain;
-    width: 8vw;
+    width: 10em;
     border: 2px solid white;
     background-color: black;
 }
@@ -133,6 +131,13 @@ body {
     text-decoration: none;
 }
 
+#titleflex {
+    display:inline-flex;
+    justify-content: center;
+    margin-bottom:1%;
+    width:100%;
+}
+
 .textalign:hover {
     color: rgb(81, 137, 201);
 }
@@ -146,7 +151,7 @@ body {
 .sidepanel {
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     height: 100%;
     top: 0;
     right: 0;
@@ -250,9 +255,15 @@ body {
         font-size: 1.5vh;
     }
 
+    #titleflex {
+        width:fit-content;
+        margin-left:10%;
+    }
+
     #title {
-        font-size: 3rem;    
-        margin: 3vh 0 0 0 ;
+        font-size: 2.5rem;
+        position:relative;
+        text-align:left;
     }
 
     #grid {
