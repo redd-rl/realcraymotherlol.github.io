@@ -111,14 +111,14 @@ body {
 }
 
 .chrbox {
-    height: 10em;
+    height: 10vw;
     border-radius: 5px;
     display: flex;
     z-index: 1;
     flex-wrap: wrap;
     justify-content: center;
     background-size: contain;
-    width: 10em;
+    width: 10vw;
     border: 2px solid white;
     background-color: black;
 }

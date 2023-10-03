@@ -20,56 +20,6 @@ function closeNav() {
     document.getElementById("mySidepanel").style.borderLeft = "0px solid rgb(175, 118, 11)";
 }
 
-function displayItemsForPage(pageNumber) {
-    const artboxes = document.querySelectorAll(".boximg");
-    const itemsPerPage = 21;
-
-    fetch('https://realcraymotherlol.github.io/JSON/paginationbowtop.json') 
-        .then(response => response.json())
-        .then(content => {
-            const currentPageData = content.ID.Currentpage[pageNumber.toString()];
-
-            artboxes.forEach((box, index) => {
-                if (index < itemsPerPage) {
-                    const imgboxKey = "boximg-" + (index + 1);
-                    const creditvalue = currentPageData[imgboxKey]["credit-required"];
-                    const creatorlink = currentPageData[imgboxKey]["href"];
-                    var hyperlink = box.querySelector('.hyperlinkbox');
-                    if (currentPageData.hasOwnProperty(imgboxKey)) {
-                        const backgroundImage = currentPageData[imgboxKey]["background-image"];
-                        const backgroundPosition = currentPageData[imgboxKey]["background-position"];
-                        const backgroundSize = currentPageData[imgboxKey]["background-size"];
-                        box.style.background = `url(${backgroundImage})` + `${backgroundPosition}` + '/' + `${backgroundSize}`;
-                        hyperlink.setAttribute("href", `${backgroundImage}`);
-                    } else {
-                        hyperlink.setAttribute("href", `UNDEFINED`);
-                        box.style.background = "none";
-                    }
-                    if (creditvalue === 0 && box.parentElement.querySelector('.textcontainer')) {
-                        const remove = box.parentElement.querySelector('.textcontainer')
-                        box.parentElement.removeChild(remove);
-                    } else if (creditvalue === 1 && !box.parentElement.querySelector('.textcontainer')) {
-                        const txtcontainer = document.createElement('div');
-                        box.parentElement.appendChild(txtcontainer);
-                        txtcontainer.classList.add('textcontainer');
-                        const creditlink = document.createElement('a');
-                        creditlink.classList.add('textalign');
-                        creditlink.setAttribute("href", `${creatorlink}`)
-                        txtcontainer.appendChild(creditlink);
-                        creditlink.textContent = "Credit";
-                    }
-                } else {
-                    box.style.background = "none";
-                }
-            });
-        })
-        .catch(error => {
-            console.error("Error fetching JSON data:", error);
-        });
-}
-
-displayItemsForPage(1);
-
 function navigateToPage(pageNumber) {
     currentPage = pageNumber;
     displayItemsForPage(currentPage);
