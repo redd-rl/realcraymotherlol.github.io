@@ -18,7 +18,7 @@
 
 <body>
     <div class="parallax bowtop"></div>
-    <button class="side-panel-toggle bowtop" onclick="openNav()">About this character</button>
+    <button style="background: url(../../images/info-xxl.svg) center / 70% no-repeat;" class="side-panel-toggle bowtop" onclick="openNav()"></button>
     <div id="titleflex">
         <div id="title">BowTop</div>
     </div>
@@ -168,59 +168,63 @@ function openNav() {
     } else {
         document.getElementById("mySidepanel").style.width = "32vw";
     }
-    document.getElementById("mySidepanel").style.borderLeft = "5px solid #42a113";
+    document.getElementById("mySidepanel").style.borderLeft = "5px solid #ffb833";
 }
 
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
-    document.getElementById("mySidepanel").style.borderLeft = "0px solid #42a113";
+    document.getElementById("mySidepanel").style.borderLeft = "0px solid #ffb833";
 }
 
 function displayItemsForPage(pageNumber) {
-const artboxes = document.querySelectorAll(".boximg");
-const itemsPerPage = 21;
+  const artboxes = document.querySelectorAll(".boximg");
+  const itemsPerPage = 21;
 
-fetch('https://realcraymotherlol.github.io/JSON/pagination.json')
+  fetch('../../JSON/pagination.json')
     .then(response => response.json())
     .then(content => {
-        const currentPageData = content.Bowtop.ID.Currentpage[pageNumber.toString()];
+      const currentPageData = content.Bowtop.ID.Currentpage[pageNumber.toString()];
 
-        artboxes.forEach((box, index) => {
-            if (index < itemsPerPage) {
-                const imgboxKey = "boximg-" + (index + 1);
-                const creditvalue = currentPageData[imgboxKey]["credit-required"];
-                const creatorlink = currentPageData[imgboxKey]["href"];
-                var hyperlink = box.querySelector('.hyperlinkbox');
-                if (currentPageData.hasOwnProperty(imgboxKey)) {
-                    const backgroundImage = currentPageData[imgboxKey]["background-image"];
-                    const backgroundPosition = currentPageData[imgboxKey]["background-position"];
-                    const backgroundSize = currentPageData[imgboxKey]["background-size"];
-                    box.style.background = `url(${backgroundImage})` + `${backgroundPosition}` + '/' + `${backgroundSize}` + "no-repeat";
-                    hyperlink.setAttribute("href", `${backgroundImage}`);
-                } else {
-                    hyperlink.setAttribute("href", `UNDEFINED`);
-                    box.style.background = "none";
-                }
-                if (creditvalue === 0 && box.parentElement.querySelector('.textcontainer')) {
-                    const remove = box.parentElement.querySelector('.textcontainer')
-                    box.parentElement.removeChild(remove);
-                } else if (creditvalue === 1 && !box.parentElement.querySelector('.textcontainer')) {
-                    const txtcontainer = document.createElement('div');
-                    box.parentElement.appendChild(txtcontainer);
-                    txtcontainer.classList.add('textcontainer');
-                    const creditlink = document.createElement('a');
-                    creditlink.classList.add('textalign');
-                    creditlink.setAttribute("href", `${creatorlink}`)
-                    txtcontainer.appendChild(creditlink);
-                    creditlink.textContent = "Credit";
-                }
-            } else {
-                box.style.background = "none";
+      artboxes.forEach((box, index) => {
+        if (index < itemsPerPage) {
+          const imgboxKey = "boximg-" + (index + 1);
+
+          if (currentPageData.hasOwnProperty(imgboxKey)) {
+            const creditvalue = currentPageData[imgboxKey]["credit-required"];
+            const creatorlink = currentPageData[imgboxKey]["href"];
+            const backgroundImage = currentPageData[imgboxKey]["background-image"];
+            const backgroundPosition = currentPageData[imgboxKey]["background-position"];
+            const backgroundSize = currentPageData[imgboxKey]["background-size"];
+
+            box.style.background = `url(${backgroundImage}) ${backgroundPosition}/${backgroundSize} no-repeat`;
+            const hyperlink = box.querySelector('.hyperlinkbox');
+            hyperlink.setAttribute("href", `${backgroundImage}`);
+            box.parentElement.style.display = 'block';
+
+            if (creditvalue === 0 && box.parentElement.querySelector('.textcontainer')) {
+              const remove = box.parentElement.querySelector('.textcontainer');
+              box.parentElement.removeChild(remove);
+            } else if (creditvalue === 1 && !box.parentElement.querySelector('.textcontainer')) {
+              const txtcontainer = document.createElement('div');
+              box.parentElement.appendChild(txtcontainer);
+              txtcontainer.classList.add('textcontainer');
+              const creditlink = document.createElement('a');
+              creditlink.classList.add('textalign');
+              creditlink.setAttribute("href", `${creatorlink}`);
+              txtcontainer.appendChild(creditlink);
+              creditlink.textContent = "Credit";
             }
-        });
+          } else {
+            // Hide the box if there's no image data
+            box.parentElement.style.display = 'none';
+          }
+        } else {
+          box.style.background = "none";
+        }
+      });
     })
     .catch(error => {
-        console.error("Error fetching JSON data:", error);
+      console.error("Error fetching JSON data:", error);
     });
 }
 

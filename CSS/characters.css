@@ -45,9 +45,10 @@ body {
     top: 5px;
     right: 5px;
     height: 40px;
+    width: 50px;
     text-align: center;
     font-family: 'Rubik';
-    border-radius: 5px;
+    border-radius: 25px;
     z-index: 2;
     place-items: center;
     color: #ffffff;
@@ -57,11 +58,39 @@ body {
 }
 
 .side-panel-toggle.bowtop {
-    background: #f8b600;
+    filter: hue-rotate(174deg) saturate(4) drop-shadow(0px 4px 0.2px #64281e);
+}
+
+.side-panel-toggle.bowtop:active {
+    filter: hue-rotate(174deg) saturate(4) brightness(0.8);
+    top: 9px;
 }
 
 .side-panel-toggle.craythebunny {
-    background: #2bd850
+    filter: hue-rotate(259deg) drop-shadow(0px 4px 0.2px #205019);
+}
+
+.side-panel-toggle.craythebunny:active {
+    filter: hue-rotate(259deg) brightness(0.8);
+    top: 9px;
+}
+
+.side-panel-toggle.grimace {
+    filter: hue-rotate(22deg) drop-shadow(0px 4px 0.2px #5838af)
+}
+
+.side-panel-toggle.grimace:active {
+    filter: hue-rotate(22deg) brightness(0.8);
+    top: 9px;
+}
+
+.side-panel-toggle.teaveese {
+    filter: hue-rotate(127deg) saturate(0.5) drop-shadow(0px 4px 0.2px #3a292a)
+}
+
+.side-panel-toggle.teaveese:active {
+    filter: hue-rotate(127deg) saturate(0.5) brightness(0.8);
+    top: 9px;
 }
 
 .chrname {
@@ -78,6 +107,7 @@ body {
 
 .boximg {
     width: 100%;
+    background: url(../images/noimg.png) center / 64px no-repeat;
     height: 100%;
     transition: 0.2s opacity;
 }
@@ -88,9 +118,11 @@ body {
 }
 
 #grid {
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    grid-template-rows: repeat( auto-fit, minmax(50px, 1fr) );;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
     column-gap: 2%;
     height: 80vh;
     width: 90%;
@@ -107,17 +139,17 @@ body {
     display: flex;
     justify-content: center;
     column-gap: 20px;
-    align-items: center
+    align-items: center;
 }
 
 .chrbox {
     height: 10vw;
     border-radius: 5px;
-    display: flex;
+    display: block;
     z-index: 1;
     flex-wrap: wrap;
     justify-content: center;
-    background-size: contain;
+    background-size: 64px;
     width: 10vw;
     border: 2px solid white;
     background-color: black;
@@ -130,6 +162,16 @@ body {
 
 .parallax.craythebunny {
     background-image: url(../images/craybg.png);
+    background-size: 350px;
+}
+
+.parallax.grimace {
+    background-image: url(../images/bggrimace.png);
+    background-size: 350px;
+}
+
+.parallax.teaveese {
+    background-image: url(../images/bggrimace.png);
     background-size: 350px;
 }
 
@@ -176,12 +218,21 @@ body {
 }
 
 .sidepanel.bowtop {
-  background-image: url(../images/fadebowtoppanelbg.png);
+    background-image: url(../images/fadebowtoppanelbg.png);
 }
 
 .sidepanel.craythebunny {
     background-image: url(../images/fadecraypanelbg.png);
-  }
+}
+
+.sidepanel.grimace {
+    background-image: url(../images/fadebggrimace.png);
+}
+
+.sidepanel.teaveese {
+    background-image: url(../images/fadebggrimace.png);
+}
+
 
 .sidepanel .closebtn {
     position: absolute;
@@ -244,7 +295,27 @@ body {
 }
 
 #pagination.craythebunny a.active {
-    background-color: #5fee5a;
+    background-color: #4db433;
+}
+
+#pagination.grimace a.active {
+    background-color: #8e87ec;
+}
+
+#pagination.grimace a {
+    background-color: #5c5991;
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.teaveese a.active {
+    background-color: #946a52;
+}
+
+#pagination.teaveese a {
+    background-color: #5c3b2c;
+    border: none;
+    margin-left: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -281,14 +352,14 @@ body {
     }
 
     #title {
-        font-size: 2.5rem;
+        font-size: 4vh;
         position: relative;
         text-align: left;
     }
 
     #grid {
         grid-template-columns: auto auto auto;
-        height:72vh;
+        height: 72vh;
         margin: 1vh 0 0 0 0;
 
     }
