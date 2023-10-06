@@ -400,7 +400,8 @@
             "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/45920535_ufGmd5OnYFGXX3v.png",
             "background-position": "50% 50%",
             "background-size": "200%",
-            "credit-required": 0
+            "credit-required": 1,
+            "href": "https://toyhou.se/jaluz"
           },
           "boximg-19": {
             "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/47152652_khf1giMaG4OZFbm.png",
