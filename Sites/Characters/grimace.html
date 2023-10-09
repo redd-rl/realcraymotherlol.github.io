@@ -173,7 +173,7 @@
   const artboxes = document.querySelectorAll(".boximg");
   const itemsPerPage = 21;
 
-  fetch('../../JSON/pagination.json')
+  fetch('https://realcraymotherlol.github.io/JSON/pagination.json')
     .then(response => response.json())
     .then(content => {
       const currentPageData = content.grimace.ID.Currentpage[pageNumber.toString()];

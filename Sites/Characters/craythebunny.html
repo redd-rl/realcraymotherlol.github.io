@@ -152,7 +152,6 @@
         <a id="prevbtn" href="#">Previous</a>
         <a href="#" class="active">1</a>
         <a href="#">2</a>
-        <a href="#">3</a>
         <a href="#" id="nextbtn">Next</a>
     </div>
 </body>
@@ -176,7 +175,7 @@ function displayItemsForPage(pageNumber) {
   const artboxes = document.querySelectorAll(".boximg");
   const itemsPerPage = 21;
 
-  fetch('../../JSON/pagination.json')
+  fetch('https://realcraymotherlol.github.io/JSON/pagination.json')
     .then(response => response.json())
     .then(content => {
       const currentPageData = content.CrayTheBunny.ID.Currentpage[pageNumber.toString()];
