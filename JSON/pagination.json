@@ -621,7 +621,8 @@
           "boximg-4": {
             "full-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/65941523_Nilcl9eD6jFUjPo.png",
             "background-image":"https://i.ibb.co/vLXRDQ4/4.png",
-            "credit-required": 0
+            "credit-required": 1,
+            "href":"https://toyhou.se/skithing"
           },
           "boximg-5": {
             "full-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/61897452_FkNn7MJ4YEwv6jJ.png",
@@ -637,17 +638,20 @@
           "boximg-7": {
             "full-image": "https://i.ibb.co/LQpFhHH/6-WNSTq-YPZz-IXE7fl1-TCet0jt4t-QRs-Hiy-LEC6-JWx-A7-Em-AU2-Ll5-IVf-Kxce-Y3ox.jpg",
             "background-image":"https://i.ibb.co/0rbrjDp/7.png",
-            "credit-required": 0
+            "credit-required": 1,
+            "href":"https://artfight.net/~Darkmatters"
           },
           "boximg-8": {
             "full-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/68783276_DIj00a7ZgAPK4St.png",
             "background-image":"https://i.ibb.co/f0QHFqd/8.png",
-            "credit-required": 0
+            "credit-required": 1,
+            "href":"https://artfight.net/~Nighthoneyshadow"
           },
           "boximg-9": {
             "full-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/68426067_Yw7W9Mxss3j4h34.png",
             "background-image":"https://i.ibb.co/nncCfmt/th-EY8-Vc-GZA09-SZ3-EDQJCA5-TN2k-Is07-Fa9l-RYZLF2m-RF9-Lq6-Oeo4f-MTQDWMrywb.png",
-            "credit-required": 0
+            "credit-required": 1,
+            "href":"https://toyhou.se/iccceEH"
           }
         }
       }
