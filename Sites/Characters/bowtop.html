@@ -154,9 +154,9 @@
     </div>
     <div id="pagination" class="bowtop">
         <a id="prevbtn" href="#">Previous</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
+        <a href="?page=1" class="active">1</a>
+        <a href="?page=2">2</a>
+        <a href="?page=3">3</a>
         <a href="#" id="nextbtn">Next</a>
     </div>
 </body>
@@ -191,14 +191,13 @@ function displayItemsForPage(pageNumber) {
 
           if (currentPageData.hasOwnProperty(imgboxKey)) {
             const creditvalue = currentPageData[imgboxKey]["credit-required"];
+            const fullsize = currentPageData[imgboxKey]["full-image"];
             const creatorlink = currentPageData[imgboxKey]["href"];
             const backgroundImage = currentPageData[imgboxKey]["background-image"];
-            const backgroundPosition = currentPageData[imgboxKey]["background-position"];
-            const backgroundSize = currentPageData[imgboxKey]["background-size"];
 
-            box.style.background = `url(${backgroundImage}) ${backgroundPosition}/${backgroundSize} no-repeat`;
+            box.style.background = `url(${backgroundImage}) center/cover no-repeat`;
             const hyperlink = box.querySelector('.hyperlinkbox');
-            hyperlink.setAttribute("href", `${backgroundImage}`);
+            hyperlink.setAttribute("href", `${fullsize}`);
             box.parentElement.style.display = 'block';
 
             if (creditvalue === 0 && box.parentElement.querySelector('.textcontainer')) {
