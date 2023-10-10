@@ -171,7 +171,7 @@ body {
 }
 
 .parallax.teaveese {
-    background-image: url(../images/bggrimace.png);
+    background-image: url(../images/teaveesebg.webp);
     background-size: 350px;
 }
 
@@ -230,7 +230,7 @@ body {
 }
 
 .sidepanel.teaveese {
-    background-image: url(../images/fadebggrimace.png);
+    background-image: url(../images/teaveesefadeoutbg.webp);
 }
 
 

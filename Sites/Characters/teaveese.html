@@ -4,11 +4,12 @@
 
 <head>
     <meta content="Cray's gallery" property="og:title">
-    <meta content="Teaveese" property="og:description">
-    <meta content="realcraymotherlol.github.io/stuff/characters/grimace" property="og:url" />
+    <meta content="BowTop" property="og:description">
+    <meta content="realcraymotherlol.github.io/stuff/games" property="og:url" />
     <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
         property="og:image" />
     <meta content="#dea300" data-react-helmet="true" name="theme-color" />
+    <link rel="preload" as="image" href="https://drive.google.com/uc?id=1xBh26CkXaud45e2pY6QV1HCdDQwhfAcg">
     <link rel="stylesheet" href="../../CSS/gallery.css">
     <link rel="stylesheet" href="../../CSS/style.css">
     <link rel="stylesheet" href="../../CSS/characters.css">
@@ -17,8 +18,7 @@
 
 <body>
     <div class="parallax teaveese"></div>
-    <button style="background: url(../../images/info-xxl.svg) center / 70% no-repeat;" class="side-panel-toggle teaveese" onclick="openNav()">
-    </button>
+    <button style="background: url(../../images/info-xxl.svg) center / 70% no-repeat;" class="side-panel-toggle teaveese" onclick="openNav()"></button>
     <div id="titleflex">
         <div id="title">Teaveese</div>
     </div>
@@ -136,42 +136,41 @@
         <div style="display: flex; align-content: center; justify-content: center;">
             <div class="aboutname">Teaveese
                 <div class="personality">
-                    Laid-back, Blissful<br>
-                    Male<br>
-                    Height: 1'7/48.26 cm<br>
-                    Creation date: June 5th 2023<br>
+                    Smart, Keen<br>
+                    Female<br>
+                    Height: 2'7/78,74 cm<br>
+                    Creation date: January 21st 2015<br>
                     ____________________________________
                 </div>
                 <div class="description">
+                    Placeholder
                 </div>
             </div>
         </div>
     </div>
     <div id="pagination" class="teaveese">
-        <a id="prevbtn" href="#">Previous</a>
+        <!-- <a id="prevbtn" href="#">Previous</a> -->
         <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#" id="nextbtn">Next</a>
+        <!-- <a href="#" id="nextbtn">Next</a> -->
     </div>
 </body>
 <script type="text/javascript">
 
-    function openNav() {
-        if (mobile.matches) {
-            document.getElementById("mySidepanel").style.width = "100%";
-        } else {
-            document.getElementById("mySidepanel").style.width = "32vw";
-        }
-        document.getElementById("mySidepanel").style.borderLeft = "5px solid #64281e";
+function openNav() {
+    if (mobile.matches) {
+        document.getElementById("mySidepanel").style.width = "100%";
+    } else {
+        document.getElementById("mySidepanel").style.width = "32vw";
     }
+    document.getElementById("mySidepanel").style.borderLeft = "5px solid rgb(129 53 15)";
+}
 
-    function closeNav() {
-        document.getElementById("mySidepanel").style.width = "0";
-        document.getElementById("mySidepanel").style.borderLeft = "0px solid #64281e";
-    }
+function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+    document.getElementById("mySidepanel").style.borderLeft = "0px solid rgb(129 53 15)";
+}
 
-    function displayItemsForPage(pageNumber) {
+function displayItemsForPage(pageNumber) {
   const artboxes = document.querySelectorAll(".boximg");
   const itemsPerPage = 21;
 
@@ -185,15 +184,14 @@
           const imgboxKey = "boximg-" + (index + 1);
 
           if (currentPageData.hasOwnProperty(imgboxKey)) {
-            const creditvalue = currentPageData[imgboxKey]["credit-required"];
+            const creditvalue = currentPageData[imgboxKey]["credit-required"]
             const creatorlink = currentPageData[imgboxKey]["href"];
             const backgroundImage = currentPageData[imgboxKey]["background-image"];
-            const backgroundPosition = currentPageData[imgboxKey]["background-position"];
-            const backgroundSize = currentPageData[imgboxKey]["background-size"];
+            const fullsize = currentPageData[imgboxKey]["full-image"];
 
-            box.style.background = `url(${backgroundImage}) ${backgroundPosition}/${backgroundSize} no-repeat`;
+            box.style.background = `url(${backgroundImage}) center/ contain no-repeat`;
             const hyperlink = box.querySelector('.hyperlinkbox');
-            hyperlink.setAttribute("href", `${backgroundImage}`);
+            hyperlink.setAttribute("href", `${fullsize}`);
             box.parentElement.style.display = 'block';
 
             if (creditvalue === 0 && box.parentElement.querySelector('.textcontainer')) {
@@ -223,7 +221,9 @@
     });
 }
 
-    displayItemsForPage(1);
+
+displayItemsForPage(1);
+
 </script>
 <script type="text/javascript" src="../../Javascript/Characters.js"></script>
 
