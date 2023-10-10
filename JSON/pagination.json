@@ -570,28 +570,23 @@
       "Currentpage": {
         "1": {
           "boximg-1": {
-            "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/65941523_Nilcl9eD6jFUjPo.png",
-            "background-position": "35% 35%",
-            "background-size": "200%",
-            "credit-required": 1,
+            "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Grimace/3.png",
+            "full-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/65941523_Nilcl9eD6jFUjPo.png",
             "href": "https://toyhou.se/SparkStar23"
           },
           "boximg-2": {
-            "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/65953673_9bdtd3OvMc55XMt.png",
-            "background-position": "40% 50%",
-            "background-size": "200%",
+            "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Grimace/1.png",
+            "full-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/65953673_9bdtd3OvMc55XMt.png",
             "credit-required": 0
           },
           "boximg-3": {
-            "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/66133477_yW44xgJQasEAeEq.png",
-            "background-position": "60% 50%",
-            "background-size": "200%",
+            "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Grimace/2.png",
+            "full-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/66133477_yW44xgJQasEAeEq.png",
             "credit-required": 0
           },
           "boximg-4": {
-            "background-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/66893803_S2Pl1lwHV5gwc3j.gif",
-            "background-position": "50% 50%",
-            "background-size": "200%",
+            "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Grimace/4.png",
+            "full-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/66893803_S2Pl1lwHV5gwc3j.gif",
             "credit-required": 1,
             "href": "https://toyhou.se/skithing"
           }

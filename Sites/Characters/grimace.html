@@ -173,7 +173,7 @@
   const artboxes = document.querySelectorAll(".boximg");
   const itemsPerPage = 21;
 
-  fetch('https://realcraymotherlol.github.io/JSON/pagination.json')
+  fetch('../../JSON/pagination.json')
     .then(response => response.json())
     .then(content => {
       const currentPageData = content.grimace.ID.Currentpage[pageNumber.toString()];
@@ -186,12 +186,11 @@
             const creditvalue = currentPageData[imgboxKey]["credit-required"];
             const creatorlink = currentPageData[imgboxKey]["href"];
             const backgroundImage = currentPageData[imgboxKey]["background-image"];
-            const backgroundPosition = currentPageData[imgboxKey]["background-position"];
-            const backgroundSize = currentPageData[imgboxKey]["background-size"];
+            const fullsize = currentPageData[imgboxKey]["full-image"];
 
-            box.style.background = `url(${backgroundImage}) ${backgroundPosition}/${backgroundSize} no-repeat`;
+            box.style.background = `url(${backgroundImage}) center / contain no-repeat`;
             const hyperlink = box.querySelector('.hyperlinkbox');
-            hyperlink.setAttribute("href", `${backgroundImage}`);
+            hyperlink.setAttribute("href", `${fullsize}`);
             box.parentElement.style.display = 'block';
 
             if (creditvalue === 0 && box.parentElement.querySelector('.textcontainer')) {
