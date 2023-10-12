@@ -4,23 +4,23 @@
 
 <head>
     <meta content="Cray's gallery" property="og:title">
-    <meta content="Teaveese" property="og:description">
-    <meta content="realcraymotherlol.github.io/Sites/Characters/Teaveese" property="og:url" />
+    <meta content="BowTop" property="og:description">
+    <meta content="realcraymotherlol.github.io/Sites/Characters/bowtop" property="og:url" />
     <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
         property="og:image" />
     <meta content="#dea300" data-react-helmet="true" name="theme-color" />
     <link rel="preload" as="image" href="https://drive.google.com/uc?id=1xBh26CkXaud45e2pY6QV1HCdDQwhfAcg">
-    <link rel="stylesheet" href="../../CSS/gallery.css">
-    <link rel="stylesheet" href="../../CSS/style.css">
-    <link rel="stylesheet" href="../../CSS/characters.css">
+    <link rel="stylesheet" href="../../../CSS/gallery.css">
+    <link rel="stylesheet" href="../../../CSS/style.css">
+    <link rel="stylesheet" href="../../../CSS/characters.css">
     <title>Gallery</title>
 </head>
 
 <body>
-    <div class="parallax teaveese"></div>
-    <button style="background: url(../../images/info-xxl.svg) center / 70% no-repeat;" class="side-panel-toggle teaveese" onclick="openNav()"></button>
+    <div class="parallax bowtopwinter"></div>
+    <button style="background: url(../../../images/info-xxl.svg) center / 70% no-repeat;" class="side-panel-toggle bowtopwinter" onclick="openNav()"></button>
     <div id="titleflex">
-        <div id="title">Teaveese</div>
+        <div id="title">BowTop</div>
     </div>
     <div style="height:100%;">
         <div id="grid" style="display:grid;">
@@ -131,27 +131,39 @@
             </div>
         </div>
     </div>
-    <div id="mySidepanel" class="sidepanel teaveese">
+    <div id="mySidepanel" class="sidepanel bowtopwinter">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <div style="display: flex; align-content: center; justify-content: center;">
-            <div class="aboutname">Teaveese
+            <div class="aboutname">BowTop
                 <div class="personality">
-                    Smart, Keen<br>
-                    Female<br>
-                    Height: 2'7/78,74 cm<br>
-                    Creation date: January 21st 2015<br>
+                    Polite, Supportive<br>
+                    Male<br>
+                    Height: 2'4/71 cm<br>
+                    Creation date: December 22th 2019<br>
                     ____________________________________
                 </div>
                 <div class="description">
-                    Placeholder
+                    BowTop is a Lego brick that seemingly has magician powers,<br>
+                    most of the time he is seen without his suit and tophat on.<br><br>
+
+                    He was my sona for a while, until I decided to turn over to Cray The Bunny.<br>
+                    as I didn't have any interest for him anymore.<br>
+                </div>
+                <div>
+                    <a class="tabs" href="index">Main</a><br>
+                    <a class="tabs" href="references">Reference sheets</a><br>
+                    <a class="tabs" href="winter">Winter</a>
+                    
                 </div>
             </div>
         </div>
     </div>
-    <div id="pagination" class="teaveese">
-        <!-- <a id="prevbtn" href="#">Previous</a> -->
-        <a href="#" class="active">1</a>
-        <!-- <a href="#" id="nextbtn">Next</a> -->
+    <div id="pagination" class="bowtopwinter">
+        <a id="prevbtn" href="#">Previous</a>
+        <a href="?page=1" class="active">1</a>
+        <a href="?page=2">2</a>
+        <a href="?page=3">3</a>
+        <a href="#" id="nextbtn">Next</a>
     </div>
 </body>
 <script type="text/javascript">
@@ -162,34 +174,34 @@ function openNav() {
     } else {
         document.getElementById("mySidepanel").style.width = "32vw";
     }
-    document.getElementById("mySidepanel").style.borderLeft = "5px solid rgb(129 53 15)";
+    document.getElementById("mySidepanel").style.borderLeft = "5px solid #6bc5e9";
 }
 
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
-    document.getElementById("mySidepanel").style.borderLeft = "0px solid rgb(129 53 15)";
+    document.getElementById("mySidepanel").style.borderLeft = "0px solid #6bc5e9";
 }
 
 function displayItemsForPage(pageNumber) {
   const artboxes = document.querySelectorAll(".boximg");
   const itemsPerPage = 21;
 
-  fetch('../../JSON/pagination.json')
+  fetch('../../../JSON/pagination.json')
     .then(response => response.json())
     .then(content => {
-      const currentPageData = content.teaveese.ID.Currentpage[pageNumber.toString()];
+      const currentPageData = content.Bowtop.winter.ID.Currentpage[pageNumber.toString()];
 
       artboxes.forEach((box, index) => {
         if (index < itemsPerPage) {
           const imgboxKey = "boximg-" + (index + 1);
 
           if (currentPageData.hasOwnProperty(imgboxKey)) {
-            const creditvalue = currentPageData[imgboxKey]["credit-required"]
+            const creditvalue = currentPageData[imgboxKey]["credit-required"];
+            const fullsize = currentPageData[imgboxKey]["full-image"];
             const creatorlink = currentPageData[imgboxKey]["href"];
             const backgroundImage = currentPageData[imgboxKey]["background-image"];
-            const fullsize = currentPageData[imgboxKey]["full-image"];
 
-            box.style.background = `url(${backgroundImage}) center/ contain no-repeat`;
+            box.style.background = `url(${backgroundImage}) center/cover no-repeat`;
             const hyperlink = box.querySelector('.hyperlinkbox');
             hyperlink.setAttribute("href", `${fullsize}`);
             box.parentElement.style.display = 'block';
@@ -221,10 +233,8 @@ function displayItemsForPage(pageNumber) {
     });
 }
 
-
 displayItemsForPage(1);
-
 </script>
-<script type="text/javascript" src="../../Javascript/Characters.js"></script>
+<script type="text/javascript" src="../../../Javascript/Characters.js"></script>
 
 </html>
