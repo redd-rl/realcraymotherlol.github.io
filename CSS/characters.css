@@ -71,6 +71,12 @@ body {
 .side-panel-toggle.grimace:active {filter: hue-rotate(22deg) brightness(0.8);top: 9px;}
 .side-panel-toggle.teaveese { filter: hue-rotate(127deg) saturate(0.5) drop-shadow(0px 4px 0.2px #3a292a)}
 .side-panel-toggle.teaveese:active { filter: hue-rotate(127deg) saturate(0.5) brightness(0.8); top: 9px; }
+.side-panel-toggle.shayloubelittle { filter: hue-rotate(311grad) brightness(1.50) drop-shadow(0px 4px 0.2px #33704e);}
+.side-panel-toggle.shayloubelittle:active { filter: hue-rotate(311grad) brightness(0.8); top: 9px; }
+.side-panel-toggle.hasami { filter: hue-rotate(135grad) saturate(1.6) drop-shadow(0px 4px 0.2px #441717);}
+.side-panel-toggle.hasami:active { filter: hue-rotate(135grad) saturate(1.6) brightness(0.8); top: 9px; }
+.side-panel-toggle.checkya { filter: saturate(0.8) drop-shadow(0px 4px 0.2px #253346);}
+.side-panel-toggle.checkya:active { filter: saturate(0.8) brightness(0.8); top: 9px; }
 
 .chrname {
     font-family: 'Coolvetica';
@@ -83,6 +89,19 @@ a.tabs{
     color: rgb(202, 48, 182);
     transition:all 0.2s;
     font-size:25px;
+}
+
+a.tabs.disabled{
+    font-family: 'ProtoPixel';
+    text-decoration: none; 
+    color: rgb(99, 24, 52);
+    transition:none;
+    font-size:25px;
+}
+
+a.tabs.disabled:hover {
+    color: rgb(99, 24, 52);
+    cursor: default;
 }
 
 a.tabs:hover {
@@ -169,6 +188,21 @@ a.tabs:hover {
 
 .parallax.teaveese {
     background-image: url(../images/teaveesebg.webp);
+    background-size: 350px;
+}
+
+.parallax.shayloubelittle {
+    background-image: url(../images/shayloubg.webp);
+    background-size: 350px;
+}
+
+.parallax.hasami {
+    background-image: url(../images/hasamibg.webp);
+    background-size: 350px;
+}
+
+.parallax.checkya {
+    background-image: url(../images/checkyabg.webp);
     background-size: 350px;
 }
 
@@ -323,10 +357,41 @@ a.tabs:hover {
 }
 
 #pagination.teaveese a {
-    background-color: #5c3b2c;
+    background-color: #4b372b;
     border: none;
     margin-left: 5px;
 }
+
+#pagination.shayloubelittle a.active {
+    background-color: #7cf8a1;
+}
+
+#pagination.shayloubelittle a {
+    background-color: rgb(32, 78, 47);
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.hasami a.active {
+    background-color: rgb(163, 163, 163);
+}
+
+#pagination.hasami a {
+    background-color: rgb(92, 92, 92);
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.checkya a.active {
+    background-color: #5b7fb1;
+}
+
+#pagination.checkya a {
+    background-color: #253346; 
+    border: none;
+    margin-left: 5px;
+}
+
 
 @media only screen and (max-width: 600px) {
     #pagination a {
