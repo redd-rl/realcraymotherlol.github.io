@@ -43,23 +43,8 @@ const pagination = document.getElementById("pagination");
 const prevButton = document.getElementById("prevbtn");
 const nextButton = document.getElementById("nextbtn");
 const pageLinks = pagination.querySelectorAll("a");
-
-const itemsPerPage = 21;
+var mobile = window.matchMedia("(max-width: 600px)")
 let currentPage = 1;
-
-
-function displayItemsForPage(pageNumber) {
-    const artboxes = document.querySelectorAll(".artbox");
-    artboxes.forEach((box, index) => {
-        if (index >= (pageNumber - 1) * itemsPerPage && index < pageNumber * itemsPerPage) {
-            box.style.display = "block";
-        } else {
-            box.style.display = "none";
-        }
-    });
-}
-
-displayItemsForPage(currentPage);
 
 function navigateToPage(pageNumber) {
     currentPage = pageNumber;

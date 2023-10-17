@@ -1,5 +1,5 @@
 {
-  "Gallery": {
+  "gallery": {
     "ID": {
       "Currentpage": {
         "1": {
@@ -86,6 +86,16 @@
           "boximg-21": {
             "background-image": "https://i.ibb.co/LPnTDV6/43592595-u-Jz-EXF6-Pb6l-QTa-B.webp",
             "full-image": "https://i.ibb.co/ngTS3wZ/43592595-u-Jz-EXF6-Pb6l-QTa-B.png"
+          }
+        },
+        "2": {
+          "boximg-1":{
+            "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/slugmouthtb.png",
+            "full-image":"https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/slugmouth.png"
+          },
+          "boximg-2":{
+            "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/moogl.png",
+            "full-image":"https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/moogle.png"
           }
         }
       }
@@ -588,6 +598,23 @@
             "credit-required": 1,
             "href": "https://toyhou.se/clickbaitvideo"
           }
+        },
+        "3":{
+          "boximg-1": {
+            "full-image": "https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/18th_birthday.png",
+            "background-image": "https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/18th_birthday.png",
+            "credit-required": 0
+          },
+          "boximg-2": {
+            "full-image": "https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/craypancak.png",
+            "background-image": "https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/craypancaklow.png",
+            "credit-required": 0
+          },
+          "boximg-3": {
+            "full-image": "https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/j.png",
+            "background-image": "https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/jlow.png",
+            "credit-required": 0
+          }
         }
       }
     }
@@ -879,6 +906,24 @@
               "background-image": "https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Checkya/6.png",
               "credit-required": 1,
               "href":"https://artfight.net/~FallFirefly"
+            }
+          }
+        }
+      }
+    }
+  },
+  "danny":{
+    "main":{
+      "ID":{
+        "Currentpage":{
+          "1":{
+            "boximg-1":{
+              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/1low",
+              "full-image":"https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/42583958_Qny5gC3OhDgpT5Z.png"
+            },
+            "boximg-2":{
+              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/45459771_qHr_13755281",
+              "full-image":"https://f2.toyhou.se/file/f2-toyhou-se/images/45459771_qHr041JtVsG7OQG.png"
             }
           }
         }

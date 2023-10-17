@@ -4,12 +4,11 @@
 
 <head>
     <meta content="Cray's gallery" property="og:title">
-    <meta content="Cray The Bunny" property="og:description">
-    <meta content="realcraymotherlol.github.io/Sites/Characters/craythebunny" property="og:url" />
+    <meta content="Danny" property="og:description">
+    <meta content="realcraymotherlol.github.io/Sites/Characters/hasami" property="og:url" />
     <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
         property="og:image" />
     <meta content="#dea300" data-react-helmet="true" name="theme-color" />
-    <link rel="preload" as="image" href="https://drive.google.com/uc?id=1xBh26CkXaud45e2pY6QV1HCdDQwhfAcg">
     <link rel="stylesheet" href="../../../CSS/gallery.css">
     <link rel="stylesheet" href="../../../CSS/style.css">
     <link rel="stylesheet" href="../../../CSS/characters.css">
@@ -17,10 +16,10 @@
 </head>
 
 <body>
-    <div class="parallax craythebunny"></div>
-    <button style="background: url(../../../images/info-xxl.svg) center / 70% no-repeat;" class="side-panel-toggle craythebunny" onclick="openNav()"></button>
+    <div class="parallax danny"></div>
+    <button style="background: url(../../../images/info-xxl.svg) center / 70% no-repeat;" class="side-panel-toggle danny" onclick="openNav()"></button>
     <div id="titleflex">
-        <div id="title">Cray the Bunny</div>
+        <div id="title">Danny</div>
     </div>
     <div style="height:100%;">
         <div id="grid" style="display:grid;">
@@ -131,29 +130,35 @@
             </div>
         </div>
     </div>
-    <div id="mySidepanel" class="sidepanel craythebunny">
+    <div id="mySidepanel" class="sidepanel danny">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <div style="display: flex; align-content: center; justify-content: center;">
-            <div class="aboutname">Cray the Bunny
+            <div class="aboutname">Danny
                 <div class="personality">
-                    Goofy, Easygoing<br>
-                    Male<br>
-                    Height: 5'10/179 cm<br>
-                    Creation date: January 21st 2015<br>
+                    ?<br>
+                    ?<br>
+                    Height: 1'6/25 cm<br>
+                    Creation date: 4th December 2021<br>
                     ____________________________________
                 </div>
                 <div class="description">
-                    Placeholder
+                    Lorem Ipsum<br>
+                    ____________________________________
+                </div>
+
+                <div>
+                    <a class="tabs" href="main">Main</a><br>
+                    <a class="tabs disabled">Reference sheets</a><br>
                 </div>
             </div>
         </div>
     </div>
-    <div id="pagination" class="craythebunny">
-        <a id="prevbtn" href="#">Previous</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#" id="nextbtn">Next</a>
+    <div id="pagination" class="danny">
+       <!-- <a id="prevbtn" href="#">Previous</a> -->
+        <a href="?page=1" class="active">1</a>
+       <!-- <a href="?page=2">2</a> -->
+       <!-- <a href="?page=3">3</a> --> 
+       <!-- <a href="#" id="nextbtn">Next</a> --> 
     </div>
 </body>
 <script type="text/javascript">
@@ -164,12 +169,12 @@ function openNav() {
     } else {
         document.getElementById("mySidepanel").style.width = "32vw";
     }
-    document.getElementById("mySidepanel").style.borderLeft = "5px solid #42a113";
+    document.getElementById("mySidepanel").style.borderLeft = "5px solid #b33c3c";
 }
 
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
-    document.getElementById("mySidepanel").style.borderLeft = "0px solid #42a113";
+    document.getElementById("mySidepanel").style.borderLeft = "0px solid #b33c3c";
 }
 
 function displayItemsForPage(pageNumber) {
@@ -179,17 +184,17 @@ function displayItemsForPage(pageNumber) {
   fetch('../../../JSON/pagination.json')
     .then(response => response.json())
     .then(content => {
-      const currentPageData = content.CrayTheBunny.ID.Currentpage[pageNumber.toString()];
+      const currentPageData = content.danny.main.ID.Currentpage[pageNumber.toString()];
 
       artboxes.forEach((box, index) => {
         if (index < itemsPerPage) {
           const imgboxKey = "boximg-" + (index + 1);
 
           if (currentPageData.hasOwnProperty(imgboxKey)) {
-            const creditvalue = currentPageData[imgboxKey]["credit-required"]
+            const creditvalue = currentPageData[imgboxKey]["credit-required"];
+            const fullsize = currentPageData[imgboxKey]["full-image"];
             const creatorlink = currentPageData[imgboxKey]["href"];
             const backgroundImage = currentPageData[imgboxKey]["background-image"];
-            const fullsize = currentPageData[imgboxKey]["full-image"];
 
             box.style.background = `url(${backgroundImage}) center/cover no-repeat`;
             const hyperlink = box.querySelector('.hyperlinkbox');
@@ -223,9 +228,7 @@ function displayItemsForPage(pageNumber) {
     });
 }
 
-
 displayItemsForPage(1);
-
 </script>
 <script type="text/javascript" src="../../../Javascript/Characters.js"></script>
 
