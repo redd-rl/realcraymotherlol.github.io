@@ -219,7 +219,6 @@ ul {
     border: 2px solid white;
     background-repeat: no-repeat;
     background-position: center;
-    transition: 0.2s opacity;
 }
 
 .artbox {
@@ -230,10 +229,6 @@ ul {
     width: 10em;
     border: 2px solid white;
     background-repeat: no-repeat;
-}
-
-.chrbox:hover {
-    opacity: 70%;
 }
 
 .boximg {
