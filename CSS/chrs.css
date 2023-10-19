@@ -19,6 +19,8 @@
 .side-panel-toggle.danny:active { filter: hue-rotate(214grad) saturate(7) brightness(0.8); top: 9px; }
 .side-panel-toggle.spectre { filter: hue-rotate(189deg) saturate(12) drop-shadow(0px 4px 0.2px #524116);}
 .side-panel-toggle.spectre:active { filter: hue-rotate(189deg) saturate(12) brightness(0.8); top: 9px; }
+.side-panel-toggle.candybunch { filter: hue-rotate(189deg) saturate(12) drop-shadow(0px 4px 0.2px #524116);}
+.side-panel-toggle.candybunch:active { filter: hue-rotate(189deg) saturate(12) brightness(0.8); top: 9px; }
 
 .parallax.bowtop {
     background-image: url(../images/bowtopbg.png);
@@ -66,7 +68,12 @@
 }
 
 .parallax.spectre {
-    background-image: url(../images/dannybg.webp);
+    background-image: url(../images/spectrebg.webp);
+    background-size: 350px;
+}
+
+.parallax.candybunch {
+    background-image: url(../images/spectrebg.webp);
     background-size: 350px;
 }
 
@@ -178,3 +185,24 @@
     border: none;
     margin-left: 5px;
 }
+
+#pagination.spectre a.active {
+    background-color: #f7d67b;
+}
+
+#pagination.spectre a {
+    background-color: #886537; 
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.candybunch a.active {
+    background-color: #f7d67b;
+}
+
+#pagination.candybunch a {
+    background-color: #886537; 
+    border: none;
+    margin-left: 5px;
+}
+
