@@ -1,0 +1,180 @@
+
+.side-panel-toggle.bowtop {filter: hue-rotate(174deg) saturate(4) drop-shadow(0px 4px 0.2px #64281e);}
+.side-panel-toggle.bowtop:active {filter: hue-rotate(174deg) saturate(4) brightness(0.8);top: 9px;}
+.side-panel-toggle.bowtopwinter {filter: hue-rotate(328deg) saturate(4) drop-shadow(0px 4px 0.2px #1e4e64);}
+.side-panel-toggle.bowtopwinter:active {filter: hue-rotate(328deg) saturate(2); top: 9px;}
+.side-panel-toggle.craythebunny {filter: hue-rotate(259deg) drop-shadow(0px 4px 0.2px #205019);}
+.side-panel-toggle.craythebunny:active {filter: hue-rotate(259deg) brightness(0.8); top: 9px;}
+.side-panel-toggle.grimace {filter: hue-rotate(22deg) drop-shadow(0px 4px 0.2px #5838af)}
+.side-panel-toggle.grimace:active {filter: hue-rotate(22deg) brightness(0.8);top: 9px;}
+.side-panel-toggle.teaveese { filter: hue-rotate(127deg) saturate(0.5) drop-shadow(0px 4px 0.2px #3a292a)}
+.side-panel-toggle.teaveese:active { filter: hue-rotate(127deg) saturate(0.5) brightness(0.8); top: 9px; }
+.side-panel-toggle.shayloubelittle { filter: hue-rotate(311grad) brightness(1.50) drop-shadow(0px 4px 0.2px #33704e);}
+.side-panel-toggle.shayloubelittle:active { filter: hue-rotate(311grad) brightness(0.8); top: 9px; }
+.side-panel-toggle.hasami { filter: hue-rotate(135grad) saturate(1.6) drop-shadow(0px 4px 0.2px #441717);}
+.side-panel-toggle.hasami:active { filter: hue-rotate(135grad) saturate(1.6) brightness(0.8); top: 9px; }
+.side-panel-toggle.checkya { filter: saturate(0.8) drop-shadow(0px 4px 0.2px #253346);}
+.side-panel-toggle.checkya:active { filter: saturate(0.8) brightness(0.8); top: 9px; }
+.side-panel-toggle.danny { filter: hue-rotate(214grad) saturate(7) drop-shadow(0px 4px 0.2px #3d3f1d);}
+.side-panel-toggle.danny:active { filter: hue-rotate(214grad) saturate(7) brightness(0.8); top: 9px; }
+.side-panel-toggle.spectre { filter: hue-rotate(189deg) saturate(12) drop-shadow(0px 4px 0.2px #524116);}
+.side-panel-toggle.spectre:active { filter: hue-rotate(189deg) saturate(12) brightness(0.8); top: 9px; }
+
+.parallax.bowtop {
+    background-image: url(../images/bowtopbg.png);
+    background-size: 350px;
+}
+
+.parallax.bowtopwinter {
+    background-image: url(../images/winterbowtopbg.webp);
+    background-size: 350px;
+}
+
+.parallax.craythebunny {
+    background-image: url(../images/craybg.png);
+    background-size: 350px;
+}
+
+.parallax.grimace {
+    background-image: url(../images/bggrimace.png);
+    background-size: 350px;
+}
+
+.parallax.teaveese {
+    background-image: url(../images/teaveesebg.webp);
+    background-size: 350px;
+}
+
+.parallax.shayloubelittle {
+    background-image: url(../images/shayloubg.webp);
+    background-size: 350px;
+}
+
+.parallax.hasami {
+    background-image: url(../images/hasamibg.webp);
+    background-size: 350px;
+}
+
+.parallax.checkya {
+    background-image: url(../images/checkyabg.webp);
+    background-size: 350px;
+}
+
+.parallax.danny {
+    background-image: url(../images/dannybg.webp);
+    background-size: 350px;
+}
+
+.parallax.spectre {
+    background-image: url(../images/dannybg.webp);
+    background-size: 350px;
+}
+
+.sidepanel.bowtop {
+    background-image: url(../images/fadebowtoppanelbg.png);
+}
+.sidepanel.winterbowtop {
+    background-image: url(../images/fadewinterbowtoppanelbg.webp);
+}
+
+.sidepanel.craythebunny {
+    background-image: url(../images/fadecraypanelbg.png);
+}
+
+.sidepanel.grimace {
+    background-image: url(../images/fadebggrimace.png);
+}
+
+.sidepanel.teaveese {
+    background-image: url(../images/teaveesefadeoutbg.webp);
+}
+
+#pagination.bowtop a {
+    background-color: #5a3e0b;
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.bowtop a.active {
+    background-color: #eeba5a;
+}
+
+#pagination.bowtopwinter a {
+    background-color: #61a7c2;
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.bowtopwinter a.active {
+    background-color: #6bc5e9;
+}
+
+#pagination.craythebunny a {
+    background-color: #1b5a0b;
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.craythebunny a.active {
+    background-color: #4db433;
+}
+
+#pagination.grimace a.active {
+    background-color: #8e87ec;
+}
+
+#pagination.grimace a {
+    background-color: #5c5991;
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.teaveese a.active {
+    background-color: #946a52;
+}
+
+#pagination.teaveese a {
+    background-color: #4b372b;
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.shayloubelittle a.active {
+    background-color: #7cf8a1;
+}
+
+#pagination.shayloubelittle a {
+    background-color: rgb(32, 78, 47);
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.hasami a.active {
+    background-color: rgb(163, 163, 163);
+}
+
+#pagination.hasami a {
+    background-color: rgb(92, 92, 92);
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.checkya a.active {
+    background-color: #5b7fb1;
+}
+
+#pagination.checkya a {
+    background-color: #253346; 
+    border: none;
+    margin-left: 5px;
+}
+
+#pagination.danny a.active {
+    background-color: #dfdd6d;
+}
+
+#pagination.danny a {
+    background-color: #746e21; 
+    border: none;
+    margin-left: 5px;
+}

@@ -922,8 +922,30 @@
               "full-image":"https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/42583958_Qny5gC3OhDgpT5Z.png"
             },
             "boximg-2":{
-              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/45459771_qHr_13755281",
+              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/45459771_qHr_13755281.png",
               "full-image":"https://f2.toyhou.se/file/f2-toyhou-se/images/45459771_qHr041JtVsG7OQG.png"
+            }
+          }
+        }
+      }
+    }
+  },
+  "spectre":{
+    "main":{
+      "ID":{
+        "Currentpage":{
+          "1":{
+            "boximg-1":{
+              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Spectre/1.png",
+              "full-image":"https://f2.toyhou.se/file/f2-toyhou-se/images/19155786_wSg7pbb21mHGTZ8.png",
+              "credit-required": 1,
+              "href":"https://scratch.mit.edu/users/-CloudySkys-/"
+            },
+            "boximg-2":{
+              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Spectre/2.png",
+              "full-image":"https://f2.toyhou.se/file/f2-toyhou-se/images/28123522_zSJp06CeJ5dgZCL.png",
+              "credit-required": 1,
+              "href":"https://toyhou.se/ozae"
             }
           }
         }
