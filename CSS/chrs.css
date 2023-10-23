@@ -73,7 +73,7 @@
 }
 
 .parallax.candybunch {
-    background-image: url(../images/spectrebg.webp);
+    background-image: url(../images/candybunchbg.webp);
     background-size: 350px;
 }
 
@@ -95,6 +95,23 @@
 .sidepanel.teaveese {
     background-image: url(../images/teaveesefadeoutbg.webp);
 }
+
+.sidepanel.shayloubelittle {
+    background-image: url(../images/shayloubgfade.webp);
+}
+
+.sidepanel.checkya {
+    background-image: url(../images/checkyabgfade.webp);
+}
+
+.sidepanel.spectre {
+    background-image: url(../images/spectrebgfadeout.webp);
+}
+
+.sidepanel.candybunch {
+    background-image: url(../images/candybunchfade.webp);
+}
+
 
 #pagination.bowtop a {
     background-color: #5a3e0b;

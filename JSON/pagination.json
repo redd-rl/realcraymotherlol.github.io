@@ -951,5 +951,43 @@
         }
       }
     }
+  },
+  "candybunch":{
+    "main":{
+      "ID":{
+        "Currentpage":{
+          "1":{
+            "boximg-1":{
+              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Candy%20Bunch/1.png",
+              "full-image":"https://f2.toyhou.se/file/f2-toyhou-se/images/54532904_x5lUWFDdAXWPNsm.jpg",
+              "credit-required": 1,
+              "href":"https://toyhou.se/transspecies"
+            },
+            "boximg-2":{
+              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Candy%20Bunch/2.png",
+              "full-image":"https://f2.toyhou.se/file/f2-toyhou-se/images/54657360_BTE3qzx2vNFNzGb.png",
+              "credit-required": 0
+            },
+            "boximg-3":{
+              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Candy%20Bunch/3.png",
+              "full-image":"https://f2.toyhou.se/file/f2-toyhou-se/images/54700742_sEb737ZcJxTZ1Im.png",
+              "credit-required": 1,
+              "href":"https://toyhou.se/skithing"
+            },
+            "boximg-4":{
+              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Candy%20Bunch/4.png",
+              "full-image":"https://f2.toyhou.se/file/f2-toyhou-se/images/64513704_5JKMVWEWAnwwpR1.png",
+              "credit-required": 0
+            },
+            "boximg-5":{
+              "background-image":"https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Candy%20Bunch/5.png",
+              "full-image":"https://f2.toyhou.se/file/f2-toyhou-se/images/68782393_U7m5M85UxE7B5QP.jpg",
+              "credit-required": 1,
+              "href":"https://artfight.net/~SkyThexAlmighty"
+            }
+          }
+        }
+      }
+    }
   }
 }
