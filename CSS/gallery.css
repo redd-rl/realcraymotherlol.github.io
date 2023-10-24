@@ -4,9 +4,9 @@ body {
 }
 
 .videoplayer {
-    width: 60rem;
+    width: 60vw;
     padding: 15px;
-    height: 36rem;
+    height: 36vw;
     border: 3px solid rgb(41, 41, 41);
     border-radius: 6px;
     background-color: black;
@@ -40,6 +40,10 @@ body {
 {
 	width: 12px;
 	background-color: #F5F5F5;
+}
+
+.textcontainer:hover {
+    opacity: 70%;
 }
 
 .videolist::-webkit-scrollbar-thumb
@@ -259,6 +263,7 @@ ul {
     text-align: center;
     position: absolute;
     left: 0;
+    bottom: -18%;
     right: 0;
     filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 1));
     font-weight: 500;
@@ -270,7 +275,6 @@ ul {
 
 .textcontainer {
     position: relative;
-    bottom: -5%;
     height: 100%;
 }
 

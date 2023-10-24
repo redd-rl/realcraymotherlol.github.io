@@ -171,8 +171,13 @@ a.tabs:hover {
 
 .textcontainer {
     height: 0%;
+    bottom:-5%;
     z-index: 1;
     color: white;
+}
+
+#pagination {
+    bottom:3%;
 }
 
 .sidepanel {
@@ -210,6 +215,8 @@ a.tabs:hover {
     text-align: center;
     font-family: 'Rubik';
     display: flex;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -225,8 +232,8 @@ a.tabs:hover {
     color: white;
     margin-top: 5%;
     font-size: 1rem;
+    text-align: center;
     font-family: 'Rubik';
-    width: 85%;
 }
 
 

@@ -4,12 +4,11 @@
 
 <head>
     <meta content="Cray's gallery" property="og:title">
-    <meta content="BowTop" property="og:description">
-    <meta content="realcraymotherlol.github.io/Sites/Characters/bowtop" property="og:url" />
+    <meta content="Danny" property="og:description">
+    <meta content="realcraymotherlol.github.io/Sites/Characters/hasami" property="og:url" />
     <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
         property="og:image" />
     <meta content="#dea300" data-react-helmet="true" name="theme-color" />
-    <link rel="preload" as="image" href="https://drive.google.com/uc?id=1xBh26CkXaud45e2pY6QV1HCdDQwhfAcg">
     <link rel="stylesheet" href="../../../CSS/gallery.css">
     <link rel="stylesheet" href="../../../CSS/style.css">
     <link rel="stylesheet" href="../../../CSS/chrs.css">
@@ -18,10 +17,10 @@
 </head>
 
 <body>
-    <div class="parallax bowtop"></div>
-    <button style="background: url(../../../images/info-xxl.svg) center / 70% no-repeat;" class="side-panel-toggle bowtop" onclick="openNav()"></button>
+    <div class="parallax ioben"></div>
+    <button style="background: url(../../../images/info-xxl.svg) center / 70% no-repeat;" class="side-panel-toggle ioben" onclick="openNav()"></button>
     <div id="titleflex">
-        <div id="title">BowTop</div>
+        <div id="title">Ioben</div>
     </div>
     <div style="height:100%;">
         <div id="grid" style="display:grid;">
@@ -132,38 +131,37 @@
             </div>
         </div>
     </div>
-    <div id="mySidepanel" class="sidepanel bowtop">
+    <div id="mySidepanel" class="sidepanel ioben">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <div style="display: flex; align-content: center; justify-content: center;">
-            <div class="aboutname">BowTop
+            <div class="aboutname">Iobenlamukuruetsoetstegeimvera
                 <div class="personality">
-                    Polite, Supportive<br>
-                    Male<br>
-                    Height: 2'4/71 cm<br>
-                    Creation date: December 22th 2019<br>
-                    ____________________________________
+                    ?<br>
+                    ?<br>
+                    Height: 4'7/139 cm<br>
+                    Creation date: January 13th 2020<br>
+                    Designed by: Craymotherlol<br>
+                    ____________________________________<br>
                 </div>
                 <div class="description">
-                    BowTop is a Lego brick that seemingly has magician powers,<br>
-                    most of the time he is seen without his suit and tophat on.<br><br>
-
-                    He was my sona for a while, until I decided to turn over to Cray The Bunny.<br>
-                    as I didn't have any interest for him anymore.<br>
+                    (pronounced yo~bin ioben as a shorter name.) <br>
+                    they/her full name translated is "I am the greatest and the sweetest alien in the world" in different languages.<br>
+                    An energetic toddler-like behaving non-binary alien that my friend came up and I did the design for her.<br>
+                    this character was going to be used in my show although it was a stretch.<br>
+                    her antenna ball changes color depending on the emotion.
                 </div>
+
                 <div>
-                    <a class="tabs" href="references">Reference sheets</a>
-                    <a class="tabs" href="references">Winter</a>
-                    
                 </div>
             </div>
         </div>
     </div>
-    <div id="pagination" class="bowtop">
-        <a id="prevbtn" href="#">Previous</a>
+    <div id="pagination" class="ioben">
+       <!-- <a id="prevbtn" href="#">Previous</a> -->
         <a href="?page=1" class="active">1</a>
-        <a href="?page=2">2</a>
-        <a href="?page=3">3</a>
-        <a href="#" id="nextbtn">Next</a>
+       <!-- <a href="?page=2">2</a> -->
+       <!-- <a href="?page=3">3</a> --> 
+       <!-- <a href="#" id="nextbtn">Next</a> --> 
     </div>
 </body>
 <script type="text/javascript">
@@ -174,12 +172,12 @@ function openNav() {
     } else {
         document.getElementById("mySidepanel").style.width = "32vw";
     }
-    document.getElementById("mySidepanel").style.borderLeft = "5px solid #ffb833";
+    document.getElementById("mySidepanel").style.borderLeft = "5px solid #853788";
 }
 
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
-    document.getElementById("mySidepanel").style.borderLeft = "0px solid #ffb833";
+    document.getElementById("mySidepanel").style.borderLeft = "0px solid #853788";
 }
 
 function displayItemsForPage(pageNumber) {
@@ -189,7 +187,7 @@ function displayItemsForPage(pageNumber) {
   fetch('../../../JSON/pagination.json')
     .then(response => response.json())
     .then(content => {
-      const currentPageData = content.Bowtop.references.ID.Currentpage[pageNumber.toString()];
+      const currentPageData = content.ioben.main.ID.Currentpage[pageNumber.toString()];
 
       artboxes.forEach((box, index) => {
         if (index < itemsPerPage) {
