@@ -87,6 +87,13 @@ a.tabs.disabled:hover {
     cursor: default;
 }
 
+#optr {
+    transition: 0.5s all;
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    height:100%;
+}
+
 a.tabs:hover {
     color:#722174;
 }
@@ -188,8 +195,6 @@ a.tabs:hover {
     top: 0;
     right: 0;
     border-left: none;
-    background-position: 0% 100%;
-    background-repeat: repeat-x;
     background-color: rgb(17, 17, 17);
     overflow: hidden;
     transition: 0.5s all;

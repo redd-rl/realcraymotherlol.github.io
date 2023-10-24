@@ -132,6 +132,7 @@
         </div>
     </div>
     <div id="mySidepanel" class="sidepanel hasami">
+        <div id="optr" class="hasami">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <div style="display: flex; align-content: center; justify-content: center;">
             <div class="aboutname">Hasami
@@ -155,6 +156,7 @@
             </div>
         </div>
     </div>
+    </div>
     <div id="pagination" class="hasami">
        <!-- <a id="prevbtn" href="#">Previous</a> -->
         <a href="?page=1" class="active">1</a>
@@ -172,9 +174,11 @@ function openNav() {
         document.getElementById("mySidepanel").style.width = "32vw";
     }
     document.getElementById("mySidepanel").style.borderLeft = "5px solid #b33c3c";
+    innerpanel.style.opacity = "1.0";
 }
 
 function closeNav() {
+    innerpanel.style.opacity = "0.0";
     document.getElementById("mySidepanel").style.width = "0";
     document.getElementById("mySidepanel").style.borderLeft = "0px solid #b33c3c";
 }

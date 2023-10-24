@@ -175,9 +175,11 @@ function openNav() {
         document.getElementById("mySidepanel").style.width = "32vw";
     }
     document.getElementById("mySidepanel").style.borderLeft = "5px solid #ffb833";
+    innerpanel.style.opacity = "1.0";
 }
 
 function closeNav() {
+    innerpanel.style.opacity = "0.0";
     document.getElementById("mySidepanel").style.width = "0";
     document.getElementById("mySidepanel").style.borderLeft = "0px solid #ffb833";
 }

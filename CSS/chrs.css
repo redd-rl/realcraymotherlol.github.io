@@ -106,50 +106,50 @@
     background-size: 350px;
 }
 
-.sidepanel.bowtop {
+#optr.bowtop {
     background-image: url(../images/fadebowtoppanelbg.png);
 }
-.sidepanel.winterbowtop {
+#optr.winterbowtop {
     background-image: url(../images/fadewinterbowtoppanelbg.webp);
 }
 
-.sidepanel.craythebunny {
+#optr.craythebunny {
     background-image: url(../images/fadecraypanelbg.png);
 }
 
-.sidepanel.grimace {
+#optr.grimace {
     background-image: url(../images/fadebggrimace.png);
 }
 
-.sidepanel.teaveese {
+#optr.teaveese {
     background-image: url(../images/teaveesefadeoutbg.webp);
 }
 
-.sidepanel.shayloubelittle {
+#optr.shayloubelittle {
     background-image: url(../images/shayloubgfade.webp);
 }
 
-.sidepanel.checkya {
+#optr.checkya {
     background-image: url(../images/checkyabgfade.webp);
 }
 
-.sidepanel.spectre {
+#optr.spectre {
     background-image: url(../images/spectrebgfadeout.webp);
 }
 
-.sidepanel.candybunch {
+#optr.candybunch {
     background-image: url(../images/candybunchfade.webp);
 }
 
-.sidepanel.hasami {
+#optr.hasami {
     background-image: url(../images/hasamibgfade.webp);
 }
 
-.sidepanel.ioben {
+#optr.ioben {
     background-image: url(../images/iobenbgfade.webp);
 }
 
-.sidepanel.bokku {
+#optr.bokku {
     background-image: url(../images/bokkubgfade.webp);
 }
 
