@@ -4,11 +4,11 @@
 
 <head>
     <meta content="Cray's gallery" property="og:title">
-    <meta content="Candy Bunch" property="og:description">
-    <meta content="realcraymotherlol.github.io/Sites/Characters/hasami" property="og:url" />
+    <meta content="DSi" property="og:description">
+    <meta content="realcraymotherlol.github.io/Sites/Characters/dsi" property="og:url" />
     <meta content="https://cdn.discordapp.com/avatars/452917196881002506/4edc6391b1cbd2a7e44b523bd966aa57.png"
         property="og:image" />
-    <meta content="#282c36" data-react-helmet="true" name="theme-color" />
+    <meta content="#174511" data-react-helmet="true" name="theme-color" />
     <link rel="stylesheet" href="../../../CSS/gallery.css">
     <link rel="stylesheet" href="../../../CSS/style.css">
     <link rel="stylesheet" href="../../../CSS/chrs.css">
@@ -17,11 +17,11 @@
 </head>
 
 <body>
-    <div class="parallax candybunch"></div>
+    <div class="parallax DSi"></div>
     <button style="background: url(../../../images/info-xxl.svg) center / 70% no-repeat;"
-        class="side-panel-toggle candybunch" onclick="openNav()"></button>
+        class="side-panel-toggle DSi" onclick="openNav()"></button>
     <div id="titleflex">
-        <div id="title">Candy Bunch</div>
+        <div id="title">DSi</div>
     </div>
     <div style="height:100%;">
         <div id="grid" style="display:grid;">
@@ -132,33 +132,32 @@
             </div>
         </div>
     </div>
-    <div id="mySidepanel" class="sidepanel candybunch">
-        <div id="optr" class="candybunch">
+    <div id="mySidepanel" class="sidepanel dsi">
+        <div id="optr" class="dsi">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <div style="display: flex; align-content: center; justify-content: center;">
-                <div class="aboutname">Candy Bunch
+                <div class="aboutname">DSi
                     <div class="personality">
-                        ?<br>
-                        ?<br>
-                        Height: 1'6/25 cm<br>
-                        Creation date: September 6th 2022<br>
-                        Designed by: Transspecies<br>
-                        ____________________________________<br>
+                        Goofy, Easygoing<br>
+                        Male<br>
+                        Height: 5'10/179 cm<br>
+                        Creation date: January 21st 2015<br>
+                        Designed by: Craymotherlol<br>
+                        ____________________________________
                     </div>
                     <div class="description">
-                        Lorem Ipsum<br>
-                        ____________________________________
+                        Placeholder
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="pagination" class="candybunch">
-        <!-- <a id="prevbtn" href="#">Previous</a> -->
-        <a href="?page=1" class="active">1</a>
-        <!-- <a href="?page=2">2</a> -->
-        <!-- <a href="?page=3">3</a> -->
-        <!-- <a href="#" id="nextbtn">Next</a> -->
+    <div id="pagination" class="dsi">
+        <a id="prevbtn" href="#">Previous</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" id="nextbtn">Next</a>
     </div>
 </body>
 <script type="text/javascript">
@@ -169,14 +168,14 @@ var innerpanel = document.getElementById("optr")
         } else {
             document.getElementById("mySidepanel").style.width = "32vw";
         }
-        document.getElementById("mySidepanel").style.borderLeft = "5px solid #858b23";
         innerpanel.style.opacity = "1.0";
+        document.getElementById("mySidepanel").style.borderLeft = "5px solid #42a113";
     }
 
     function closeNav() {
         innerpanel.style.opacity = "0.0";
         document.getElementById("mySidepanel").style.width = "0";
-        document.getElementById("mySidepanel").style.borderLeft = "0px solid #858b23";
+        document.getElementById("mySidepanel").style.borderLeft = "0px solid #42a113";
     }
 
     function displayItemsForPage(pageNumber) {
@@ -186,17 +185,17 @@ var innerpanel = document.getElementById("optr")
         fetch('../../../JSON/pagination.json')
             .then(response => response.json())
             .then(content => {
-                const currentPageData = content.candybunch.main.ID.Currentpage[pageNumber.toString()];
+                const currentPageData = content.dsi.ID.Currentpage[pageNumber.toString()];
 
                 artboxes.forEach((box, index) => {
                     if (index < itemsPerPage) {
                         const imgboxKey = "boximg-" + (index + 1);
 
                         if (currentPageData.hasOwnProperty(imgboxKey)) {
-                            const creditvalue = currentPageData[imgboxKey]["credit-required"];
-                            const fullsize = currentPageData[imgboxKey]["full-image"];
+                            const creditvalue = currentPageData[imgboxKey]["credit-required"]
                             const creatorlink = currentPageData[imgboxKey]["href"];
                             const backgroundImage = currentPageData[imgboxKey]["background-image"];
+                            const fullsize = currentPageData[imgboxKey]["full-image"];
 
                             box.style.background = `url(${backgroundImage}) center/cover no-repeat`;
                             const hyperlink = box.querySelector('.hyperlinkbox');
@@ -230,7 +229,9 @@ var innerpanel = document.getElementById("optr")
             });
     }
 
+
     displayItemsForPage(1);
+
 </script>
 <script type="text/javascript" src="../../../Javascript/Characters.js"></script>
 

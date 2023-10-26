@@ -1135,5 +1135,21 @@
         }
       }
     }
+  },
+  "dsi":{
+    "main":{
+      "ID":{
+        "Currentpage":{
+          "1":{
+            "boximg-1":{
+              "background-image": "https://file.garden/ZSVxY3jzfmsAN53d/Icons/21716688.webp",
+              "full-image":"https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/DSi/65502996_V7HZ1emFmTJMKJq.jpg",
+              "credit-required": 1,
+              "href":"https://toyhou.se/skithing"
+            }
+          }
+        }
+      }
+    }
   }
 }
