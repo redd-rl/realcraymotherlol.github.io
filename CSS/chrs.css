@@ -41,6 +41,9 @@
 .side-panel-toggle.cray { filter: hue-rotate(214grad) saturate(10) drop-shadow(0px 4px 0.2px #3d3f1d);}
 .side-panel-toggle.cray:active { filter: hue-rotate(214grad) saturate(10) brightness(0.8); top: 9px; }
 
+.side-panel-toggle.dsi { filter: hue-rotate(387grad) saturate(6) drop-shadow(0px 4px 0.2px #1d343f);}
+.side-panel-toggle.dsi:active { filter: hue-rotate(387grad) saturate(6) brightness(0.8); top: 9px; }
+
 .parallax.bowtop {
     background-image: url(../images/bowtopbg.png);
     background-size: 350px;
@@ -106,6 +109,11 @@
     background-size: 350px;
 }
 
+.parallax.dsi {
+    background-image: url(../images/dsibg.webp);
+    background-size: 350px;
+}
+
 #optr.bowtop {
     background-image: url(../images/fadebowtoppanelbg.png);
 }
@@ -151,6 +159,10 @@
 
 #optr.bokku {
     background-image: url(../images/bokkubgfade.webp);
+}
+
+#optr.dsi {
+    background-image: url(../images/dsibgfade.webp);
 }
 
 #pagination.bowtop a {
@@ -293,5 +305,14 @@
     margin-left: 5px;
 }
 
+#pagination.dsi a.active {
+    background-color: #61b1e2;
+}
+
+#pagination.dsi a {
+    background-color: #1e3747; 
+    border: none;
+    margin-left: 5px;
+}
 
 

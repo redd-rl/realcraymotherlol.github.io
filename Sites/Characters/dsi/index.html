@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <div class="parallax DSi"></div>
+    <div class="parallax dsi"></div>
     <button style="background: url(../../../images/info-xxl.svg) center / 70% no-repeat;"
-        class="side-panel-toggle DSi" onclick="openNav()"></button>
+        class="side-panel-toggle dsi" onclick="openNav()"></button>
     <div id="titleflex">
         <div id="title">DSi</div>
     </div>
@@ -138,11 +138,11 @@
             <div style="display: flex; align-content: center; justify-content: center;">
                 <div class="aboutname">DSi
                     <div class="personality">
-                        Goofy, Easygoing<br>
-                        Male<br>
-                        Height: 5'10/179 cm<br>
-                        Creation date: January 21st 2015<br>
-                        Designed by: Craymotherlol<br>
+                        ?<br>
+                        ?<br>
+                        Height: ?<br>
+                        Creation date: May 26th 2023<br>
+                        Designed by: Skithing<br>
                         ____________________________________
                     </div>
                     <div class="description">
@@ -169,13 +169,13 @@ var innerpanel = document.getElementById("optr")
             document.getElementById("mySidepanel").style.width = "32vw";
         }
         innerpanel.style.opacity = "1.0";
-        document.getElementById("mySidepanel").style.borderLeft = "5px solid #42a113";
+        document.getElementById("mySidepanel").style.borderLeft = "5px solid #61b1e2";
     }
 
     function closeNav() {
         innerpanel.style.opacity = "0.0";
         document.getElementById("mySidepanel").style.width = "0";
-        document.getElementById("mySidepanel").style.borderLeft = "0px solid #42a113";
+        document.getElementById("mySidepanel").style.borderLeft = "0px solid #61b1e2";
     }
 
     function displayItemsForPage(pageNumber) {
@@ -185,7 +185,7 @@ var innerpanel = document.getElementById("optr")
         fetch('../../../JSON/pagination.json')
             .then(response => response.json())
             .then(content => {
-                const currentPageData = content.dsi.ID.Currentpage[pageNumber.toString()];
+                const currentPageData = content.dsi.main.ID.Currentpage[pageNumber.toString()];
 
                 artboxes.forEach((box, index) => {
                     if (index < itemsPerPage) {
