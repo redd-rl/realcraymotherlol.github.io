@@ -11,6 +11,12 @@ a {
     border-radius: 5px;
 }
 
+.divborder:hover {
+    transform: scale(1.1);
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
 .softbutton {
     border-radius: 5px;
     border: 2px solid #155e27;
@@ -42,6 +48,7 @@ a {
     padding-right: 4vw;
     background-size: 10vw;
     font-size: 32px;
+    
 }
 
 
@@ -49,6 +56,8 @@ a {
     background-size: 11vw;
     background-color: #5851b9;
     font-size: 32px;
+    transform: scale(1.1); 
+    gap: 20px;
 }
 
 @keyframes hover {
