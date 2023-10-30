@@ -90,11 +90,11 @@
         },
         "2": {
           "boximg-1": {
-            "background-image": "https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/slugmouthtb.png",
+            "background-image": "https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Misc/slugmouthtb.png",
             "full-image": "https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/slugmouth.png"
           },
           "boximg-2": {
-            "background-image": "https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/moogl.png",
+            "background-image": "https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Misc/moogl.png",
             "full-image": "https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/moogle.png"
           },
           "boximg-3": {
@@ -982,6 +982,10 @@
               "full-image": "https://f2.toyhou.se/file/f2-toyhou-se/images/28123522_zSJp06CeJ5dgZCL.png",
               "credit-required": 1,
               "href": "https://toyhou.se/ozae"
+            },
+            "boximg-3": {
+              "background-image": "https://file.garden/ZSVxY3jzfmsAN53d/Thumbnails/Spectre/72755879_6GhodoSu8sS795z.webp",
+              "full-image": "https://file.garden/ZSVxY3jzfmsAN53d/Full%20Drawings/72755879_6GhodoSu8sS795z.png"
             }
           }
         }
